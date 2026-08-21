@@ -1,0 +1,79 @@
+# ============================================
+# ARCHIVOS COMPRIMIDOS (ZIPS, RARS, ETC)
+# ============================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+*.tgz
+
+# ============================================
+# ARCHIVOS DE DISEÑO (PESADOS)
+# ============================================
+*.psd
+*.ai
+*.eps
+*.svg  # Si tienes SVGs muy pesados, quita esta línea
+*.fig
+*.sketch
+*.xd
+
+# ============================================
+# IMÁGENES PESADAS (OPCIONAL)
+# ============================================
+# Si quieres ignorar TODAS las imágenes:
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.webp
+
+# O solo las que pesen más de 5MB (con una herramienta extra)
+
+# ============================================
+# ARCHIVOS TEMPORALES Y LOGS
+# ============================================
+*.log
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# ============================================
+# CONFIGURACIONES LOCALES
+# ============================================
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================
+# DEPENDENCIAS (si usas npm)
+# ============================================
+node_modules/
+package-lock.json
+yarn.lock
+bower_components/
+
+# ============================================
+# ARCHIVOS DE WP (OPCIONAL)
+# ============================================
+wp-config.php
+*.sql
+*.sqlite
+
+# ============================================
+# OTROS ARCHIVOS INNECESARIOS
+# ============================================
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+.DS_Store
