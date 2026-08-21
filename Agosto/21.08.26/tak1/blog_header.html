@@ -1,0 +1,148 @@
+<section class="stefa_banner-blog">
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        https://cert-cdn.movistar.com.pe/2026/08/Banner-desktop_11zon-scaled.webp
+      "
+    />
+
+    <source
+      media="(min-width: 768px)"
+      srcset="https://cert-cdn.movistar.com.pe/2026/08/Banner-tablet_11zon.webp"
+    />
+
+    <img
+      src="https://cert-cdn.movistar.com.pe/2026/08/Banner-mobile_11zon.webp"
+      alt="Movistar Empresas y Crece del BCP"
+      title="Movistar Empresas y Crece del BCP"
+      width="1920"
+      height="400"
+      class="img_banner-blog"
+    />
+  </picture>
+
+  <div class="stefa_contenedor_items-blog">
+    <h1 class="title">
+      Movistar Empresas y Crece del BCP se unen para impulsar la digitalización
+      de nuevos negocios
+    </h1>
+
+    <span class="date">29 de Enero, 2026</span>
+  </div>
+</section>
+
+<style>
+  .stefa_contenedor_items-blog .title {
+    font-size: 40px !important    ;
+  }
+
+  .stefa_banner-blog {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #0b2739;
+  }
+
+  .stefa_banner-blog picture {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stefa_banner-blog .img_banner-blog {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .stefa_contenedor_items-blog {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: calc(100% - 32px);
+    max-width: 302px;
+    margin: 0 auto;
+    padding-top: 230px;
+    box-sizing: border-box;
+  }
+
+  .stefa_contenedor_items-blog .title {
+    width: 100%;
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .stefa_contenedor_items-blog .date {
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .stefa_contenedor_items-blog {
+      left: 28%;
+      width: 374px;
+      max-width: none;
+      gap: 24px;
+      margin: 0;
+      padding-top: 80px;
+      transform: translateX(-50%);
+    }
+
+    .stefa_contenedor_items-blog .title {
+      font-size: 28px;
+      line-height: 32px;
+      text-align: left;
+    }
+
+    .stefa_contenedor_items-blog .date {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .stefa_contenedor_items-blog {
+      left: 20%;
+      width: 476px;
+    }
+
+    .stefa_contenedor_items-blog .title {
+      font-size: 40px;
+      line-height: 42px;
+    }
+
+    .stefa_contenedor_items-blog .date {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .stefa_contenedor_items-blog {
+      padding-top: 210px;
+    }
+    .stefa_contenedor_items-blog .title {
+      font-size: 40px !important    ;
+    }
+    .stefa-none {
+      display: none;
+    }
+  }
+</style>
