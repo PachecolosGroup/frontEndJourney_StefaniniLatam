@@ -1,9 +1,18 @@
-# Tratar archivos HTML con CSS/JS como HTML
-*.html linguist-language=HTML
-
-# Asegurar que CSS y JS se cuenten por separado
+# Configuración para que GitHub reconozca todos los lenguajes
 *.css linguist-language=CSS
 *.js linguist-language=JavaScript
+*.html linguist-language=HTML
 
-# Si tienes archivos con múltiples lenguajes
+# Para archivos HTML con CSS/JS embebido
 *.html linguist-vendored=false
+
+# Para archivos SCSS/SASS si los usas
+*.scss linguist-language=Sass
+*.sass linguist-language=Sass
+
+# Para TypeScript
+*.ts linguist-language=TypeScript
+
+# Ignorar archivos de configuración
+*.json linguist-vendored=true
+package-lock.json linguist-vendored=true
