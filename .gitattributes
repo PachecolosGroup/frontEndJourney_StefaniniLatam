@@ -1,0 +1,9 @@
+# Tratar archivos HTML con CSS/JS como HTML
+*.html linguist-language=HTML
+
+# Asegurar que CSS y JS se cuenten por separado
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Si tienes archivos con múltiples lenguajes
+*.html linguist-vendored=false

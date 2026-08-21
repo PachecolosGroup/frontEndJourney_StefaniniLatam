@@ -13,6 +13,12 @@ Decidí subirlo oficialmente desde el 21 de Agosto del 2026, debi hacerlo desde 
 - **Control de versiones**: Asure Storage explorer, Git, GitHub
 - **Deploy**: Netlify, Vercel, Wordpress
 
+| Tecnología     | % aprox. | Descripción                          |
+| -------------- | -------- | ------------------------------------ |
+| **HTML5**      | 55%      | Estructura de páginas y componentes  |
+| **CSS3**       | 25%      | Estilos, animaciones y responsividad |
+| **JavaScript** | 25%      | Interactividad y lógica frontend     |
+
 ## 📌 Tipos de tareas incluidas
 
 - Landing pages completas
