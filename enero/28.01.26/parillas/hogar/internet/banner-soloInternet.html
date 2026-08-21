@@ -1,0 +1,131 @@
+<div
+  class="stefa_banner_kenos_general general_animation"
+  lt-carousel="view: 1; view600: 1; view800: 1; view1200: 1; autoheight: false; autoplay: true; delay: 3000;"
+>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="stefa_container_banner_kenos">
+          <a
+            id="BTN-${name-lp}-BANNER-${index}"
+            class=""
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://tienda.movistar.com.pe/solicitud/checkout/cobertura?service=93359103400FTTH&ref_origin=WP_SOLOINTERNET_BANNER1_400MBPS_HOGAR"
+            onclick="
+              dataLayer.push({
+                event: 'hv.event',
+                eventCategory: 'lp_fibra_optica',
+                eventAction: 'click',
+                eventLabel: 'comprar online - 0',
+                nonInteraction: 1,
+              })
+            "
+          >
+            <picture class="stefa_picture_bg_kenos">
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/01/WEBP_ENE_Fibra-optica-desktop.webp
+                "
+              />
+              <img
+                alt="Home Movistar"
+                title="Home Movistar"
+                width="704"
+                height="328"
+                class="stefa_image_banner_kenos custom_img_banner custom_solo_internet"
+                src="https://cert-cdn.movistar.com.pe/2026/01/WEBP_ENE_Fibra-optica-mobile.webp"
+              />
+            </picture>
+            <!-- https://cert-cdn.movistar.com.pe/2025/12/WEBP_DIC_Verano2026-solo-internet-desktop.webp
+                         https://cert-cdn.movistar.com.pe/2025/12/WEBP_DIC_Verano2026-solo-internet-mobile.webp
+                          -->
+          </a>
+          <div class="stefa_container_items_banner_kenos custom_solo_internet">
+            <h1 class="tag_label">Internet Hogar​</h1>
+            <p class="description_banner custom_solo_internet">
+              <b>Haz el cambio</b> que refresca tu <b>verano</b>
+            </p>
+            <p class="text_bottom_banner">con Fibra Movistar</p>
+            <style>
+              .text_bottom_banner {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: #6b6c6f;
+                margin-top: -24px;
+              }
+
+              @media (min-width: 1280px) {
+                .text_bottom_banner {
+                  font-size: 18px;
+                  margin-top: -16px;
+                }
+              }
+            </style>
+            <a
+              id="BTN-${name-lp}-BANNER-${index}"
+              class="btn-primary stefa_primary_btn_kenos"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://tienda.movistar.com.pe/solicitud/checkout/cobertura?service=93359103400FTTH&ref_origin=WP_SOLOINTERNET_BANNER1_400MBPS_HOGAR"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventCategory: 'lp_fibra_optica',
+                  eventAction: 'click',
+                  eventLabel: 'comprar online - 0',
+                  nonInteraction: 1,
+                })
+              "
+              >Comprar online</a
+            >
+            <div
+              style="opacity: 0"
+              class="stefa_formulario_contenedor"
+              id="FORM-${name-lp}-BANNER-${index}"
+              data-codproducto="code-number"
+              data-descripcion="description"
+              data-detalleorigen="origen detail"
+              data-nombreproducto="product name"
+              data-subtipoproducto="product"
+              data-tipoproducto="product"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination dots-solo swiper-animation-pagination"></div>
+  </div>
+  <div class="swiper-button-prev lt-button-prev d-none"></div>
+  <div class="swiper-button-next lt-button-next d-none"></div>
+</div>
+
+<style>
+  p.text_bottom_banner {
+    margin-top: -6%;
+  }
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .description_banner {
+    color: rgb(49 50 53) !important;
+  }
+
+  @media (min-width: 1280px) {
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .description_banner.custom_solo_internet {
+      min-width: 499px;
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos.custom_solo_internet {
+      padding-left: 45px !important;
+    }
+  }
+  .lt__parent
+    .swiper-pagination.dots-solo.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: block;
+  }
+</style>

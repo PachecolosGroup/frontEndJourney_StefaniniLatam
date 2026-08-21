@@ -1,0 +1,280 @@
+<section class="stefa-duos-kenosv2__baner">
+  <div
+    class="stefa-duos-kenosv2__baner--carrusel"
+    lt-carousel="view: 1; view1200: 1; autoheight: false"
+  >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- slide1 -->
+        <div class="swiper-slide">
+          <div class="stefa-duos-kenosv2__baner-content">
+            <a
+              class="stefa-duos-kenosv2__link"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_duos',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'comprar online - 0',
+                })
+              "
+              href="https://mimovistar.sng.link/Er83m/rpztz?_dl=https%3A%2F%2Fwww.movistar.com.pe%2Fapp-mi-movistar%23movistar-club&_smtype=3​"
+              >&nbsp;</a
+            >
+            <picture class="stefa-duos-kenosv2__baner-picture">
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/Club-movistar-desktop_11zon.webp
+                "
+              />
+              <source
+                media="(min-width:600px )"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/Club-movistar-mobile_11zon.webp
+                "
+              />
+              <img
+                src="https://cert-cdn.movistar.com.pe/2026/08/Club-movistar-mobile_11zon.webp"
+                alt="Banner Duos"
+                width="1920"
+                height="316"
+                class="stefa-duos-kenosv2__baner-img"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <!-- slide2 -->
+        <div class="swiper-slide">
+          <div class="stefa-duos-kenosv2__baner-content">
+            <a
+              class="stefa-duos-kenosv2__link"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_duos',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'comprar online - 0',
+                })
+              "
+              href="http://smvst.com/AppMovistarLanding"
+              >&nbsp;</a
+            >
+            <picture class="stefa-duos-kenosv2__baner-picture">
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/03/WEBP_MAR_Club-v2-Banner-desktop.webp
+                "
+              />
+              <source
+                media="(min-width:600px )"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/03/WEBP_MAR_Club-v2_Banner-principal-mobile.webp
+                "
+              />
+              <img
+                src="https://cert-cdn.movistar.com.pe/2026/03/WEBP_MAR_Club-v2_Banner-principal-mobile.webp"
+                alt="Banner Duos"
+                width="1920"
+                height="316"
+                class="stefa-duos-kenosv2__baner-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination dots-solo"></div>
+    </div>
+
+    <div class="swiper-button-prev lt-button-prev">
+      <svg
+        class="icon svg--inline"
+        fill="none"
+        focusable="false"
+        role="img"
+        viewbox="0 0 8 15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 1.7334L1 7.7334L7 13.7334"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="swiper-button-next lt-button-next">
+      <svg
+        class="icon svg--inline"
+        fill="none"
+        focusable="false"
+        role="img"
+        viewbox="0 0 8 15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 13.7334L7 7.7334L1 1.7334"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+        ></path>
+      </svg>
+    </div>
+  </div>
+</section>
+<style>
+  /* test slider visual */
+  @media screen and (min-width: 1260px) {
+    .stefa-duos-kenosv2__baner
+      .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+      bottom: 30px !important;
+    }
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+      width: 30%;
+      height: 100%;
+      object-fit: contain;
+      transform-origin: center;
+    }
+    .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+      right: auto;
+      left: 106px;
+      top: 83.05%;
+    }
+    .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+      right: auto;
+      left: 35px;
+      top: 83.05%;
+    }
+  }
+
+  .stefa-duos-kenosv2__baner .stefa-duos-kenosv2__baner--carrusel {
+    max-width: 1296px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .stefa-duos-kenosv2__baner-content {
+    position: relative;
+    width: 100%;
+    max-width: 1296px;
+    margin: 32px auto 0;
+  }
+
+  .stefa-duos-kenosv2__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .stefa-duos-kenosv2__link:hover,
+  .stefa-duos-kenosv2__link:focus,
+  .stefa-duos-kenosv2__link:active {
+    text-decoration: none;
+    color: transparent;
+  }
+
+  @media (max-width: 767px) {
+    .stefa-duos-kenosv2__baner-content {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-pagination {
+    left: auto;
+    right: 0;
+    width: 95%;
+    max-width: 1296px;
+    text-align: left;
+  }
+
+  .stefa-duos-kenosv2__baner
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    bottom: 40px;
+  }
+
+  :focus {
+    outline: 0;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next,
+  .stefa-duos-kenosv2__baner .swiper-button-prev {
+    position: absolute;
+    top: 100%;
+    width: 32px;
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .stefa-duos-kenosv2__baner
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 18px;
+    height: 8px;
+    border-radius: 99px;
+    background-color: #019bef;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next::after,
+  .stefa-duos-kenosv2__baner .swiper-button-prev::after {
+    display: none;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+    right: auto;
+    left: 30px;
+    top: 83.05%;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+    right: auto;
+    left: 120px;
+    top: 83.05%;
+  }
+  @media (max-width: 600px) {
+    .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+      right: auto;
+      left: 61px;
+      top: 84.75%;
+    }
+    .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+      right: auto;
+      left: 10px;
+      top: 84.75%;
+    }
+    .stefa-duos-kenosv2__baner .swiper-button-next,
+    .stefa-duos-kenosv2__baner .swiper-button-prev {
+      width: 10px;
+    }
+  }
+</style>

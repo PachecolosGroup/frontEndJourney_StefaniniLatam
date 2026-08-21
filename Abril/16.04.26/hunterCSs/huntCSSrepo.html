@@ -1,0 +1,134 @@
+<a
+  href="tel:080024168"
+  class="container-telf"
+  onclick="
+    dataLayer.push({
+      event: 'hv.event',
+      eventName: '0800_magento',
+      eventCategory: '0800 flotante_hunter',
+      eventAction: 'click',
+      eventLabel: '080024168',
+    })
+  "
+>
+  <div class="ico-whats-desk">
+    <img
+      class="iconWhatsapp"
+      src="https://crossattachmedia.serviciosmovistar.com/developers/files/resources/experimentos/magento/imagenes/telf-icon.svg"
+      alt="Call"
+    />
+  </div>
+
+  <div class="text-desk">
+    <p class="text-telf">
+      Canal de ventas <br /><span class="name-whatsApp"
+        ><strong>080024168</strong></span
+      >
+    </p>
+  </div>
+</a>
+
+<style>
+  .container-telf {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    text-decoration: none;
+    z-index: 90;
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+    transition: all 0.3s ease;
+  }
+
+  .ico-whats-desk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a4ff;
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    left: -55px;
+    animation: pulse 2s infinite ease-in-out;
+
+    box-shadow:
+      0 0 0 10px rgba(0, 164, 255, 0.25),
+      0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .ico-whats-desk img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+  }
+
+  .container-telf .text-desk {
+    background-color: #019df4;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    height: 56px;
+    width: 180px;
+    padding: 6px 12px 6px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow:
+      0 0 0 10px rgba(0, 164, 255, 0.25),
+      0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .container-telf p.text-telf {
+    font-size: 16px;
+    line-height: 14px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .container-telf p.text-telf span {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .container-telf:hover {
+    transform: translateX(-5px);
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-telf {
+      top: 20%;
+    }
+
+    .ico-whats-desk {
+      height: 60px;
+      width: 60px;
+      left: -50px;
+    }
+
+    .ico-whats-desk img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .container-telf .text-desk {
+      height: 40px;
+      width: 130px;
+      padding: 12px 0 8px 8px;
+    }
+
+    .container-telf p.text-telf {
+      font-size: 11px;
+      line-height: 10.95px;
+      text-align: center;
+    }
+
+    .container-telf p.text-telf span {
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+</style>

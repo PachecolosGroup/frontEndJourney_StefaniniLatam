@@ -1,0 +1,80 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' type='text/css' data-senna-track="temporary" href='https://cert-cdn.movistar.com.pe/documents/assets/futbol-libre/CSS_ENE_Futbol_Libre.css'>
+<script
+    type="application/ld+json"> {
+    "@context": "https://schema.org/",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://www.movistar.com.pe/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Hogar",
+            "item": "https://www.movistar.com.pe/hogar"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Fútbol Libre",
+            "item": "https://www.movistar.com.pe/hogar/tv/futbol-libre"
+        }
+    ]
+} </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "¿Dónde ver el mejor Futbol Libre en vivo hoy?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Movistar te da la oportunidad de ver el mejor fútbol nacional e internacional con una calidad óptima, sin interrupciones ni desventajas. Además contamos con una amplia oferta de partidos, entre los que se cuentan los partidos de Perú, primera y segunda división peruana, y partidos de los equipos de las estrellas a nivel internacional."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Por qué es mejor ver tus partidos de fútbol libre de forma legal?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ver tus partidos de fútbol libre de forma legal es mejor porque garantiza una experiencia segura, con transmisiones de alta calidad y sin interrupciones ni riesgos de malware o virus. Con Movistar TV disfruta tus partidos de fútbol libre sin interrupciones y con la calidad óptima que tú mereces."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Qué partidos de fútbol peruano puedes ver de forma libre con nuestros planes?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Además de los partidos de Perú en Clasificatorias, con nuestros planes de TV puedes ver partidos de Eliminatorias de CONMEBOL, partidos seleccionados de la primera división peruana, y toda la segunda división nacional."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Qué partidos de fútbol mundial puedes ver libremente con nuestros planes?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Con nuestros planes de TV puedes ver partidos de las principales ligas del mundo a través de canales deportivos seleccionados. Disfruta con partidos de las principales ligas de América, Europa y Asia, y ve en acción a las superestrellas del fútbol mundial."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Qué torneos puedes disfrutar libremente con Disney+ Premium?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uniéndote a Movistar puedes disfrutar de Disney+ Premium y ESPN en vivo sin costo adicional, con lo cual puedes ver partidos seleccionados de la Champions League, Europa League, La Liga de España, Premier League de Inglaterra, Fútbol argentino, el Brasileirao y mucho más."
+    }
+  },{
+    "@type": "Question",
+    "name": "¿Qué tienes que hacer para disfrutar de fútbol libre y sin interrupciones?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Elige el plan de Movistar TV de tu preferencia en esta página, espera la llamada de nuestro operador, brinda tus datos, ¡y listo! Prepárate para gozar del verdadero fútbol libre, sin desventajas y con la calidad que sólo obtienes con Movistar."
+    }
+  }]
+}
+</script>

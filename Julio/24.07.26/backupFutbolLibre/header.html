@@ -1,0 +1,74 @@
+<!-- HEADER -->
+<section class="stefa-duos-kenosv2__baner">
+  <div class="stefa-duos-kenosv2__baner-content">
+    <a
+      class="stefa-duos-kenosv2__link"
+      onclick="
+        dataLayer.push({
+          event: 'hv.event',
+          eventName: 'lp_movistar-tv',
+          eventCategory: 'banner',
+          eventAction: 'click',
+          eventLabel: 'comprar online - 0',
+        })
+      "
+      href="https://www.movistar.com.pe/programacion-tv"
+      >&nbsp;</a
+    >
+    <picture class="stefa-duos-kenosv2__baner-picture">
+      <source
+        media="(min-width:1200px)"
+        srcset="
+          https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_Hero-base.webp
+        "
+      />
+      <source
+        media="(min-width:600px )"
+        srcset="
+          https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_mobInternal-Hero.webp
+        "
+      />
+      <img
+        src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_mobInternal-Hero.webp"
+        alt="Banner TV en vivo"
+        width="1920"
+        height="316"
+        class="stefa-duos-kenosv2__baner-img"
+      />
+    </picture>
+  </div>
+</section>
+<style>
+  .stefa-duos-kenosv2__baner-content {
+    position: relative;
+    width: 95%;
+    max-width: 1296px;
+    margin: 32px auto 0;
+  }
+
+  .stefa-duos-kenosv2__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .stefa-duos-kenosv2__link:hover,
+  .stefa-duos-kenosv2__link:focus,
+  .stefa-duos-kenosv2__link:active {
+    text-decoration: none;
+    color: transparent;
+  }
+
+  @media (max-width: 767px) {
+    .stefa-duos-kenosv2__baner-content {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
+</style>

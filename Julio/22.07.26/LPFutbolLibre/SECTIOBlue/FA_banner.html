@@ -1,0 +1,214 @@
+<div class="stefa_sct_blue-container">
+  <!-- slide1 -->
+  <div class="stefa_sct_blue" id="banner-movistar-deportes">
+    <div class="stefa_banner-content">
+      <span class="stefa_banner-subtitle">Movistar deportes</span>
+      <h1 class="stefa_banner-title">
+        Los mejores canales deportivos
+        <span class="stefa_highlight">del Fútbol Libre</span>
+      </h1>
+      <p class="stefa_banner-description">
+        Canal de televisión por suscripción especializado en deportes que
+        trasmiten en vivo partidos de fútbol, vóley, eventos internacionales y
+        programas de análisis deportivo para el público peruano.
+      </p>
+      <div class="stefa_banner-action">
+        <a href="#" class="stefa_banner-btn" id="btn-comprar-ahora"
+          >Comprar ahora</a
+        >
+      </div>
+    </div>
+
+    <!-- Bloque de imagen real -->
+    <img
+      class="stefa_banner-image"
+      src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_STB_Cd_2.webp"
+      alt="Futbol Libre"
+    />
+  </div>
+  <!-- slide2 -->
+  <div class="stefa_sct_blue" id="banner-movistar-deportes2">
+    <div class="stefa_banner-content">
+      <span class="stefa_banner-subtitle">ESPN</span>
+      <h1 class="stefa_banner-title">
+        <span class="stefa_highlight">Todo el deporte</span>
+        en un solo lugar
+      </h1>
+      <p class="stefa_banner-description">
+        Disfruta de los mejores partidos de fútbol nacional e internacional,
+        UEFA Champions League, La Copa Oro, La Liga de España, Bundesliga y más.
+      </p>
+      <div class="stefa_banner-action">
+        <a href="#" class="stefa_banner-btn" id="btn-comprar-ahora2"
+          >Comprar ahora</a
+        >
+      </div>
+    </div>
+
+    <!-- Bloque de imagen real -->
+    <img
+      class="stefa_banner-image"
+      src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_STB_Cd_1.webp"
+      alt="Futbol Libre"
+    />
+  </div>
+</div>
+
+<style>
+  .stefa_sct_blue-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .stefa_sct_blue {
+    background-color: #0b2739;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 40px;
+    gap: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+  .stefa_sct_blue-container img.stefa_banner-image {
+    max-width: 580px;
+  }
+
+  .stefa_sct_blue .stefa_banner-content {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stefa_sct_blue .stefa_banner-subtitle {
+    font-size: 16px;
+    color: #c4d3e0;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+  .stefa_sct_blue .stefa_banner-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+
+  .stefa_sct_blue .stefa_banner-title .stefa_highlight {
+    font-weight: 700;
+  }
+
+  .stefa_sct_blue .stefa_banner-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 540px;
+    margin-bottom: 8px;
+  }
+
+  .stefa_sct_blue .stefa_banner-action {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+
+  .stefa_sct_blue .stefa_banner-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #019bef;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 60px;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
+  }
+
+  .stefa_sct_blue .stefa_banner-btn:hover {
+    background-color: #008edd;
+    transform: translateY(-2px);
+  }
+
+  .stefa_sct_blue .stefa_banner-btn:active {
+    transform: translateY(0);
+  }
+
+  .stefa_sct_blue .stefa_banner-image-placeholder {
+    flex: 0.9;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #ff3b30;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stefa_sct_blue .stefa_placeholder-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .stefa_sct_blue {
+      flex-direction: column;
+      padding: 24px;
+      gap: 24px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .stefa_sct_blue .stefa_banner-image-placeholder,
+    .stefa_sct_blue .stefa_banner-image {
+      order: -1;
+      flex: none;
+      width: 430px;
+      height: 180px;
+      aspect-ratio: auto;
+      align-self: center;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .stefa_sct_blue .stefa_banner-content {
+      width: 100%;
+    }
+
+    .stefa_sct_blue .stefa_banner-title {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+
+    .stefa_sct_blue .stefa_banner-description {
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    /* Alinea el botón a la derecha como en el diseño responsive */
+    .stefa_sct_blue .stefa_banner-action {
+      justify-content: flex-end;
+      margin-top: 4px;
+    }
+
+    .stefa_sct_blue .stefa_banner-btn {
+      padding: 12px 28px;
+      font-size: 15px;
+    }
+  }
+</style>

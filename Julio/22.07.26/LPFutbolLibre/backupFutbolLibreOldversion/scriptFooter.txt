@@ -1,0 +1,138 @@
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/swiper-bundle.min.js"
+    id="swiper-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/custom-slider-swiper-v1.0.js"
+    id="movistar-residencial-swiper-js-js"></script>
+<script type='text/javascript' src='https://cert-cdn.movistar.com.pe/2026/02/JS_FEB_libreria-front.min.js'></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/custom-slider-v1.0.js"></script>
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/customSliderShows.js"></script>
+
+<script>
+
+
+    let collapseList = document.querySelectorAll(".preguntas-collapse_content");
+    collapseList.forEach((collapse) => {
+        let collapseItems = collapse.querySelectorAll(".preguntas-collapse_header");
+        collapseItems.forEach((boton) => {
+            boton.addEventListener("click", function (e) {
+                if (this.parentElement.classList.contains("active")) {
+                    collapseItems.forEach((boton) => {
+                        boton.parentElement.classList.remove("active")
+                    }
+                    )
+                } else {
+                    collapseItems.forEach((boton) => {
+                        boton.parentElement.classList.remove("active")
+                    }
+                    );
+                    this.parentElement.classList.add("active")
+                }
+            })
+        }
+        )
+    }
+    );
+
+
+    let collapseCeldas = document.querySelectorAll(".preguntas-collapse_item");
+    let boton_vermas = document.getElementById("preguntas-collapse_mas--boton_js");
+    let boton_vermas_info = document.getElementById("preguntas-collapse_mas--info_js");
+    if (collapseCeldas.length <= 4) {
+        boton_vermas.style.display = "none"
+    }
+    if (collapseCeldas.length > 4) {
+        collapseCeldas.forEach((collapseCelda, i) => {
+            if (i > 3) {
+                collapseCeldas[i].style.display = "none"
+            }
+        }
+        )
+    }
+    boton_vermas.addEventListener("click", (e) => {
+        if (boton_vermas.classList.contains("active")) {
+            boton_vermas.classList.remove("active");
+            boton_vermas_info.textContent = "Ver más";
+            collapseCeldas.forEach((collapseCelda, i) => {
+                if (i > 3) {
+                    collapseCeldas[i].style.display = "none"
+                }
+            }
+            )
+        } else {
+            boton_vermas.classList.add("active");
+            boton_vermas_info.textContent = "Ver menos";
+            collapseCeldas.forEach((collapseCelda, i) => {
+                collapseCeldas[i].style.display = "block"
+            }
+            )
+        }
+    }
+    );
+
+
+    /**const slider = new Slider;
+    slider.initSliderHero(".glide-banner_hero", 1 > 1);
+    */
+
+    /*document.querySelectorAll(".nav-tabs .nav-link").forEach((e) => {
+        e.addEventListener("click", function (e) {
+            const t = e.target.getAttribute("href").replace(/\#/g, "");
+            document.querySelector('[id="' + t + '"] .swiper-container').classList.contains("swiper-container-initialized") ? setTimeout(() => {
+                refreshSliders1()
+            }
+            ) : setTimeout(() => {
+                sliderTab1()
+            }
+                , 50)
+        })
+    }
+    )*/
+
+
+    jQuery(function (e) {
+        e(".planes--box5 .planes--box5-footer .link--more5").click(function () {
+            e(".planes--box5").hasClass("active") ? (e(".planes--box5").removeClass("active"),
+                e(".planes--box5-body").slideUp(),
+                e(".planes--box5 .planes--box5-footer .link--more5 .link--more5-text ").text("Ver detalle")) : (e(".planes--box5").addClass("active"),
+                    e(".planes--box5-body").slideDown(),
+                    e(".planes--box5 .planes--box5-footer .link--more5 .link--more5-text ").text("Ocultar detalle"))
+        }),
+            e(".planes--box .planes--box-footer .link--more").click(function () {
+                e(".planes--box").hasClass("active") ? (e(".planes--box").removeClass("active"),
+                    e(".planes--box-body").slideUp(),
+                    e(".planes--box .planes--box-footer .link--more .link--more-text").text("Ver detalle")) : (e(".planes--box").addClass("active"),
+                        e(".planes--box-body").slideDown(),
+                        e(".planes--box .planes--box-footer .link--more .link--more-text").text("Ocultar detalle"))
+            }),
+            e(".link--more--tv.link--more1").click(function () {
+                e(".planes--box1").hasClass("active") ? (e(".planes--box1-body1").slideDown(),
+                    e(".planes--box1 .planes--box1-footer .link--more1 .link--more-text1").text("Ocultar detalle")) : (e(".planes--box1").addClass("active"),
+                        e(".planes--box1").removeClass("active"),
+                        e(".planes--box-body1").slideUp(),
+                        e(".planes--box1 .planes--box1-footer .link--more1 .link--more-text1").text("Ver paquete movistar tv"))
+            }),
+            e(".fibra-carrucel-footer .link--more5").click(function () {
+                e(".fibra-carrucel-body").hasClass("active") ? (e(".fibra-carrucel-body").removeClass("active"),
+                    $(".fibra-carrucel-oculto").slideUp(),
+                    e(".fibra-carrucel-footer .link--more5 .link--more5-text").text("Ver más beneficios")) : (e(".fibra-carrucel-body").addClass("active"),
+                        e(".fibra-carrucel-oculto").slideDown(),
+                        e(".fibra-carrucel-footer .link--more5 .link--more5-text").text("Ver menos beneficios"))
+            }),
+            e(".stefa-planes-fibra-internet .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").click(function () {
+                e(".stefa-planes-fibra-internet .swiper-slide").removeClass("slide-mobile-plan"),
+                    e(".stefa-planes-fibra-internet .swiper-slide").addClass("slide-mobile-mostrar")
+            }),
+            e(".stefa-planes-fibra-internet .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").click(function () {
+                e(".stefa-planes-fibra-internet .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").hide()
+            }),
+            e(".stefa-planes-fibra-trios .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").click(function () {
+                e(".stefa-planes-fibra-trios .swiper-slide").removeClass("slide-mobile-plan"),
+                    e(".stefa-planes-fibra-trios .swiper-slide").addClass("slide-mobile-mostrar")
+            }),
+            e(".stefa-planes-fibra-trios .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").click(function () {
+                e(".stefa-planes-fibra-trios .planes-fibra-optica_container .fibra-carrucel-ver-mas .fibra-carrucel_btn").hide()
+            })
+    })
+
+</script>

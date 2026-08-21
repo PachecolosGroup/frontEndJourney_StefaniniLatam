@@ -1,0 +1,116 @@
+<section class="disney-section">
+  <div class="disney-content">
+    <!-- Títulos y texto descriptivo -->
+    <!-- <h2 class="disney-content--title">¿Qué es <b>Disney+</b>?</h2> -->
+
+    <p class="disney-content--parrafo">
+      Tu <b>plan con Disney+ incluido</b> para disfrutar series, películas y el
+      mejor deporte en un solo lugar
+    </p>
+
+    <!-- Contenedor de logos -->
+    <div class="disney-logos">
+      <picture class="stefa--disneyplusLogos">
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_LOGOSTV_22.png
+          "
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_LOGOSTV_22.png
+          "
+        />
+        <img
+          style="border-radius: 16px"
+          alt="Disney+ TV"
+          width="100%"
+          height="auto"
+          loading="lazy"
+          src="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_LOGOSTV_22.png"
+        />
+      </picture>
+    </div>
+  </div>
+  <!-- Imagen del televisor a la derecha -->
+
+  <!-- <div class="disney-tv">
+    <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEV_Img-tv.webp"
+      />
+      <source
+        media="(min-width: 600px)"
+        srcset="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEV_Img-tv.webp"
+      />
+      <img
+        alt="Disney+ TV"
+        class="tv-image"
+        height="400"
+        loading="lazy"
+        src="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEV_Img-tv.webp"
+        width="1423"
+      />
+    </picture>
+  </div> -->
+  <a class="stefa_section2_HB_btn" href="#">Ver más detalles</a>
+</section>
+
+<style>
+  .stefa_section2_HB_btn {
+    background-color: #019bef;
+    color: #ffffff;
+    padding: 15px 22px;
+    border-radius: 100px;
+    max-width: fit-content;
+    text-decoration: none !important;
+    &:hover {
+      background-color: #017ac1;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  picture.stefa--disneyplusLogos {
+    min-width: 620px;
+  }
+  @media screen and (max-width: 600px) {
+    picture.stefa--disneyplusLogos {
+      min-width: 420px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .disney-section {
+      height: 480px;
+    }
+
+    .disney-content {
+      margin-top: -100px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .disney-section {
+      height: 568px;
+    }
+
+    .disney-logos {
+      display: flex !important;
+      width: 100%;
+      margin: auto;
+      padding-top: 0px !important;
+    }
+
+    .disney-content {
+      margin-top: -125px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .disney-content--parrafo {
+      font-size: 16px !important;
+    }
+  }
+</style>

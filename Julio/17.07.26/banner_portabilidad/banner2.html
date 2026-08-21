@@ -1,0 +1,1400 @@
+<!-- Estructura principal para Banners Hero en ladings pages version Kenos -->
+<!-- NOTA: Para su correcta visualización mantener los parametros de lt-carousel (view: 1; view600: 1; view800: 1; view1200: 1; autoheight: false; autoplay: false;) -->
+<div
+  class="stefa_banner_kenos_general"
+  lt-carousel="view: 1; view600: 1; view800: 1; view1200: 1; autoheight: true;"
+>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <!-- Item 1 - Banner posición #1 -->
+        <div class="stefa_container_banner_kenos stefa_landing_tablet_kenos">
+          <picture class="stefa_picture_bg_kenos">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_linea-adiconal_-desktop.webp
+              "
+            />
+            <img
+              alt="Home Movistar"
+              title="Home Movistar"
+              width="704"
+              height="328"
+              class="stefa_image_banner_kenos"
+              src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_linea-adiconal_mobile.webp"
+            />
+          </picture>
+          <div class="stefa_container_items_banner_kenos">
+            <h1 class="tag_label">Postpago</h1>
+            <div class="title_banner">
+              Postpago: Tu nuevo plan de <b>S/49.90 con más beneficios</b>
+            </div>
+            <p class="txt_banner"></p>
+            <a
+              id="BTN-TYC-BANNER-${index}"
+              class="tyc_enlace"
+              rel="noopener noreferrer"
+              target="_self"
+              href="#legales"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_planes_postpago',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'terminos-condiciones - 0',
+                })
+              "
+              ><u>Términos y condiciones</u></a
+            >
+            <div class="stefa_d_flex_items">
+              <a
+                id="BTN-${name-lp}-BANNER-${index}"
+                class="btn-primary stefa_primary_btn_kenos d-none"
+                rel="noopener noreferrer"
+                target="_self"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'llamame ahora - 0',
+                  })
+                "
+                >¡Llámame ahora!</a
+              >
+              <a
+                id="BTN-${name-lp}-LINK-${index}"
+                class="stefa_link_btn_kenos d-none"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 0',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div>
+            <div
+              class="stefa_formulario_contenedor d-block"
+              data-codproducto="gen-m-port-69"
+              data-descripcion="Postpago: Internet ilimitado por siempre - Plan postpago 39.90 al mes - 25 GB - Apps ilimitadas x12 meses"
+              data-detalleorigen="Banner - Postpago"
+              data-nombreproducto="GENERICO MOVIL PORTA - PLAN ILIMITADO MI MOVISTAR DE S/69.9"
+              data-subtipoproducto="Portabilidad"
+              data-target=""
+              data-tipoproducto="Movil"
+              id="Movil-WP-planes-postpago-Banner-1"
+            ></div>
+            <!-- test boton  oculto-->
+            <!-- <div class="stefa_d_flex_items">
+              <a
+                id="BTN-planes_postpago:_internet_ilimitado_desde_s/_39.90-BANNER-1"
+                class="btn-primary stefa_primary_btn_kenos btn-dropped"
+                rel="noopener noreferrer"
+                target="_self"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'llamame ahora - 0',
+                  })
+                "
+                >¡Llámame ahora!</a
+              ><a
+                id="BTN-planes_postpago:_internet_ilimitado_desde_s/_39.90-LINK-1"
+                class="stefa_link_btn_kenos d-none"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 1',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide d-none">
+        <!-- Item 2 - Banner posición #2 -->
+        <div class="stefa_container_banner_kenos stefa_landing_tablet_kenos">
+          <picture class="stefa_picture_bg_kenos">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                https://cert-cdn.movistar.com.pe/2025/01/WEBP_ENE_banner2_desktop-tablet.webp
+              "
+            />
+            <img
+              alt="Home Movistar"
+              title="Home Movistar"
+              width="704"
+              height="328"
+              class="stefa_image_banner_kenos"
+              src="https://cert-cdn.movistar.com.pe/2025/01/WEBP_ENE_banner2_mobile.webp"
+            />
+          </picture>
+          <div class="stefa_container_items_banner_kenos">
+            <span class="tag_label">Movistar total</span>
+            <p class="title_banner">
+              Elige tu plan con Movistar Total a ahorra hasta S/ 800 al año*
+            </p>
+            <a
+              id="BTN-TYC-BANNER-${index}"
+              class="tyc_enlace"
+              rel="noopener noreferrer"
+              target="_self"
+              href="#legales"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_planes_postpago',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'terminos-condiciones - 1',
+                })
+              "
+              ><u>Términos y condiciones</u></a
+            >
+            <div class="stefa_d_flex_items">
+              <a
+                id="BTN-${name-lp}-BANNER-${index}"
+                class="btn-primary stefa_primary_btn_kenos btn-dropped"
+                rel="noopener noreferrer"
+                target="_self"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'llamame ahora - 0',
+                  })
+                "
+                >¡Llámame ahora!</a
+              >
+              <a
+                id="BTN-${name-lp}-LINK-${index}"
+                class="stefa_link_btn_kenos d-none"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 1',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div>
+            <div
+              class="stefa_formulario_contenedor"
+              data-codproducto="MT-CAP-MOVIL"
+              data-descripcion="Elige tu plan con Movistar total y ahorra hasta S/800 al año - suma una línea móvil a tu fibra - internet ilimitado - 120 GB de alta velocidad - Disney + hasta x 6 meses"
+              data-detalleorigen="Banner-Movistar Total"
+              data-nombreproducto="MOVISTAR TOTAL GENERICO CAPTA MOVIL"
+              data-subtipoproducto="Movistar Total"
+              data-target=""
+              data-tipoproducto="Movil"
+              id="Movil-WP-planes-postpago-Banner-0"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide d-none">
+        <!-- Item 3 - Banner posición #3 -->
+        <div class="stefa_container_banner_kenos stefa_landing_tablet_kenos">
+          <picture class="stefa_picture_bg_kenos">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                https://cert-cdn.movistar.com.pe/2025/03/WEBP_MAR_Banner_50_dto_Desktop.webp
+              "
+            />
+            <img
+              alt="Home Movistar"
+              title="Home Movistar"
+              width="704"
+              height="328"
+              class="stefa_image_banner_kenos"
+              src="https://cert-cdn.movistar.com.pe/2025/03/WEBP_MAR_Banner_50_dto_Mobile.webp"
+            />
+          </picture>
+          <div class="stefa_container_items_banner_kenos">
+            <span class="tag_label">Postpago</span>
+            <p class="title_banner">¡Cámbiate a Movistar!</p>
+            <p class="description_banner">
+              Vive una mejor experiencia con la red que te ofrece más
+              beneficios.
+            </p>
+            <a
+              id="BTN-TYC-BANNER-${index}"
+              class="tyc_enlace"
+              rel="noopener noreferrer"
+              target="_self"
+              href="#legales"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_planes_postpago',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'terminos-condiciones - 2',
+                })
+              "
+              ><u>Términos y condiciones</u></a
+            >
+            <div class="stefa_d_flex_items">
+              <a
+                id="BTN-${name-lp}-BANNER-${index}"
+                class="btn-primary stefa_primary_btn_kenos"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://tienda.movistar.com.pe/portabilidad/solochip/addtocart?sku=PORTA_2991627&ref_origin=WP_LPPLANESPOSTPAGO_BANNER_PARRILLA_100_PORTA"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: '¡Quiero que me llamen! - 0',
+                  })
+                "
+                >¡Quiero que me llamen!</a
+              >
+              <a
+                id="BTN-${name-lp}-LINK-${index}"
+                class="stefa_link_btn_kenos d-none"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 3',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div>
+            <div
+              class="stefa_formulario_contenedor"
+              id="banner-portabilidad-test-contenido__form4"
+              data-codproducto=""
+              data-nombreproducto="GENERICO MOVIL PORTA - PLAN ILIMITADO MI MOVISTAR DE S/69.9"
+              data-subtipoproducto="Portabilidad"
+              data-tipoproducto="Movil"
+              data-detalleorigen="Banner - Postpago Máximo"
+              data-descripcion=""
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide d-none">
+        <!-- Item 4 - Banner posición #4 -->
+        <div
+          class="stefa_container_banner_kenos stefa_landing_tablet_kenos banner_mayo-xiodays"
+        >
+          <picture class="stefa_picture_bg_kenos">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                https://cert-cdn.movistar.com.pe/2025/07/WEBP_JUL_Banner_postpago_desktop.webp
+              "
+            />
+            <img
+              alt="Home Movistar"
+              title="Home Movistar"
+              width="704"
+              height="328"
+              class="stefa_image_banner_kenos"
+              src="https://cert-cdn.movistar.com.pe/2025/07/WEBP_JUL_Banner_postpago_mobile.webp"
+            />
+          </picture>
+          <div class="stefa_container_items_banner_kenos">
+            <span class="tag_label">Postpago</span>
+            <p class="title_banner"><b>Cámbiate o renueva</b> hoy mismo</p>
+            <a
+              id="BTN-TYC-BANNER-${index}"
+              class="tyc_enlace d-none"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="#"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_planes_postpago',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'terminos-condiciones - 2',
+                })
+              "
+              ><u>Términos y condiciones</u></a
+            >
+            <div class="stefa_d_flex_items">
+              <a
+                id="BTN-${name-lp}-BANNER-${index}"
+                class="btn-primary stefa_primary_btn_kenos"
+                rel="noopener noreferrer"
+                target="_self"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'llamame ahora - 3',
+                  })
+                "
+                >¡Llámame ahora!</a
+              >
+              <a
+                id="BTN-${name-lp}-LINK-${index}"
+                class="stefa_link_btn_kenos"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 2',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div>
+            <div
+              class="stefa_formulario_contenedor"
+              data-codproducto="gen-m-portabilidad-39"
+              data-descripcion="Disfruta de más datos y beneficios - 25GB - Apps ilimitadas por 12 meses"
+              data-detalleorigen="Banner - Planes desde 39.90 al mes"
+              data-nombreproducto="Genérico - Portabilidad - Plan Mi Movistar S/39.90"
+              data-subtipoproducto="Portabilidad"
+              data-target=""
+              data-tipoproducto="Movil"
+              id="Movil-WP-planes-postpago-Banner-3"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide d-none">
+        <!-- Item 5 - Banner posición #5 -->
+        <div
+          class="stefa_container_banner_kenos stefa_landing_tablet_kenos banner_mayo-xiodays"
+        >
+          <picture class="stefa_picture_bg_kenos">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                https://cert-cdn.movistar.com.pe/2025/02/WEBP_FEB_FONFO_PLANES_desktop.webp
+              "
+            />
+            <img
+              alt="Home Movistar"
+              title="Home Movistar"
+              width="704"
+              height="328"
+              class="stefa_image_banner_kenos"
+              src="https://cert-cdn.movistar.com.pe/2025/02/WEBP_FEB_FONFO_PLANES_mobile.webp"
+            />
+          </picture>
+          <div class="stefa_container_items_banner_kenos">
+            <span class="tag_label">Postpago</span>
+            <p class="title_banner">
+              ¡Disfruta de más datos y beneficios por solo <b>S/39.90</b>!
+            </p>
+            <a
+              id="BTN-TYC-BANNER-${index}"
+              class="tyc_enlace d-none"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="#"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_planes_postpago',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'terminos-condiciones - 2',
+                })
+              "
+              ><u>Términos y condiciones</u></a
+            >
+            <div class="stefa_d_flex_items">
+              <a
+                id="BTN-${name-lp}-BANNER-${index}"
+                class="btn-primary stefa_primary_btn_kenos"
+                rel="noopener noreferrer"
+                target="_self"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'llamame ahora - 3',
+                  })
+                "
+                >¡Llámame ahora!</a
+              >
+              <a
+                id="BTN-${name-lp}-LINK-${index}"
+                class="stefa_link_btn_kenos"
+                rel="noopener noreferrer"
+                target="_blank"
+                onclick="
+                  dataLayer.push({
+                    event: 'hv.event',
+                    eventName: 'lp_planes_postpago',
+                    eventCategory: 'banner',
+                    eventAction: 'click',
+                    eventLabel: 'link - 2',
+                  })
+                "
+                ><u>Button link</u></a
+              >
+            </div>
+            <div
+              class="stefa_formulario_contenedor"
+              data-codproducto="gen-m-portabilidad-39"
+              data-descripcion="Disfruta de más datos y beneficios - 25GB - Apps ilimitadas por 12 meses"
+              data-detalleorigen="Banner - Planes desde 39.90 al mes"
+              data-nombreproducto="Genérico - Portabilidad - Plan Mi Movistar S/39.90"
+              data-subtipoproducto="Portabilidad"
+              data-target=""
+              data-tipoproducto="Movil"
+              id="Movil-WP-planes-postpago-Banner-3"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination dots-solo"></div>
+  </div>
+
+  <div class="swiper-button-prev lt-button-prev"></div>
+  <div class="swiper-button-next lt-button-next"></div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Seleccionamos todos los botones que tengan esa clase
+    const botones = document.querySelectorAll(
+      ".btn-primary.stefa_primary_btn_kenos.btn-dropped",
+    );
+
+    botones.forEach((boton) => {
+      boton.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        // Ocultamos SOLO el botón clicado
+        boton.style.display = "none";
+
+        // Buscamos el formulario correspondiente dentro del mismo swiper-slide
+        const slide = boton.closest(".swiper-slide");
+        const formulario = slide.querySelector(".stefa_formulario_contenedor");
+
+        if (formulario) {
+          formulario.classList.remove("d-none"); // quitar clase que lo oculta (si aplica)
+          formulario.style.display = "block"; // aseguramos que sea visible
+        }
+
+        if (window.Swiper) {
+          document
+            .querySelectorAll(".swiper-container")
+            .forEach((container) => {
+              if (container.swiper) {
+                container.swiper.updateAutoHeight(300);
+              }
+            });
+        }
+      });
+    });
+  });
+</script>
+<script>
+  window.addEventListener("load", function () {
+    const paginationContainer = document.querySelector(
+      ".stefa_banner_kenos_general .swiper-pagination",
+    );
+    let currentProgress = 0;
+    let progressInterval;
+
+    function addNumbersToBullets() {
+      const bullets = paginationContainer.querySelectorAll(
+        ".stefa_banner_kenos_general .swiper-pagination-bullet",
+      );
+      bullets.forEach((bullet, index) => {
+        if (bullet.textContent.trim() === "") {
+          bullet.textContent = (index + 1).toString();
+        }
+      });
+    }
+
+    function startProgressBar(bullet) {
+      clearInterval(progressInterval);
+      currentProgress = 0;
+      bullet.style.setProperty("--progress", "0%");
+      progressInterval = setInterval(() => {
+        currentProgress += 1;
+        if (currentProgress > 100) {
+          clearInterval(progressInterval);
+          return;
+        }
+        bullet.style.setProperty("--progress", currentProgress + "%");
+      }, 20);
+    }
+
+    const observer = new MutationObserver(() => {
+      // Desconectamos observer para evitar loop
+      observer.disconnect();
+
+      addNumbersToBullets();
+
+      const activeBullet = paginationContainer.querySelector(
+        ".stefa_banner_kenos_general .swiper-pagination-bullet-active",
+      );
+      if (activeBullet) {
+        // Solo quitamos estilos si tienen el '--progress'
+        paginationContainer
+          .querySelectorAll(
+            ".stefa_banner_kenos_general .swiper-pagination-bullet",
+          )
+          .forEach((b) => b.style.removeProperty("--progress"));
+
+        // Solo agregar clase si no existe
+        if (
+          !paginationContainer.classList.contains("swiper-animation-pagination")
+        ) {
+          paginationContainer.classList.add("swiper-animation-pagination");
+        }
+
+        startProgressBar(activeBullet);
+      }
+
+      // Volvemos a conectar el observer
+      observer.observe(paginationContainer, {
+        subtree: true,
+        attributes: true,
+        childList: true,
+        attributeFilter: ["class"],
+      });
+    });
+
+    // Inicializamos el observer
+    observer.observe(paginationContainer, {
+      subtree: true,
+      attributes: true,
+      childList: true,
+      attributeFilter: ["class"],
+    });
+
+    // Resto de funciones sin cambios
+    function updateActiveBullet() {
+      document
+        .querySelectorAll(".general_animation .swiper-pagination-bullet")
+        .forEach((bullet) => {
+          bullet.classList.remove("swiper-pagination-bullet-active");
+        });
+      const activeBullet = document.querySelector(
+        ".general_animation .swiper-pagination-bullet-active",
+      );
+      if (activeBullet) {
+        activeBullet.classList.add("swiper-pagination-bullet-active");
+      }
+    }
+
+    function applyClassBasedOnSlideCount() {
+      const slides = document.querySelectorAll(
+        ".general_animation .swiper-slide:not(.swiper-slide-duplicate)",
+      );
+      const pagination = document.querySelector(
+        ".general_animation .swiper-animation-pagination",
+      );
+      const flechaIzquierda = document.querySelector(
+        ".general_animation .swiper-button-prev.lt-button-prev",
+      );
+      const flechaDerecha = document.querySelector(
+        ".general_animation .swiper-button-next.lt-button-next",
+      );
+
+      if (!pagination) return;
+
+      const visibleSlides = Array.from(slides).filter(
+        (slide) => slide.innerHTML.trim() !== "",
+      );
+      const count = visibleSlides.length;
+      const className = `stefa_${count}_item_count`;
+
+      const elementsToUpdate = [pagination, flechaIzquierda, flechaDerecha];
+
+      elementsToUpdate.forEach((element) => {
+        if (!element) return;
+
+        element.classList.forEach((cls) => {
+          if (cls.startsWith("stefa_") && cls.endsWith("_item_count")) {
+            element.classList.remove(cls);
+          }
+        });
+
+        element.classList.add(className);
+      });
+    }
+
+    setTimeout(() => {
+      const bullets = document.querySelectorAll(
+        ".stefa_banner_kenos_general .swiper-pagination-bullet",
+      );
+      bullets.forEach((bullet, index) => {
+        bullet.textContent = (index + 1).toString();
+      });
+    }, 500);
+
+    // Reemplazo seguro de IDs
+    const formattedTitle = document.title
+      .split(/[\|\-]/)[0]
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "_");
+
+    const slides = document.querySelectorAll(".swiper-slide");
+    slides.forEach((slide, index) => {
+      slide.querySelectorAll("[id]").forEach((element) => {
+        if (
+          element.id.includes("${index}") ||
+          element.id.includes("${name-lp}")
+        ) {
+          let newId = element.id
+            .replace("${index}", index)
+            .replace("${name-lp}", formattedTitle);
+          element.id = newId;
+        }
+      });
+    });
+
+    const customSwiper = new Swiper(".general_animation .swiper-container", {
+      loop: true,
+      pagination: {
+        el: ".general_animation .swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      on: {
+        slideChange: function () {
+          setTimeout(updateActiveBullet, 10);
+        },
+      },
+    });
+
+    document
+      .querySelector(".general_animation .swiper-pagination")
+      .addEventListener("click", () => {
+        setTimeout(updateActiveBullet, 10);
+      });
+
+    applyClassBasedOnSlideCount();
+  });
+</script>
+<style>
+  .txt_banner {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #6b6c6f;
+  }
+
+  @media screen and (max-width: 768px) {
+    .txt_banner {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .stefa_formulario_contenedor {
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+  }
+
+  .stefa_banner_kenos_general .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stefa_container_banner_kenos {
+    height: auto;
+    width: 100%;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-bottom: 72px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #d3d4d3;
+    margin-bottom: 0;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_container_items_banner_kenos
+    .title_banner,
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_container_items_banner_kenos
+    .description_banner {
+    color: #ffffff;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_link_btn_kenos {
+    color: #ffffff !important;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_link_btn_kenos:hover {
+    color: #ffffff !important;
+  }
+
+  .stefa_container_banner_kenos .stefa_picture_bg_kenos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_container_items_banner_kenos {
+    position: relative;
+    justify-content: end !important;
+    margin-top: 200px;
+    z-index: 2;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos {
+    min-height: 450px;
+    padding-bottom: 0px;
+    overflow-x: hidden;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_picture_bg_kenos {
+    z-index: 1;
+    position: absolute;
+    max-width: inherit;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_picture_bg_kenos
+    .stefa_image_banner_kenos,
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_picture_bg_kenos
+    .stefa_image_banner_kenos {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .swiper-default-pagination {
+    display: none !important;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_picture_bg_kenos
+    .stefa_image_banner_kenos {
+    position: absolute;
+    top: 0;
+    min-height: max-content;
+  }
+
+  .stefa_container_banner_kenos .stefa_container_items_banner_kenos {
+    width: 360px;
+    height: auto;
+    gap: 0px;
+    padding: 16px;
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .stefa_container_banner_kenos .stefa_container_items_banner_kenos .tag_label {
+    width: auto;
+    height: 24px;
+    border-radius: 4px;
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    background: #e6f5fd;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #019bef;
+    margin-bottom: 8px;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .title_banner {
+    margin-bottom: 8px;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .title_banner,
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .title_banner
+    h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    width: auto;
+    height: auto;
+    color: #313235;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .title_banner
+    h1 {
+    display: inline;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .description_banner {
+    width: auto;
+    height: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6b6c6f;
+    margin-bottom: 8px;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .tyc_enlace {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    width: auto;
+    height: 16px;
+    cursor: pointer;
+    transform: translate(0px, -35px);
+    position: absolute;
+  }
+
+  .stefa_container_banner_kenos
+    .stefa_container_items_banner_kenos
+    .stefa_primary_btn_kenos {
+    width: 328px;
+    height: 48px;
+    border-radius: 60px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    background: #019bef;
+    color: #ffffff !important;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  /* 🔹 Estilo base para los bullets */
+  .stefa_banner_kenos_general .swiper-pagination .swiper-pagination-bullet {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #313235;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    z-index: 2;
+    /* bullet siempre por delante */
+  }
+
+  /* 🔹 Bullet activo */
+  .stefa_banner_kenos_general
+    .swiper-pagination
+    .swiper-pagination-bullet-active {
+    background: #e6f5fd;
+    border: 2px solid #019bef;
+  }
+
+  .stefa_banner_kenos_general.general_animation
+    .swiper-pagination
+    .swiper-pagination-bullet-active {
+    background: #e6f5fd;
+    border: 2px solid transparent;
+  }
+
+  /* 🔹 Eliminar el círculo blanco interior */
+  .stefa_banner_kenos_general
+    .swiper-animation-pagination
+    .swiper-pagination-bullet-active::after {
+    display: none;
+  }
+
+  /* 🔹 Evita el outline al enfocar los bullets */
+  :focus {
+    outline: none !important;
+  }
+
+  .stefa_banner_kenos_general .swiper-button-next,
+  .stefa_banner_kenos_general .swiper-button-prev {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+  }
+
+  .stefa_banner_kenos_general .swiper-button-prev {
+    transform: translate(-530%, -56px);
+  }
+
+  .stefa_banner_kenos_general .swiper-button-next {
+    transform: translate(530%, -56px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-pagination.dots-solo.swiper-pagination-clickable.swiper-pagination-bullets {
+    transform: translate(-50%, -48px);
+    width: auto;
+    height: 40px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .stefa_banner_kenos_general .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #313235;
+  }
+
+  .stefa_banner_kenos_general .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #313235;
+  }
+
+  .stefa_banner_kenos_general .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after,
+  .stefa_banner_kenos_general .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    outline: none !important;
+  }
+
+  .stefa_primary_btn_kenos:hover {
+    background-color: rgba(0, 142, 221, 1) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+    .stefa_picture_bg_kenos
+    .stefa_image_banner_kenos {
+    border-radius: 0px;
+  }
+
+  .stefa_banner_kenos_general.general_animation
+    .swiper-slide.swiper-slide-duplicate {
+    display: none !important;
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_8_item_count {
+    transform: translate(-975%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_8_item_count {
+    transform: translate(915%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_7_item_count {
+    transform: translate(-875%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_7_item_count {
+    transform: translate(815%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_5_item_count {
+    transform: translate(-675%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_5_item_count {
+    transform: translate(615%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_4_item_count {
+    transform: translate(-575%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_4_item_count {
+    transform: translate(515%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_3_item_count {
+    transform: translate(-475%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_3_item_count {
+    transform: translate(415%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_2_item_count {
+    transform: translate(-375%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_2_item_count {
+    transform: translate(315%, -45px);
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-prev.lt-button-prev.stefa_1_item_count {
+    display: none !important;
+  }
+
+  .stefa_banner_kenos_general
+    .swiper-button-next.lt-button-next.stefa_1_item_count {
+    display: none !important;
+  }
+
+  @media (min-width: 800px) {
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .tyc_enlace {
+      transform: translate(450px, -50px);
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_container_items_banner_kenos {
+      margin-top: 2em;
+      width: 656px;
+      gap: 32px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos,
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_picture_bg_kenos
+      .stefa_image_banner_kenos {
+      max-width: 800px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_container_items_banner_kenos
+      .stefa_d_flex_items {
+      flex-direction: row-reverse;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos {
+      min-height: 320px;
+    }
+
+    .stefa_container_banner_kenos .stefa_picture_bg_kenos {
+      justify-content: center;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos {
+      border-width: 0px;
+      border-style: solid;
+      border-color: transparent;
+      padding-top: 40px;
+      padding-right: 32px;
+      padding-left: 32px;
+      gap: 10px;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos
+      .stefa_picture_bg_kenos
+      .stefa_image_banner_kenos {
+      max-width: 704px;
+      min-height: 266px;
+      width: 704px;
+      height: 266px;
+      border-radius: 16px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos
+      .stefa_container_items_banner_kenos {
+      width: 658px;
+      padding-top: 12px;
+      padding-right: 32px;
+      padding-bottom: 12px;
+      padding-left: 32px;
+      border-right-width: 1px;
+      border-left-width: 1px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos
+      .stefa_container_items_banner_kenos
+      .stefa_primary_btn_kenos {
+      min-width: 180px;
+      max-width: max-content;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .tag_label {
+      margin-bottom: 16px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_container_items_banner_kenos {
+      min-width: 1224px;
+      margin-top: 0em;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos {
+      max-width: 1224px;
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_picture_bg_kenos
+      .stefa_image_banner_kenos {
+      max-width: 1224px;
+      transform: translateX(0px);
+    }
+
+    .stefa_container_banner_kenos,
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos {
+      max-width: 1192px;
+      max-height: 356px;
+      padding-right: 32px;
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 0em;
+      min-height: max-content;
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_picture_bg_kenos
+      .stefa_image_banner_kenos {
+      max-width: 704px;
+      min-height: 266px;
+      width: 704px;
+      height: 266px;
+      border-radius: 16px;
+      transform: translateX(32px);
+    }
+
+    .stefa_container_banner_kenos .stefa_container_items_banner_kenos {
+      min-width: 565px;
+      width: 565px !important;
+      padding-left: 0 !important;
+      justify-content: start;
+      padding-top: 0 !important;
+      transform: translateX(116px);
+    }
+
+    .stefa_container_banner_kenos .stefa_picture_bg_kenos {
+      transform: translateX(32px);
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .title_banner {
+      margin-bottom: 16px;
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .title_banner,
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .title_banner
+      h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .description_banner {
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .tyc_enlace {
+      line-height: 20px;
+      transform: translate(1024px, 245px);
+      height: 0;
+    }
+
+    .swiper-slide[aria-label="2 / 5"]
+      .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .tyc_enlace {
+      transform: translate(1024px, 200px);
+    }
+
+    .swiper-slide[aria-label="3 / 5"]
+      .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .tyc_enlace {
+      transform: translate(1024px, 200px);
+    }
+
+    .stefa_container_banner_kenos
+      .stefa_container_items_banner_kenos
+      .stefa_primary_btn_kenos {
+      width: 180px;
+      max-width: max-content;
+      font-size: 18px;
+    }
+
+    .stefa_banner_kenos_general
+      .swiper-pagination.dots-solo.swiper-pagination-clickable.swiper-pagination-bullets {
+      transform: translate(-18%, -30px);
+    }
+
+    .stefa_banner_kenos_general .swiper-button-prev {
+      transform: translate(-360%, -37px);
+    }
+
+    .stefa_banner_kenos_general .swiper-button-next {
+      transform: translate(725%, -37px);
+    }
+
+    .stefa_container_banner_kenos.stefa_landing_tablet_kenos
+      .stefa_d_flex_items,
+    .stefa_container_banner_kenos.stefa_landing_bgimg_kenos
+      .stefa_d_flex_items {
+      flex-direction: row-reverse !important;
+      margin-top: 16px;
+      gap: 32px !important;
+    }
+
+    .stefa_link_btn_kenos {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .stefa_formulario_contenedor {
+      min-height: 120px;
+    }
+  }
+</style>
+
+<style>
+  .stefa_container_banner_kenos.stefa_landing_tablet_kenos {
+    border-width: 0px;
+    border-style: solid;
+    border-color: transparent;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_tablet_kenos
+    .stefa_image_banner_kenos {
+    min-height: 180px;
+  }
+
+  .stefa_container_banner_kenos.stefa_landing_tablet_kenos .stefa_d_flex_items,
+  .stefa_container_banner_kenos.stefa_landing_bgimg_kenos .stefa_d_flex_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stefa_link_btn_kenos {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    width: auto;
+    height: 20px;
+    color: #019bef !important;
+    cursor: pointer;
+  }
+  /* eliminar abajo para ver mas banners */
+  @media (min-width: 1260px) {
+    .swiper-button-prev.lt-button-prev.swiper-button-disabled,
+    .swiper-button-next.lt-button-next.swiper-button-disabled {
+      display: none;
+    }
+  }
+</style>

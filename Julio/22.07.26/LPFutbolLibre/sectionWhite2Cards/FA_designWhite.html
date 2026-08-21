@@ -1,0 +1,236 @@
+<div class="stefa_2wcards-demo-container">
+  <section class="stefa_2wcards">
+    <h2 class="stefa_2wcards-title">
+      ¿Por qué disfrutar del verdadero
+      <span class="stefa_2wcards-title-highlight">Fútbol Libre</span> en vivo
+      hoy con Movistar?
+    </h2>
+
+    <!-- Grid de dos Tarjetas -->
+    <div class="stefa_2wcards-grid">
+      <!-- Tarjeta 1: Movistar Deportes -->
+      <article class="stefa_2wcards-card">
+        <div
+          class="stefa_2wcards-card-img-container stefa_2wcards-placeholder-bg"
+        >
+          <img
+            class="stefa_2wcards-card-imgr"
+            src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_SW_card2.webp"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="stefa_2wcards-card-body">
+          <span class="stefa_2wcards-card-tag stefa_2wcards-tag-blue"
+            >Movistar Deportes</span
+          >
+          <h3 class="stefa_2wcards-card-heading">
+            <span class="stefa_2wcards-card-heading-highlight">La Liga 1</span>
+            en vivo y con la calidad que te mereces.
+          </h3>
+          <p class="stefa_2wcards-card-description">
+            Disfruta del torneo local en alta definición, sin cortes y desde
+            cualquier pantalla. Sigue cada partido de la Liga 1 con
+            transmisiones estables, la narración más vibrante y el análisis
+            exclusivo de nuestros programas de Movistar Deportes.
+          </p>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2: Disney+ Premium -->
+      <article class="stefa_2wcards-card">
+        <div class="stefa_2wcards-card-img-container">
+          <img
+            class="stefa_2wcards-card-imgr"
+            src="https://cert-cdn.movistar.com.pe/2026/07/WEBP_JUL_SW_card1.webp"
+            alt="Fútbol Internacional en Disney+ Premium"
+          />
+        </div>
+
+        <div class="stefa_2wcards-card-body">
+          <span class="stefa_2wcards-card-tag stefa_2wcards-tag-blue"
+            >Disney + Premium</span
+          >
+          <h3 class="stefa_2wcards-card-heading">
+            Las mejores ligas del mundo en vivo con
+            <span class="stefa_2wcards-card-heading-highlight"
+              >Disney+ Premium</span
+            >
+          </h3>
+          <p class="stefa_2wcards-card-description">
+            Olvídate de los enlaces inestables y vive el fútbol internacional de
+            forma cómoda y segura. Sigue en directo a las superestrellas de las
+            mejores ligas de América y Europa gracias a Disney+ Premium y ESPN.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+
+<style>
+  .stefa_2wcards-demo-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .stefa_2wcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .stefa_2wcards .stefa_2wcards-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #313235;
+    text-align: center;
+    max-width: 820px;
+    margin-bottom: 12px;
+  }
+
+  .stefa_2wcards .stefa_2wcards-title-highlight {
+    font-weight: 700;
+  }
+
+  .stefa_2wcards .stefa_2wcards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-4px);
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-img-container {
+    width: 100%;
+    height: 344px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card:hover .stefa_2wcards-card-img {
+    transform: scale(1.04);
+  }
+
+  .stefa_2wcards .stefa_2wcards-placeholder-bg {
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(255, 255, 255, 0.25);
+    box-sizing: border-box;
+  }
+  .stefa_2wcards-card-imgr {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .stefa_2wcards .stefa_2wcards-placeholder-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-tag {
+    display: inline-flex;
+    align-self: flex-start;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+
+  .stefa_2wcards .stefa_2wcards-tag-blue {
+    background-color: #e6f5fd;
+    color: #019bef;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-heading {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.35;
+    color: #313235;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-heading-highlight {
+    font-weight: 700;
+  }
+
+  .stefa_2wcards .stefa_2wcards-card-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6b6c6f;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 20px 16px;
+    }
+
+    .stefa_2wcards {
+      gap: 20px;
+    }
+
+    .stefa_2wcards .stefa_2wcards-title {
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    .stefa_2wcards .stefa_2wcards-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .stefa_2wcards .stefa_2wcards-card-img-container {
+      height: 180px;
+    }
+
+    .stefa_2wcards .stefa_2wcards-card-body {
+      padding: 20px;
+      gap: 10px;
+    }
+    .stefa_2wcards .stefa_2wcards-card-heading {
+      font-size: 20px;
+    }
+  }
+</style>

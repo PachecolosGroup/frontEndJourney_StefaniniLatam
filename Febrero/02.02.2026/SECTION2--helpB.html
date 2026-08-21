@@ -1,0 +1,131 @@
+<section class="stefa_section2_HB_2ptv">
+  <div class="stefa_section2_HB_2ptv--content">
+    <div class="stefa_section2_HB_2ptv--txt">
+      <p class="stefa_sect2_2ptv-txt1">
+        Tu <b>plan con Disney+ incluido</b> para <br />
+        disfrutar series, películas y el mejor deporte <br />
+        en un solo lugar
+      </p>
+      <div class="stefa_sect2_2ptv-holder">
+        <!-- mobile -->
+        <picture>
+          <source
+            media="(max-width: 599px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_2disney.png
+            "
+          />
+          <img
+            class="stefa_sect2_2ptv_icontv"
+            src="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_LOGOSTV_22.png"
+            alt=""
+          />
+        </picture>
+      </div>
+      <a class="stefa_section2_2ptv_btn" href="#">Ver más detalles</a>
+    </div>
+    <div class="stefa_section2_HB_2ptv--img">
+      <picture>
+        <!-- mobile -->
+        <source
+          media="(max-width: 769px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEB_2Disney-img-b.webp
+          "
+        />
+        <img
+          src="https://cert-cdn.movistar.com.pe/2026/02/WEBP_FEV_Img-tv.webp"
+          alt=""
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stefa_section2_HB_2ptv--content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+  }
+  .stefa_section2_HB_2ptv--txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .stefa_section2_HB_2ptv {
+    background: #002337;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 35, 55, 1) 0%,
+      rgba(0, 74, 86, 1) 100%
+    );
+    color: #ffffff;
+  }
+  .stefa_section2_2ptv_btn {
+    background-color: #019bef;
+    color: #ffffff;
+    padding: 15px 22px;
+    border-radius: 100px;
+    max-width: fit-content;
+    text-decoration: none !important;
+    &:hover {
+      background-color: #017ac1;
+      transition: ease-in-out 0.3s;
+    }
+  }
+
+  .stefa_sect2_2ptv-holder {
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  }
+  .stefa_section2_HB_2ptv--img {
+    img {
+      width: 100%;
+      max-width: 620px;
+      height: auto;
+    }
+  }
+
+  /* fonts */
+  .stefa_sect2_2ptv-txt1 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin: 0%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .stefa_section2_HB_2ptv--content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      padding: 4%;
+    }
+
+    /* fonts */
+    .stefa_sect2_2ptv-txt1 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      margin: 0%;
+      text-align: center;
+    }
+
+    .stefa_section2_2ptv_btn {
+      margin: auto;
+    }
+  }
+</style>
