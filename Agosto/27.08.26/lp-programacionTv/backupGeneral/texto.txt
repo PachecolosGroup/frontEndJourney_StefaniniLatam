@@ -1,0 +1,12 @@
+----- script header
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cert-cdn.movistar.com.pe/documents/assets/Stefa-Utils/CSS_ABR_Swiper-library_v1.css" />
+<link rel='stylesheet' href='https://cert-cdn.movistar.com.pe/documents/assets/hogar/movistar-tv-cable/CSS_ENE_movistar-tv-cable-v1.css' />
+
+
+---------- script footer
+<script type='text/javascript'  src='/wp-content/themes/movistar-residencial/assets/js/swiper-bundle.min.js'  id='swiper-js-js'></script>
+<script type='text/javascript' src='https://cert-cdn.movistar.com.pe/2026/02/JS_FEB_libreria-front.min.js'></script>
+

@@ -1,0 +1,86 @@
+<section class="stefa-programacion-explora">
+  <div class="stefa-programacion-explora__container">
+    <picture>
+      <img src="https://cert-cdn.movistar.com.pe/2026/05/SVG_MAY_Programcion-provisional-TV.svg" alt="TV" width="64"
+        height="64" loading="lazy" class="stefa-programacion-explora__img w-auto">
+    </picture>
+    <p class="stefa-programacion-explora__texto">Explora los canales de tu TV</p>
+    <a href="https://www.movistar.com.pe/tv-en-vivo#ver-canales" class="stefa-programacion-explora__enlace">
+      Consultar aquí
+    </a>
+  </div>
+
+</section>
+<style>
+  .stefa-programacion-explora__container {
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 16px 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    max-width: 1224px;
+    margin: 20px auto;
+  }
+
+  .stefa-programacion-explora__texto {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #313235;
+    margin: 0 260px 0 10px;
+
+  }
+
+  .stefa-programacion-explora__enlace {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #019BEF;
+    border-radius: 60px;
+    width: 150px;
+    height: 48px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stefa-programacion-explora__enlace:hover,
+  .stefa-programacion-explora__enlace:focus,
+  .stefa-programacion-explora__enlace:active {
+    background-color: #019BEF;
+    color: #fff;
+  }
+
+  @media(max-width:600px) {
+    .stefa-programacion-explora__container {
+      padding: 16px 8px;
+      max-width: 341px;
+    }
+
+    .stefa-programacion-explora__texto {
+      margin: 0 0;
+      font-size: 13px;
+    }
+
+    .stefa-programacion-explora__enlace {
+      font-size: 9px;
+      width: 75px;
+      height: 24px;
+    }
+
+    .stefa-programacion-explora__img.w-auto {
+      max-width: 24px;
+    }
+  }
+</style>

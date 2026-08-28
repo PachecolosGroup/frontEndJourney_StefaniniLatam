@@ -1,0 +1,493 @@
+<div id="l1max-part">
+  <!-- L1MAX TAB ----- section1 -->
+  <section class="stefa-l1max-sct1">
+    <div class="stefa-l1max-sct1__inner">
+      <div class="stefa-l1max-sct1__copy">
+        <p class="stefa-l1max-sct1_txt1">
+          Vive los mejores <b>partidos locales</b>
+        </p>
+        <p class="stefa-l1max-sct1__text2">En Movistar TV APP</p>
+      </div>
+
+      <div class="stefa-l1max-sct1__media">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen1_11zon-6a905e7a38469.webp
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen1_11zon-6a905e7a38469.webp
+            "
+          />
+          <img
+            src="https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen1_11zon-6a905e7a38469.webp"
+            alt="Series, películas y deportes disponibles en el Plan Premium de Disney+"
+            width="720"
+            height="420"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- section2 -->
+  <section class="stefa-l1max-sct2">
+    <div class="stefa-l1max-sct2_holder">
+      <p class="stefa-limax-stc2-txt">
+        Vive todos los partidos de la <b>Liga 1</b> por <b>L1MAX</b>
+        <br />
+        Canal 14 SD | 714 HD
+      </p>
+      <div class="stefa-l1max-sct2__img">
+        <picture class="stefa-l1max-sct2__banner">
+          <source
+            media="(min-width: 1024px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen2_11zon-6a905e7b65e49.webp
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen2_11zon-6a905e7b65e49.webp
+            "
+          />
+          <img
+            src="https://cert-cdn.movistar.com.pe/2026/08/seccion2-imagen2_11zon-6a905e7b65e49.webp"
+            alt="Vive el clasico"
+            width="600"
+            height="480"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="stefa-l1max-sct2_btn">
+      <p class="stefa-l1max-sct3__txt">
+        Así de fácil y <b> sin costo adicional</b>
+      </p>
+
+      <a class="stefa-l1max-sct3__cta" href="#">Activa sin costo adicional</a>
+    </div>
+  </section>
+
+  <style>
+    .stefa-l1max-sct1,
+    .stefa-l1max-sct2,
+    .stefa-l1max-sct3 {
+      --stefa-l1max-navy: #0f2b3d;
+      --stefa-l1max-navy-hover: #16405b;
+      --stefa-l1max-ink: #1a1d29;
+      --stefa-l1max-border: #9fd4e8;
+      --stefa-l1max-white: #ffffff;
+      --stefa-l1max-focus: #1f7fa8;
+
+      --stefa-l1max-max: 1120px;
+      --stefa-l1max-gutter: 20px;
+      --stefa-l1max-radius: 8px;
+      --stefa-l1max-radius-lg: 12px;
+
+      --stefa-l1max-font:
+        "Inspire TMM", "Avenir Next", "Segoe UI", system-ui, -apple-system,
+        "Helvetica Neue", Arial, sans-serif;
+
+      box-sizing: border-box;
+      font-family: var(--stefa-l1max-font);
+      color: var(--stefa-l1max-ink);
+      background-color: var(--stefa-l1max-white);
+    }
+
+    .stefa-l1max-sct1,
+    .stefa-l1max-sct2 button {
+      text-decoration: none !important;
+      transition: ease all 0.2s;
+    }
+
+    .stefa-l1max-sct1 img,
+    .stefa-l1max-sct2 img,
+    .stefa-l1max-sct3 img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .stefa-l1max-sct1 picture,
+    .stefa-l1max-sct2 picture,
+    .stefa-l1max-sct3 picture {
+      display: block;
+    }
+
+    .stefa-l1max-sct1 a:focus-visible,
+    .stefa-l1max-sct2 a:focus-visible,
+    .stefa-l1max-sct3 a:focus-visible {
+      outline: 3px solid var(--stefa-l1max-focus);
+      outline-offset: 3px;
+    }
+
+    /* ==========================================================================
+              SECCIÓN 1 — Texto + imagen de portada
+              Mobile: apilado.  Tablet/Desktop: dos columnas.
+              ========================================================================== */
+    .stefa-l1max-sct1 {
+      padding: 32px var(--stefa-l1max-gutter);
+    }
+
+    .stefa-l1max-sct1_txt1 {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      color: rgba(hsla(225, 4%, 20%, 1));
+    }
+
+    .stefa-l1max-sct1__inner {
+      max-width: var(--stefa-l1max-max);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .stefa-l1max-sct1__text {
+      font-size: 24px;
+      line-height: 1.5;
+      max-width: 22em;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      color: var(--stefa-l1max-ink);
+    }
+
+    .stefa-l1max-sct1__text strong {
+      font-weight: 700;
+    }
+
+    .stefa-l1max-sct1__media {
+      width: 100%;
+    }
+
+    .stefa-l1max-sct1__media img {
+      width: 100%;
+      border-radius: var(--stefa-l1max-radius);
+    }
+
+    .stefa-l1max-sct1__text2 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: rgba(hsla(225, 4%, 20%, 1));
+    }
+
+    /* --- Tablet --- */
+    @media (min-width: 768px) {
+      .stefa-l1max-sct1 {
+        padding: 40px var(--stefa-l1max-gutter);
+      }
+
+      .stefa-l1max-sct1__inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+      }
+      .stefa-l1max-sct1__copy {
+        flex: 1 1 50%;
+      }
+      .stefa-l1max-sct1__media {
+        flex: 1 1 50%;
+      }
+      .stefa-l1max-sct1__text {
+        font-size: 21px;
+      }
+    }
+
+    /* --- Desktop --- */
+    @media (min-width: 1024px) {
+      .stefa-l1max-sct1 {
+        padding: 56px var(--stefa-l1max-gutter);
+      }
+
+      .stefa-l1max-sct1__inner {
+        gap: 56px;
+      }
+      .stefa-l1max-sct1__copy {
+        flex: 1 1 46%;
+      }
+      .stefa-l1max-sct1__media {
+        flex: 0 1 44%;
+      }
+
+      .stefa-l1max-sct1__text {
+        font-size: 24px;
+        line-height: 1.5;
+        max-width: 22em;
+      }
+    }
+
+    /* ==========================================================================
+              SECCIÓN 2 — Tarjeta con borde y banner del plan
+              ========================================================================== */
+
+    .stefa-l1max-sct2_holder {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 1224px;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .stefa-l1max-sct2_btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .stefa-limax-stc2-txt {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .stefa-l1max-sct2__img img {
+      width: 100%;
+      height: auto;
+    }
+
+    .stefa-l1max-sct2__img {
+      width: 940px;
+      max-width: 100%;
+      border-radius: var(--stefa-l1max-radius);
+    }
+
+    .stefa-l1max-sct2 {
+      padding: 0 var(--stefa-l1max-gutter) 32px;
+    }
+
+    .stefa-l1max-sct2__card {
+      max-width: var(--stefa-l1max-max);
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid var(--stefa-l1max-border);
+      border-radius: var(--stefa-l1max-radius);
+      background-color: var(--stefa-l1max-white);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .stefa-l1max-sct2__text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--stefa-l1max-ink);
+    }
+
+    .stefa-l1max-sct2__text strong {
+      font-weight: 700;
+    }
+
+    .stefa-l1max-sct2__banner {
+      display: block;
+      width: 100%;
+      border-radius: var(--stefa-l1max-radius);
+      background-color: var(--stefa-l1max-navy);
+      overflow: hidden;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .stefa-l1max-sct2__banner:hover {
+      background-color: var(--stefa-l1max-navy-hover);
+    }
+
+    /*   .stefa-l1max-sct2__banner img {
+               width: 100%;
+             }
+            */
+    /* --- Tablet --- */
+    @media (min-width: 768px) {
+      .stefa-l1max-sct2 {
+        padding-bottom: 40px;
+      }
+
+      .stefa-l1max-sct2__card {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        padding: 22px 24px;
+      }
+      .stefa-l1max-sct2__text {
+        flex: 1 1 auto;
+      }
+      .stefa-l1max-sct2__banner {
+        flex: 0 0 320px;
+        width: 320px;
+      }
+    }
+
+    /* --- Desktop --- */
+    @media (min-width: 1024px) {
+      .stefa-l1max-sct2 {
+        padding-bottom: 56px;
+      }
+
+      .stefa-l1max-sct2__card {
+        padding: 24px 28px;
+        gap: 32px;
+      }
+      .stefa-l1max-sct2__text {
+        font-size: 17px;
+        max-width: 26em;
+      }
+
+      .stefa-l1max-sct2__banner {
+        flex: 0 0 420px;
+        width: 940px;
+      }
+    }
+
+    /* ==========================================================================
+              SECCIÓN 3 — Título, grilla de 3 y llamada a la acción
+              ========================================================================== */
+    .stefa-l1max-sct3 {
+      padding: 32px var(--stefa-l1max-gutter) 48px;
+      text-align: center;
+    }
+
+    .stefa-l1max-sct3__inner {
+      max-width: var(--stefa-l1max-max);
+      margin: 0 auto;
+    }
+
+    .stefa-l1max-sct3__title {
+      margin: 0 auto 24px;
+      font-size: 21px;
+      line-height: 1.4;
+      font-weight: 400;
+      max-width: 16em;
+      color: var(--stefa-l1max-ink);
+    }
+
+    .stefa-l1max-sct3__title strong {
+      font-weight: 700;
+    }
+
+    .stefa-l1max-sct3__grid {
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .stefa-l1max-sct3__item {
+      margin: 0;
+    }
+
+    .stefa-l1max-sct3__item img {
+      width: 100%;
+      border-radius: var(--stefa-l1max-radius);
+    }
+
+    .stefa-l1max-sct3__txt {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+      padding: 0;
+      color: var(--stefa-l1max-ink);
+    }
+
+    .stefa-l1max-sct3__cta {
+      display: inline-block;
+      min-width: 210px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background-color: hsla(201, 99%, 47%, 1);
+      color: white;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none !important;
+      transition: ease all 0.2s;
+    }
+
+    .stefa-l1max-sct3__cta:hover {
+      background-color: var(--stefa-l1max-navy-hover);
+    }
+
+    /* --- Tablet --- */
+    @media (min-width: 768px) {
+      .stefa-l1max-sct3 {
+        padding: 40px var(--stefa-l1max-gutter) 56px;
+      }
+
+      .stefa-l1max-sct3__title {
+        font-size: 23px;
+        max-width: 20em;
+        margin-bottom: 28px;
+      }
+
+      .stefa-l1max-sct3__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .stefa-l1max-sct3__more {
+        margin-bottom: 24px;
+      }
+    }
+
+    /* --- Desktop --- */
+    @media (min-width: 1024px) {
+      .stefa-l1max-sct3 {
+        padding: 48px var(--stefa-l1max-gutter) 72px;
+      }
+
+      .stefa-l1max-sct3__title {
+        font-size: 26px;
+        max-width: 24em;
+        margin-bottom: 32px;
+      }
+
+      .stefa-l1max-sct3__grid {
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .stefa-l1max-sct3__more {
+        font-size: 17px;
+        margin-bottom: 28px;
+      }
+
+      .stefa-l1max-sct3__cta {
+        padding: 15px 34px;
+        font-size: 16px;
+      }
+    }
+
+    /* --- Respeta a quien desactiva las animaciones --- */
+    @media (prefers-reduced-motion: reduce) {
+      .stefa-l1max-sct2__banner,
+      .stefa-l1max-sct3__cta {
+        transition: none;
+      }
+    }
+  </style>
+</div>
