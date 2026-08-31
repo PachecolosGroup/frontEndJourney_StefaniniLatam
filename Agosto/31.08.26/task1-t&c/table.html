@@ -1,0 +1,330 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #50535a !important;
+  }
+  .tabla--tyc {
+    width: 100%;
+    /* overflow-x: auto; */
+    background-color: #ffffff;
+  }
+  .table {
+    width: 100%;
+    min-width: 1050px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    color: #ffffff;
+    background-color: #ffffff;
+    font-size: 12px;
+  }
+  .table th,
+  .table td {
+    border: 1px solid #999999;
+    padding: 5px 6px;
+    line-height: 1.2;
+    vertical-align: top;
+  }
+  .table th {
+    background-color: #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .table thead tr:first-child th {
+    height: 25px;
+    font-size: 13px;
+    padding: 4px;
+  }
+  .table thead tr:nth-child(2) th {
+    background-color: #019df4;
+    font-size: 12px;
+  }
+  .table thead th:first-child,
+  .table tbody td:first-child {
+    width: 13%;
+  }
+  .table thead th:not(:first-child),
+  .table tbody td:not(:first-child) {
+    width: 17.4%;
+  }
+  .table tbody td:first-child {
+    vertical-align: middle;
+    font-weight: normal;
+  }
+  .table tbody tr {
+    min-height: 30px;
+  }
+  .table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  .table ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+  .table li {
+    margin: 0 0 3px 0;
+    padding: 0;
+  }
+  .table p {
+    margin: 0;
+  }
+  .table small {
+    display: inline-block;
+    font-size: 9px;
+    line-height: 1.2;
+  }
+  .table .texto-centro {
+    text-align: center;
+    vertical-align: middle;
+  }
+  .table .monto {
+    white-space: nowrap;
+    font-weight: normal;
+  }
+  .table .monto .moneda,
+  .table .monto .periodo {
+    font-size: 10px;
+  }
+  .table .monto .valor {
+    font-size: 12px;
+  }
+  .table .fila-planes td {
+    height: 245px;
+  }
+  .table .fila-dispositivos td {
+    vertical-align: middle;
+  }
+  .table .fila-reproducciones td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  .table .fila-reproducciones td:first-child {
+    text-align: left;
+  }
+  .table .fila-activacion td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  .table .fila-activacion td:first-child {
+    text-align: left;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+    .table {
+      font-size: 11px;
+    }
+    .table th,
+    .table td {
+      padding: 4px;
+    }
+  }
+</style>
+<div class="tabla--tyc">
+  <table class="table">
+    <thead>
+      <!-- Encabezados principales -->
+      <tr>
+        <th rowspan="2">Servicio principal</th>
+
+        <th colspan="1">TV</th>
+
+        <th colspan="3">INTERNET</th>
+
+        <th colspan="1">MÓVIL</th>
+      </tr>
+
+      <!-- Encabezados de productos -->
+      <tr>
+        <th>Producto TV App</th>
+
+        <th>TV App Lite (2)</th>
+
+        <th>TV App Full (3)</th>
+
+        <th>TV App Plus (4)</th>
+
+        <th>Tv App Lite (5)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Costo -->
+      <tr>
+        <td>Costo</td>
+
+        <td class="texto-centro">Beneficio incluido en tu plan</td>
+
+        <td class="texto-centro">Beneficio incluido en tu plan</td>
+
+        <td class="texto-centro">
+          <p class="monto">
+            <span class="moneda">S/</span>
+            <span class="valor">70.00</span>
+            <span class="periodo">al mes</span>
+          </p>
+        </td>
+
+        <td class="texto-centro">
+          <p class="monto">
+            <span class="moneda">S/</span>
+            <span class="valor">55.00</span>
+            <span class="periodo">al mes</span>
+          </p>
+        </td>
+
+        <td class="texto-centro">Beneficio incluido en tu plan</td>
+      </tr>
+
+      <!-- Planes -->
+      <tr class="fila-planes">
+        <td>Planes</td>
+
+        <td>
+          <ul>
+            <li>Trío Movistar</li>
+            <li>Dúo TV Movistar (Línea + TV)</li>
+            <li>Dúo Internet + TV</li>
+            <li>Movistar TV</li>
+            <li>Movistar Total Trío</li>
+            <li>Movistar Total Dúo Internet + TV</li>
+          </ul>
+        </td>
+
+        <td>
+          <ul>
+            <li>Movistar Total Internet</li>
+            <li>Movistar Total Dúo Internet + Línea</li>
+            <li>Dúo Internet + Línea (*)</li>
+            <li>Movistar Internet (*)</li>
+          </ul>
+
+          <small> (*) HFC desde 200 Mbps, FTTH desde 400 Mbps </small>
+        </td>
+
+        <td>
+          <ul>
+            <li>Dúo Internet + Línea</li>
+            <li>Movistar Internet</li>
+            <li>Movistar Total Internet</li>
+            <li>Movistar Total Dúo Internet + Línea</li>
+          </ul>
+        </td>
+
+        <td>
+          <ul>
+            <li>Dúo Internet + Línea</li>
+            <li>Movistar Internet</li>
+            <li>Movistar Total Internet</li>
+            <li>Movistar Total Dúo Internet + Línea</li>
+          </ul>
+        </td>
+
+        <td>
+          Plan Postpago ilimitado (nueva contratación y portabilidad):
+
+          <ul>
+            <li>
+              Tv App Lite x24m y L1 Max x6m en planes de S/49.90 y S/55.90
+            </li>
+
+            <li>Tv App Lite x24m y L1 Max x24m en planes desde S/59.90</li>
+          </ul>
+
+          Plan Movistar Total ilimitado:
+
+          <ul>
+            <li>Tv App Lite x24m en plan móvil de S/39.90</li>
+          </ul>
+
+          Cambio de plan (Plan Postpago Ilimitado y Plan Movistar Total
+          Ilimitado):
+
+          <ul>
+            <li>Tv App Lite x24m, conforme al plan contratado.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Streaming incluido -->
+      <tr>
+        <td>Streaming incluido</td>
+
+        <td class="texto-centro">No aplica</td>
+
+        <td class="texto-centro">No aplica</td>
+
+        <td class="texto-centro">Disney+ Premium</td>
+
+        <td class="texto-centro">Disney+ Premium</td>
+
+        <td class="texto-centro">No aplica</td>
+      </tr>
+
+      <!-- Canales en vivo -->
+      <tr>
+        <td>Canales en vivo</td>
+
+        <td class="texto-centro">
+          +100
+          <br />
+
+          <small>
+            Acceso a los canales de su plan de TV contratado, según
+            disponibilidad.
+          </small>
+        </td>
+
+        <td class="texto-centro">+20</td>
+
+        <td class="texto-centro">+100</td>
+
+        <td class="texto-centro">+45</td>
+
+        <td class="texto-centro">+20</td>
+      </tr>
+
+      <!-- Dispositivos compatibles -->
+      <tr class="fila-dispositivos">
+        <td>Dispositivos compatibles</td>
+
+        <td colspan="4" class="texto-centro">
+          Smart TV (Android TV), Smartphones Android y iOS, Tablet Android y
+          iOS, PC (Windows y MAC), Decodificadores y también Chromecast
+        </td>
+
+        <td class="texto-centro">Smartphones Android y iOS</td>
+      </tr>
+
+      <!-- Reproducciones simultáneas -->
+      <tr class="fila-reproducciones">
+        <td>Reproducciones simultáneas</td>
+
+        <td>Hasta 2 dispositivos a la vez</td>
+
+        <td>1 dispositivo a la vez</td>
+
+        <td>Hasta 2 dispositivos a la vez</td>
+
+        <td>Hasta 2 dispositivos a la vez</td>
+
+        <td>1 dispositivo a la vez</td>
+      </tr>
+
+      <!-- Mecanismo de activación -->
+      <tr class="fila-activacion">
+        <td>Mecanismo para activación del producto o beneficio promocional</td>
+
+        <td colspan="5">App Mi Movistar (autogestión)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

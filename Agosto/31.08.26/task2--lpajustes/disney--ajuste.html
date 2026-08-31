@@ -1,0 +1,247 @@
+<!-- section border abajo -->
+<section class="stefa-dsn-sct2">
+  <div class="stefa-dsn-sct2__card">
+    <p class="stefa-dsn-sct2__text">
+      Las mejores series, películas y el <br class="stefa-hd" />
+      deporte de <b>ESPN</b> en un solo lugar
+    </p>
+
+    <a class="stefa-dsn-sct2__banner" href="#">
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/08/webp_disneylogoplus.png
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/08/webp_disneylogoplus.png
+          "
+        />
+        <img
+          src="https://cert-cdn.movistar.com.pe/2026/08/webp_disneylogoplus.png"
+          alt="Disney+ Plan Premium"
+          width="840"
+          height="106"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+    </a>
+  </div>
+</section>
+
+<style>
+  .stefa-dsn-sct2 {
+    --stefa-dsn-navy: #0f2b3d;
+    --stefa-dsn-navy-hover: #16405b;
+    --stefa-dsn-ink: #1a1d29;
+    --stefa-dsn-border: #9fd4e8;
+    --stefa-dsn-white: #ffffff;
+    --stefa-dsn-focus: #1f7fa8;
+
+    --stefa-dsn-max: 1120px;
+    --stefa-dsn-gutter: 20px;
+    --stefa-dsn-radius: 8px;
+    --stefa-dsn-radius-lg: 12px;
+
+    --stefa-dsn-font:
+      "Inspire TMM", "Avenir Next", "Segoe UI", system-ui, -apple-system,
+      "Helvetica Neue", Arial, sans-serif;
+
+    box-sizing: border-box;
+    font-family: var(--stefa-dsn-font);
+    color: var(--stefa-dsn-ink);
+    background-color: var(--stefa-dsn-white);
+  }
+
+  .stefa-dsn-sct2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .stefa-dsn-sct2 picture {
+    display: block;
+  }
+
+  .stefa-dsn-sct2 a:focus-visible {
+    outline: 3px solid var(--stefa-dsn-focus);
+    outline-offset: 3px;
+  }
+
+  /* ==========================================================================
+   SECCIÓN 2 — Tarjeta con borde y banner del plan
+   ========================================================================== */
+
+  .stefa-dsn-sct2 {
+    padding: 0 var(--stefa-dsn-gutter) 32px;
+  }
+
+  .stefa-dsn-sct2__card {
+    max-width: var(--stefa-dsn-max);
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid var(--stefa-dsn-border);
+    border-radius: var(--stefa-dsn-radius);
+    background-color: var(--stefa-dsn-white);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .stefa-dsn-sct2__text {
+    margin: 0;
+    color: var(--stefa-dsn-ink);
+    font-weight: 400;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+
+  .stefa-dsn-sct2__text strong {
+    font-weight: 700;
+  }
+
+  /* El fondo oscuro va en el enlace: así el bloque se ve correcto
+   aunque el asset del logo llegue con fondo transparente. */
+  .stefa-dsn-sct2__banner {
+    display: block;
+    width: 100%;
+    border-radius: var(--stefa-dsn-radius);
+    background-color: var(--stefa-dsn-navy);
+    overflow: hidden;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    background: HSLA(205, 100%, 6%, 1);
+    background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 52, 71, 1) 50%,
+      rgba(0, 67, 82, 1) 100%
+    );
+  }
+
+  .stefa-dsn-sct2__banner:hover {
+    background-color: var(--stefa-dsn-navy-hover);
+  }
+
+  .stefa-dsn-sct2__banner img {
+    width: 100%;
+  }
+
+  /* --- Tablet --- */
+  @media (min-width: 768px) {
+    .stefa-dsn-sct2 {
+      padding-bottom: 40px;
+    }
+
+    .stefa-dsn-sct2__card {
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      padding: 22px 24px;
+    }
+    .stefa-dsn-sct2__text {
+      flex: 1 1 auto;
+    }
+    .stefa-dsn-sct2__banner {
+      flex: 0 0 610px;
+      width: 320px;
+    }
+  }
+
+  /* --- Desktop --- */
+  @media (min-width: 1024px) {
+    .stefa-dsn-sct2 {
+      padding-bottom: 56px;
+    }
+
+    .stefa-dsn-sct2__card {
+      padding: 24px 28px;
+      gap: 32px;
+    }
+    .stefa-dsn-sct2__text {
+      font-size: 17px;
+      max-width: 26em;
+    }
+
+    .stefa-dsn-sct2__banner {
+      flex: 0 0 610px;
+      width: 420px;
+    }
+  }
+
+  /* --- Respeta a quien desactiva las animaciones --- */
+  @media (prefers-reduced-motion: reduce) {
+    .stefa-dsn-sct2__banner {
+      transition: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .stefa-dsn-sct2 {
+      padding: 30px 0px 30px 0px;
+      width: 350px;
+      /* height: 235px; */
+      margin: 0 auto;
+    }
+    .stefa-dsn-sct2__card {
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid var(--stefa-dsn-border);
+      border-radius: var(--stefa-dsn-radius);
+      background-color: var(--stefa-dsn-white);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      height: 220px;
+    }
+    .stefa-dsn-sct2__banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--stefa-dsn-radius);
+      background-color: var(--stefa-dsn-navy);
+      overflow: hidden;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+    .stefa-dsn-sct2__banner img {
+      width: 600px;
+    }
+  }
+  @media (max-width: 600px) {
+    .stefa_section-programas-disney__espn__slider--imagen {
+      max-width: 450px !important;
+      margin: 0 auto;
+    }
+    .stefa_section-programas-disney__espn--title {
+      font-weight: 400;
+      font-style: Bold;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      text-align: center;
+      max-width: 715px;
+      margin: 0px auto 24px;
+    }
+  }
+
+  .stefa-hd {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .stefa-hd {
+      display: none;
+    }
+  }
+</style>
