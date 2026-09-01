@@ -1,0 +1,445 @@
+<section class="stefa-duos-kenosv2__baner">
+  <div
+    class="stefa-duos-kenosv2__baner--carrusel"
+    lt-carousel="view: 1; view800:1; view1200: 1; autoheight: false"
+    id="swiperBanners"
+  >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="stefa-duos-kenosv2__baner-content">
+            <a
+              class="stefa-duos-kenosv2__link card--cli__c2c"
+              data-categoriaproducto="Fija"
+              data-codproducto="G-M-TV"
+              data-descripcion="Instalación Gratis"
+              data-detalleorigen="Card Hogar-botón lo quiero-Instalación Gratis"
+              data-nombreproducto="Genérico Fijo Mono Tv"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_duos',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'comprar online - 0',
+                })
+              "
+              href="#"
+              >&nbsp;</a
+            >
+            <picture class="stefa-duos-kenosv2__baner-picture">
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_TV-Cable-Desktop_11zon.webp
+                "
+              />
+              <source
+                media="(min-width:600px )"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_TV-Cable-Mobile_11zon.webp
+                "
+              />
+              <img
+                fetchpriority="high"
+                decoding="async"
+                src="https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_TV-Cable-Mobile_11zon.webp"
+                alt="Banner Duos"
+                width="1920"
+                height="316"
+                class="stefa-duos-kenosv2__baner-img"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="stefa-duos-kenosv2__baner-content">
+            <a
+              class="stefa-duos-kenosv2__link card--cli__c2c"
+              data-categoriaproducto="Fija"
+              data-codproducto="G-M-TV"
+              data-descripcion="Instalación Gratis"
+              data-detalleorigen="Card Hogar-botón lo quiero-Instalación Gratis"
+              data-nombreproducto="Genérico Fijo Mono Tv"
+              onclick="
+                dataLayer.push({
+                  event: 'hv.event',
+                  eventName: 'lp_duos',
+                  eventCategory: 'banner',
+                  eventAction: 'click',
+                  eventLabel: 'comprar online - 0',
+                })
+              "
+              href="#"
+              >&nbsp;</a
+            >
+            <picture class="stefa-duos-kenosv2__baner-picture">
+              <source
+                media="(min-width:1200px)"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_MT-Kenos_banner1-desktop.webp
+                "
+              />
+              <source
+                media="(min-width:600px )"
+                srcset="
+                  https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_MT-Kenos_banner1-desktop.webp
+                "
+              />
+              <img
+                src="https://cert-cdn.movistar.com.pe/2026/08/WEBP_AGO_MT-Kenos_banner2-mobile.webp"
+                width="1920"
+                height="316"
+                class="stefa-duos-kenosv2__baner-img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination dots-solo"></div>
+    </div>
+
+    <div class="container-flechas">
+      <div class="swiper-button-prev lt-button-prev">
+        <svg
+          class="icon svg--inline"
+          fill="none"
+          focusable="false"
+          role="img"
+          viewbox="0 0 8 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 1.7334L1 7.7334L7 13.7334"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="swiper-button-next lt-button-next">
+        <svg
+          class="icon svg--inline"
+          fill="none"
+          focusable="false"
+          role="img"
+          viewbox="0 0 8 15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1 13.7334L7 7.7334L1 1.7334"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+      @media (min-width: 1260px) {
+    
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const swiperContainer = document.querySelector(
+      "#swiperBanners .swiper-container",
+    );
+
+    function attachListener() {
+      if (swiperContainer && swiperContainer.swiper) {
+        const swiperInstance = swiperContainer.swiper;
+        const nextBtn = document.querySelector(
+          "#swiperBanners .swiper-button-next",
+        );
+        const prevBtn = document.querySelector(
+          "#swiperBanners .swiper-button-prev",
+        );
+
+        swiperInstance.on("slideChange", () => {
+          nextBtn.classList.remove("active-color");
+          prevBtn.classList.remove("active-color");
+
+          // Ejemplo: cambia color si el segundo slide (índice 1) está activo
+          if (swiperInstance.activeIndex === 1) {
+            nextBtn.classList.add("active-color");
+            prevBtn.classList.add("active-color");
+          }
+        });
+
+        console.log("Listener conectado al Swiper #swiperBanners");
+      } else {
+        setTimeout(attachListener, 100); // reintenta hasta que la instancia exista
+      }
+    }
+
+    attachListener();
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const swiperContainer = document.querySelector(
+      "#swiperBanners .swiper-container",
+    );
+
+    function attachNav() {
+      if (swiperContainer && swiperContainer.swiper) {
+        const swiperInstance = swiperContainer.swiper;
+        const nextBtn = document.querySelector(
+          "#swiperBanners .swiper-button-next",
+        );
+        const prevBtn = document.querySelector(
+          "#swiperBanners .swiper-button-prev",
+        );
+
+        // Conectar flechas externas al Swiper
+        nextBtn.addEventListener("click", () => swiperInstance.slideNext());
+        prevBtn.addEventListener("click", () => swiperInstance.slidePrev());
+
+        console.log("Flechas externas conectadas al Swiper #swiperBanners");
+      } else {
+        setTimeout(attachNav, 100); // reintenta hasta que la instancia exista
+      }
+    }
+
+    attachNav();
+  });
+</script>
+
+<style>
+  .seo-mt__parrilla--section
+    .seo-mt__parrilla--content
+    .seo-mt-parrilla--content
+    .seo-mt-card--cli
+    .card--cli__content
+    .card--cli__lead
+    .card--cli__c2c {
+    all: upset;
+  }
+
+  .stefa-duos-kenosv2__baner .stefa-duos-kenosv2__baner--carrusel {
+    max-width: 1224px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .stefa-duos-kenosv2__baner-content {
+    position: relative;
+    width: 100%;
+    max-width: 1224px;
+    margin: 32px auto 0;
+    padding: 0 24px;
+  }
+
+  .stefa-duos-kenosv2__link.card--cli__c2c {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .stefa-duos-kenosv2__link:hover,
+  .stefa-duos-kenosv2__link:focus,
+  .stefa-duos-kenosv2__link:active {
+    text-decoration: none;
+    color: transparent;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-container {
+    padding-bottom: 30px;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (max-width: 767px) {
+    .stefa-duos-kenosv2__baner-content {
+      margin-top: 0px;
+      width: 100%;
+    }
+
+    .stefa-duos-kenosv2__baner .stefa-duos-kenosv2__baner--carrusel {
+      width: 100%;
+    }
+
+    .stefa-duos-kenosv2__baner-content {
+      margin-top: 0px;
+      width: 100%;
+      height: 400px;
+    }
+
+    .stefa-duos-kenosv2__baner-picture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 400px;
+      width: 100%;
+    }
+
+    .stefa-duos-kenosv2__baner-img {
+      object-fit: cover;
+      object-position: center;
+      height: 100%;
+      width: 100%;
+      display: block;
+      border-radius: 0 0 32px 32px;
+    }
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-pagination {
+    left: auto;
+    right: 0;
+    width: 95%;
+    max-width: 1296px;
+    text-align: center;
+  }
+
+  .stefa-duos-kenosv2__baner
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    bottom: 0px;
+  }
+
+  :focus {
+    outline: 0;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next,
+  .stefa-duos-kenosv2__baner .swiper-button-prev {
+    position: absolute;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    color: #313235;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    padding: 10px 16px;
+  }
+
+  .stefa-duos-kenosv2__baner
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 42px;
+    height: 12px;
+    border-radius: 99px;
+    background-color: #019bef;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-pagination-bullet {
+    background: #949494;
+    opacity: 1;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next::after,
+  .stefa-duos-kenosv2__baner .swiper-button-prev::after {
+    display: none;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+    right: auto;
+    left: -4px;
+    top: 0;
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+    right: auto;
+    left: 120px;
+    top: 83.05%;
+  }
+
+  @media (min-width: 767px) {
+    .stefa-duos-kenosv2__baner-img {
+      height: 293px;
+      object-fit: cover;
+      border-radius: 32px;
+    }
+
+    .stefa-duos-kenosv2__baner
+      .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+      bottom: 0px !important;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+      right: auto;
+      left: -4px;
+      top: 83.05%;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+      right: -4px;
+      left: auto;
+      top: 83.05%;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-pagination {
+      left: 0;
+      right: 0;
+      width: 95%;
+      max-width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .container-flechas {
+      max-width: 100%;
+      margin: 0 auto;
+      position: relative;
+      top: -228px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .stefa-duos-kenosv2__baner
+      .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+      bottom: 0px;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-pagination {
+      right: auto;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next {
+      left: 116px;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+      left: 40px;
+    }
+
+    .stefa-duos-kenosv2__baner .swiper-button-next.lt-button-next,
+    .stefa-duos-kenosv2__baner .swiper-button-prev.lt-button-prev {
+      display: none;
+    }
+  }
+
+  .stefa-duos-kenosv2__baner .swiper-button-next.active-color,
+  .stefa-duos-kenosv2__baner .swiper-button-prev.active-color {
+    color: #0b2739;
+    /* color cuando el slide específico está activo */
+  }
+</>
