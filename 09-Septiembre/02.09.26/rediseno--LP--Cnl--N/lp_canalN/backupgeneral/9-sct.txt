@@ -1,0 +1,2349 @@
+<link rel='stylesheet' type='text/css' data-senna-track="temporary" href='/documents/37905/15798247/CSS_SEP_canal_n_v1.css'>
+<link rel='stylesheet' type='text/css' data-senna-track="temporary" href='/documents/37905/15798247/atm_c2c.min.css'>
+<style>
+.canaln-exclusivo__title b,
+.tvappque-planes__headsubtitle b {
+    font-weight: 700
+}
+
+.tvappque-planes__inner {
+    padding: 15px 15px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px
+}
+
+.tvappque-planes__head {
+    max-width: 330px;
+    margin: auto
+}
+
+.tvappque-planes__headtitle {
+    color: #019df4;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.3em
+}
+
+.tvappque-planes__headsubtitle {
+    color: #50535a;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300
+}
+
+.tvappque-planes {
+    position: relative;
+    padding-top: 50px
+}
+
+.tvappque-planes__maintitle {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #44464b;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0 25px
+}
+
+.canaln-exclusivo {
+    padding: 36px 16px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center
+}
+
+.canaln-exclusivo__inner,
+.canaln-programas__inner {
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.canaln-exclusivo__title {
+    text-align: center;
+    font-size: 32px;
+    color: #313235;
+    line-height: 1.2em;
+    font-weight: 300
+}
+
+.canaln-exclusivo__subtitle {
+    color: #50535a;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 28px;
+    font-weight: 300
+}
+
+.canaln-exclusivo__subtitle b {
+    font-weight: 700
+}
+
+.canaln-exclusivo__cards,
+.canaln-vive__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.canaln-exclusivo__carditem {
+    width: 324px;
+    height: 317px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 32px 24px
+}
+
+.canaln-exclusivo__carditem.uno {
+    margin-bottom: 30px
+}
+
+.canaln-exclusivo__itembg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.canaln-exclusivo__itemtitle {
+    position: relative;
+    margin-bottom: 17px;
+    color: #50535a;
+    font-size: 24px;
+    line-height: 1.2em
+}
+
+.canaln-exclusivo__itemsubtitle {
+    position: relative;
+    margin-bottom: 34px;
+    color: #50535a;
+    font-size: 16px;
+    line-height: 1.3em;
+    max-width: 226px
+}
+
+.canaln-exclusivo__itembtn {
+    padding: 8px 32px;
+    background-color: #0b2739;
+    color: #fff;
+    border-radius: 60px;
+    border: unset;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    left: 24px;
+    bottom: 24px
+}
+
+.canaln-exclusivo__itemsubtitle.dos,
+.canaln-exclusivo__itemtitle.dos,
+.fibra-carrucel-_a_comp_online:hover {
+    color: #fff
+}
+
+.canaln-vive {
+    background-color: #0b2739;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center
+}
+
+.canaln-vive__inner {
+    width: 100%;
+    max-width: 330px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.canaln-vive__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.3em
+}
+
+.canaln-vive__subtitle {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 16px
+}
+
+.canaln-vive__listitem {
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.canaln-vive__itemicon-img {
+    width: auto;
+    height: auto
+}
+
+.canaln-vive__itemtitle {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.canaln-vive__itemsubtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: unset
+}
+
+.canaln-vive__listitem.uno {
+    margin-bottom: 32px
+}
+
+.canaln-programas {
+    padding: 36px 16px;
+    display: flex;
+    justify-content: center;
+    background-color: #019df4
+}
+
+.canaln-programas__list,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info {
+    width: 100%;
+    position: relative
+}
+
+.canaln-programas__title {
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.3em
+}
+
+.canaln-programas__subtitle {
+    margin-bottom: 32px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px
+}
+
+.canaln-programas__list .swiper-container {
+    padding: 0 0 45px
+}
+
+.canaln-programas__item {
+    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+    overflow: hidden
+}
+
+.canaln-programas__itemimage {
+    max-height: 269px;
+    overflow: hidden
+}
+
+.canaln-programas__itemimage-img {
+    width: 100%;
+    height: auto
+}
+
+.canaln-programas__itemtitle {
+    margin: unset;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #0b2739
+}
+
+.canaln-programas__itemtext {
+    background-color: #fff;
+    padding: 10px
+}
+
+@media (min-width:768px) {
+
+    .canaln-exclusivo__inner,
+    .canaln-programas__inner {
+        max-width: 1080px
+    }
+
+    .canaln-exclusivo__title {
+        max-width: 740px;
+        font-size: 38px
+    }
+
+    .canaln-exclusivo__subtitle {
+        max-width: 740px;
+        font-size: 18px
+    }
+
+    .canaln-exclusivo__cards,
+    .canaln-vive__list {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .canaln-exclusivo__carditem.uno {
+        margin-bottom: unset
+    }
+
+    .canaln-exclusivo__carditem {
+        width: 520px;
+        height: 400px
+    }
+
+    .canaln-exclusivo__itemtitle {
+        font-size: 32px;
+        max-width: 427px
+    }
+
+    .canaln-exclusivo__itemsubtitle {
+        font-size: 20px;
+        max-width: 324px
+    }
+
+    .canaln-exclusivo__itembtn {
+        padding: 16px 64px;
+        font-size: 18px
+    }
+
+    .canaln-vive__inner {
+        max-width: 780px
+    }
+
+    .canaln-vive__title {
+        font-size: 38px
+    }
+
+    .canaln-vive__itemsubtitle,
+    .canaln-vive__subtitle {
+        font-size: 18px
+    }
+
+    .canaln-vive__listitem {
+        max-width: 374px
+    }
+
+    .canaln-vive__itemtitle {
+        font-size: 20px
+    }
+
+    .canaln-programas__title {
+        font-size: 38px;
+        max-width: 740px
+    }
+
+    .canaln-programas__subtitle {
+        font-size: 18px;
+        max-width: 740px
+    }
+}
+
+.faqs-accordion .container .toggler-header .btn {
+    padding-left: 40px !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important
+}
+
+.faqs-accordion .container .header:nth-child(2n):before {
+    position: absolute;
+    display: flex;
+    background-color: #d3d4d3;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    top: 50%;
+    translate: 0 -51%;
+    font-size: 16px;
+    color: #242628;
+    font-weight: 700
+}
+
+.faqs-accordion .container .header:nth-child(2):before {
+    content: "1"
+}
+
+.faqs-accordion .container .header:nth-child(4):before {
+    content: "2"
+}
+
+.faqs-accordion .container .header:nth-child(6):before {
+    content: "3"
+}
+
+.faqs-accordion .container .header:nth-child(8):before {
+    content: "4"
+}
+
+.faqs-accordion .container .header:nth-child(10):before {
+    content: "5"
+}
+
+.faqs-accordion .container .toggler-header-expanded:before {
+    color: #fff !important;
+    background-color: #019df4 !important
+}
+
+.canaln-programas .swiper-button-next.flecha-next.slider-seo__nav {
+    right: -15px;
+    z-index: 5;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 16px
+}
+
+.canaln-programas .swiper-button-prev.flecha-prev.slider-seo__nav {
+    left: -15px;
+    z-index: 5;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 16px
+}
+
+@media only screen and (max-width:991px) {
+    .faqs-accordion .container {
+        padding: 0 8px
+    }
+}
+
+@media (max-width:992px) and (min-width:600px) {
+    .tvenvivo-banner__head {
+        margin-left: 0
+    }
+
+    .tvenvivo-banner__subtitulo {
+        font-size: 18px
+    }
+
+    .tvenvivo-banner__info {
+        text-align: center
+    }
+
+    .tvenvivo-banner__form {
+        margin-top: -40px
+    }
+}
+
+.anchor__underline,
+.anchor__underline:hover {
+    text-decoration: underline;
+    color: #019bf2
+}
+
+svg.svg--more--atc.svg--inline {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px
+}
+
+.nateevo-movTotal--planes {
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    background: 0 0
+}
+
+.nateevo-movTotal--planes .container {
+    position: relative
+}
+
+.nateevo-movTotal--planes .swiper-container {
+    position: initial
+}
+
+.nateevo-movTotal--planes .swiper-pagination {
+    position: relative;
+    text-align: center;
+    transition: opacity .3s;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    margin-top: 5px
+}
+
+.nateevo-movTotal--planes .item {
+    position: relative;
+    padding: 0 12px
+}
+
+@media (min-width:993px) {
+    .nateevo-movTotal--planes {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+}
+
+@media (min-width:600px) {
+    .tvappque-planes__head {
+        max-width: 740px
+    }
+
+    .tvappque-planes__headtitle {
+        font-size: 40px
+    }
+
+    .tvappque-planes__headsubtitle {
+        font-size: 18px
+    }
+
+    .tvappque-planes__inner {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 60px
+    }
+
+    .tvappque-planes__maintitle {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 36px
+    }
+
+    .nateevo-movTotal--planes .swiper-pagination {
+        display: none
+    }
+}
+
+.nateevo-movTotal--planes .swiper-button-next,
+.nateevo-movTotal--planes .swiper-button-prev {
+    display: inherit;
+    background: #019df4;
+    width: 35px;
+    height: 35px;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 25%);
+    color: #fff;
+    display: flex
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-body-item,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-oculto,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-body-item,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-ver-mas,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-body-item,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-ver-mas {
+    display: none
+}
+
+.fibra-carrucel-cintillo .fibra-carrucel-cintillo_general,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-cintillo .fibra-carrucel-cintillo_general {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%
+}
+
+.fibra-carrucel-cintillo_general .fibra-carrucel-cintillo_general--text {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    width: 70%
+}
+
+.fibra-carrucel-cintillo_general--text .fibra-carrucel-cintillo_text-title {
+    width: 100%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.nateevo-movTotal--planes .planes-fibra-optica_container-segunda .planes-internet-trios-segunda .swiper-slide,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .swiper-slide,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .swiper-slide {
+    position: relative;
+    padding: 15px 15px 35px
+}
+
+.nateevo-movTotal--planes .planes-fibra-optica_container-segunda .planes-internet-trios-segunda .fibra-carrucel-slide_container {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+    position: relative;
+    border-radius: 15px;
+    width: auto;
+    margin: 0 auto
+}
+
+.nateevo-movTotal--planes .planes-fibra-optica_container-segunda .planes-internet-trios-segunda .fibra-carrucel-slide_container .fibra-carrucel-header,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    padding: 55px 5px 25px;
+    border-bottom: 1px solid #ededed;
+    border-radius: 15px 15px 0 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body {
+    padding: 20px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-cintillo,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-cintillo,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-cintillo {
+    position: absolute;
+    top: -1px;
+    background: #0b2739;
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 48px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_btn .fibra-carrucel-btn_item {
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0 solid transparent;
+    outline: 0;
+    font-size: 18px;
+    line-height: 48px;
+    height: 48px;
+    background-color: #019bf2;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .4s;
+    width: 234px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer .link--more.link--more5,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer .link--more.link--more5,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer .link--more.link--more5 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+    background-color: transparent;
+    border: 0;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: #019bf2;
+    outline: 0;
+    transition: .4s
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-icon,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-icon,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-icon {
+    width: 15%
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body {
+    width: 85%
+}
+
+.logos-disney-star .body-boxes-app,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .logos-disney-star .body-boxes-app {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px
+}
+
+.logos-disney-star .beneficios-renovable,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .logos-disney-star .beneficios-renovable {
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto 22px
+}
+
+.fibra-carrucel-header__gratis--gratis {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: #e63780;
+    display: inline-block;
+    background: #fbc7de;
+    border-radius: 16px;
+    padding: 4px 12px
+}
+
+.fibra-carrucel-header__beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.fibra-carrucel-header_btn {
+    margin: 1em auto 0
+}
+
+.fibra-carrucel-info.mes-2 {
+    margin-top: -10px
+}
+
+.fibra-carrucel-info .texto-mes2,
+.fibra-carrucel-info.mes-2 .texto-mes,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-info .texto-mes2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: .12px;
+    color: #000;
+    margin-top: -20px
+}
+
+.fibra-carrucel-info.mes-2 span,
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-info.mes-2 span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .25px
+}
+
+.fibra-carrucel_btn_comp_online {
+    user-select: none;
+    border: 0 solid transparent;
+    outline: 0;
+    line-height: 40px;
+    height: 42px;
+    font-size: 16px;
+    background-color: #019bf2;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .4s;
+    margin: .5em auto 1em;
+    width: 234px
+}
+
+.fibra-carrucel-_a_comp_online {
+    color: #fff;
+    width: 100%;
+    height: 48px;
+    display: block
+}
+
+@media (max-width:768px) {
+    .nateevo-movTotal--planes .planes-fibra-optica_container-segunda .planes-internet-trios-segunda .fibra-carrucel-slide_container {
+        width: auto
+    }
+}
+
+.velocidad-cinta {
+    display: flex;
+    width: 255px;
+    height: 52px;
+    padding: 8px 18px;
+    justify-content: center;
+    align-items: center;
+    background: var(--realce-magenta-realce, #e63780);
+    color: #fff;
+    margin: 20px 0 0;
+    font-size: 14px
+}
+
+.meses-cinta,
+.velocidad-cinta {
+    border-radius: 8px;
+    column-gap: 5px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-cintillo_general .fibra-carrucel-cintillo_general--text {
+    width: 65%;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-cintillo_general--text .fibra-carrucel-cintillo_text-title {
+    font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+    font-weight: 300;
+    margin: 0;
+    text-align: center
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-header_simetrica,
+.stefa-planes-fibra-trios p {
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra_carrucel_beneficios_texto::after {
+    content: "";
+    background: #d3d4d3;
+    width: 9%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    left: -2%;
+    top: 6px
+}
+
+.nateevo-movTotal--planes .fibra_carrucel_beneficios_texto::before {
+    content: "";
+    background: #d3d4d3;
+    width: 11%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    right: -2%;
+    top: 6px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information {
+    font-weight: 400;
+    font-size: 20px;
+    color: #019df4;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info {
+    width: auto;
+    position: relative;
+    margin-top: -14px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-info .fibra-carrucel-header_regular {
+    font-weight: 400;
+    font-size: 14px;
+    color: #50535a;
+    margin: -14px 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header__beneficios {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: #50535a;
+    margin: 16px 0 0 !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header_btn {
+    margin-bottom: 8px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header__gratis-rosa {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #86888c;
+    top: 18px;
+    margin-bottom: 8px;
+    border-top: 1px solid #ededed;
+    width: 282px;
+    position: relative;
+    right: 4px;
+    padding-top: 19px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header__gratis--gratis {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    color: #e63780;
+    display: inline-block;
+    background: #fbc7de;
+    border-radius: 16px;
+    padding: 4px 12px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item {
+    display: flex;
+    flex-direction: row
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image img,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image img,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-image img {
+    position: relative;
+    top: 2px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #019df4;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_description {
+    font-size: 12px;
+    color: #86888c;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information.informacion2 {
+    margin-top: -30px !important
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info.espacio1 {
+    margin-bottom: -60px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-header_mbps {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #0b2739;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-info span {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px
+}
+
+.nateevo-movTotal--planes .swiper-button-next:after,
+.nateevo-movTotal--planes .swiper-button-prev:after,
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 13px;
+    font-weight: 700
+}
+
+.box_disney_separador {
+    background: #d3d4d3;
+    content: "";
+    height: 60px;
+    width: 1px;
+    margin: 0 -1em
+}
+
+.imperdible::after,
+.imperdible::before {
+    content: ""
+}
+
+.fibra-carrucel-info {
+    width: auto;
+    margin: 0 auto
+}
+
+.swiper-button-next.s-button--next svg,
+.swiper-button-prev.s-button--prev svg {
+    width: 0;
+    height: 12px
+}
+
+.imperdible {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    position: relative;
+    padding-top: 25px;
+    margin: 0
+}
+
+.imperdible::after {
+    background: #d3d4d3;
+    width: 80%;
+    left: -90%;
+    top: 32px
+}
+
+.imperdible::before {
+    background: #b6b7b7;
+    width: 82%;
+    right: -90%;
+    top: 32px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-prev.s-button--prev.swiper-button-disabled use,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-prev.s-button--prev.swiper-button-disabled use,
+svg.svg--more--atc.svg--inline {
+    filter: invert(51%) sepia(81%) saturate(3888%) hue-rotate(175deg) brightness(101%) contrast(99%)
+}
+
+.fibra-carrucel-cintillo_general .fibra-carrucel-cintillo_general--image {
+    width: 24%
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--info {
+    font-weight: 400;
+    font-size: 12px;
+    color: #86888c
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--mbps {
+    font-weight: 700;
+    font-size: 12px;
+    color: #86888c
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_title,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--title,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_title,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #019df4
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .beneficios--box-icon img {
+    width: 25px;
+    height: 21px;
+    background-size: cover
+}
+
+.fibra-carrucel-cintillo .fibra-carrucel-cintillo_general {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%
+}
+
+.fibra-carrucel-cintillo_general--text .fibra-carrucel-cintillo_text-title.title2 {
+    text-align: left
+}
+
+.fibra-carrucel-body .fibra-carrucel-footer,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .fibra-carrucel-body .fibra-carrucel-footer,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer {
+    display: block !important;
+    padding: 35px 0 0;
+    position: relative
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer::before {
+    content: "";
+    background: #ededed;
+    width: 120%;
+    display: inline-block;
+    position: absolute;
+    height: 1px;
+    left: -10%;
+    top: 15px
+}
+
+.stefa-planes-fibra-internet {
+    max-width: 1227px;
+    margin: auto
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-cintillo.cintillo-general2,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .swiper-pagination.dots-solo .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #019df4
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+    position: relative;
+    border-radius: 15px;
+    width: auto;
+    margin: 0 auto
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information {
+    font-weight: 400;
+    color: #019df4;
+    font-size: 20px;
+    margin-top: 13px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_simetrica {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #86888c;
+    padding: 0 26px 12px;
+    margin: 0
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_regular {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #86888c;
+    margin-bottom: 26px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item {
+    display: flex;
+    flex-direction: row
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_description,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item .fibra-carrucel-body_description.fibra-carrucel-body_description-texto .fibra-carrucel-description_description {
+    font-size: 12px;
+    color: #86888c
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information.informacion2 {
+    margin-top: -20px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-next.s-button--next,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-prev.s-button--prev,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-next.s-button--next,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-prev.s-button--prev,
+.swiper-button-next.s-button--next,
+.swiper-button-prev.s-button--prev {
+    background: #019df4;
+    width: 35px;
+    height: 35px;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 1px rgb(0 0 0 / 25%);
+    color: #fff
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-next.s-button--next use,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-prev.s-button--prev use,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-next.s-button--next use,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-prev.s-button--prev use {
+    filter: brightness(2.5)
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .swiper-pagination.dots-solo,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .swiper-pagination.dots-solo {
+    bottom: 0
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps {
+    font-weight: 700;
+    font-size: 40px;
+    color: #0b2739
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps span {
+    font-size: 30px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_precio .fibra-carrucel-header_precio-mes,
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_precio .fibra-carrucel-header_precio-simbolo {
+    font-size: 18px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_precio {
+    font-size: 32px;
+    color: #0b2739;
+    font-weight: 700;
+    margin-top: 5px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_btn .fibra-carrucel-btn_item {
+    font-weight: 400;
+    color: #019bf2;
+    text-align: center;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #019bf2;
+    outline: 0;
+    font-size: 16px;
+    line-height: 42px;
+    width: 230px;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .4s
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container {
+    padding-top: 50px;
+    padding-bottom: 30px
+}
+
+.logos-disney-star .body-boxes-app {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px
+}
+
+.stefa-planes-fibra-internet .fibra-carrucel-header__gratis-rosa {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #86888c;
+    position: relative;
+    top: 0;
+    margin-bottom: -5px;
+    border-top: 1px solid #ededed;
+    width: 265px;
+    padding-top: 19px;
+    margin-top: 35px
+}
+
+.fibra-carrucel-header__beneficios,
+.stefa-planes-fibra-internet .fibra-carrucel-header__beneficios {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    color: #50535a;
+    margin: 16px 0 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.stefa-planes-fibra-internet p {
+    margin-bottom: 0
+}
+
+.fibra-carrucel-info.mes-2 span {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .25px
+}
+
+.stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_regular.regular2 {
+    margin-bottom: 9px
+}
+
+@media (min-width:767px) and (max-width:1200px) {
+
+    .nateevo-movTotal--planes .swiper-pagination,
+    .stefa-planes-fibra-internet .swiper-pagination {
+        display: block
+    }
+}
+
+.stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto::after {
+    content: "";
+    background: #d3d4d3;
+    width: 9%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    left: -5%;
+    top: 6px
+}
+
+.stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto::before {
+    content: "";
+    background: #d3d4d3;
+    width: 10%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    right: -4%;
+    top: 6px
+}
+
+.stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto.texto2::after {
+    left: -2%
+}
+
+.stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto.texto2::before {
+    right: -2%
+}
+
+@media (max-width:600px) {
+    .tvenvivo-banner {
+        margin-left: -30px
+    }
+
+    .nateevo-movTotal--planes .fibra_carrucel_beneficios_texto::before {
+        width: 14%
+    }
+
+    .nateevo-movTotal--planes .fibra_carrucel_beneficios_texto::after {
+        width: 12%
+    }
+
+    .nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-header__gratis-rosa {
+        width: 309px
+    }
+
+    .nateevo-movTotal--planes .swiper-button-next,
+    .nateevo-movTotal--planes .swiper-button-prev,
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-next.s-button--next,
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-prev.s-button--prev {
+        display: none
+    }
+
+    .imperdible::before {
+        width: 89%;
+        right: -102%
+    }
+
+    .imperdible::after {
+        width: 89%;
+        left: -102%
+    }
+
+    .stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto::before {
+        width: 20%;
+        right: -2%
+    }
+
+    .stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto::after {
+        width: 20%;
+        left: -2%
+    }
+
+    .stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto.texto2::before {
+        right: -2%;
+        width: 18%
+    }
+
+    .stefa-planes-fibra-internet .fibra_carrucel_beneficios_texto.texto2::after {
+        left: -2%;
+        width: 17%
+    }
+
+    .fibra-carrucel-info__beneficios-title.paso1::before {
+        right: 108%;
+        width: 39%
+    }
+
+    .fibra-carrucel-info__beneficios-title.paso1::after {
+        left: 106%;
+        width: 42%
+    }
+
+    .velocidad-cinta {
+        width: 280px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-ver-mas {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-ver-mas .fibra-carrucel_btn {
+        font-weight: 400;
+        font-size: 16px;
+        outline: 0;
+        text-decoration: underline;
+        color: #019df4
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container {
+        padding-top: 25px;
+        padding-bottom: 0
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_btn .fibra-carrucel-btn_item {
+        width: 234px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_precio {
+        font-size: 24px;
+        margin-top: 0;
+        color: #50535a
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_precio .fibra-carrucel-header_precio-mes {
+        font-size: 12px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container {
+        justify-content: center;
+        align-items: center
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps {
+        font-size: 32px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps span {
+        font-size: 20px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info {
+        width: auto;
+        position: relative
+    }
+
+    .stefa-planes-fibra-internet .fibra-carrucel-header__gratis-rosa {
+        position: relative;
+        top: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 0
+    }
+
+    .stefa-planes-fibra-internet .fibra-carrucel-header__gratis-rosa.gratis {
+        border-bottom: 1px solid #ededed;
+        padding-bottom: 20px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_simetrica {
+        padding: 0;
+        border-bottom: 0
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-footer::before {
+        width: 114%;
+        left: -7%
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header {
+        padding: 55px 5px 0;
+        border-bottom: 1px solid #ededed
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto {
+        position: relative;
+        padding-top: 0
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-oculto::before {
+        content: "";
+        background: #ededed;
+        width: 113.5%;
+        display: inline;
+        position: absolute;
+        height: 1px;
+        left: -6.5%;
+        top: -17px
+    }
+
+    .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-body.body2 {
+        padding-top: 1px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information {
+        margin-bottom: 12px
+    }
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container {
+        max-width: 100%;
+        margin: 0 auto
+    }
+
+    .fibra-carrucel_btn_comp_online {
+        width: 234px;
+        margin: 0 auto
+    }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 13px;
+    font-weight: 700
+}
+
+.fibra-carrucel-info__beneficios {
+    max-width: 320px;
+    height: 150px;
+    padding-top: 24px
+}
+
+.fibra-carrucel-info__beneficios-title {
+    position: relative;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: .32em;
+    color: #50535a;
+    padding-bottom: 12px
+}
+
+.fibra-carrucel-info__beneficios-meses {
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #313235
+}
+
+.fibra-carrucel-info__beneficios-title::after,
+.fibra-carrucel-info__beneficios-title::before {
+    content: "";
+    position: absolute;
+    top: 26%;
+    width: 23%;
+    border-top: 1px solid #d3d4d3
+}
+
+.fibra-carrucel-info__beneficios-title::before {
+    right: 80%
+}
+
+.fibra-carrucel-info__beneficios-title::after {
+    left: 80%
+}
+
+.fibra-carrucel-info__beneficios-title.paso1::before {
+    right: 107%;
+    width: 20%
+}
+
+.fibra-carrucel-info__beneficios-title.paso1::after {
+    left: 107%;
+    width: 20%
+}
+
+.fibra-carrucel-info__beneficios-logos {
+    margin: 6px auto
+}
+
+.imperdible.cintillo1::after,
+.imperdible.cintillo1::before,
+.imperdible.cintillo2::after,
+.imperdible::after,
+.imperdible::before {
+    display: inline;
+    position: absolute;
+    height: 1px;
+    content: ""
+}
+
+.imperdible.cintillo1 {
+    padding-top: 4px
+}
+
+.imperdible.cintillo1::after {
+    background: #d3d4d3;
+    width: 28%;
+    left: -4%;
+    top: 11px
+}
+
+.imperdible.cintillo1::before {
+    background: #b6b7b7;
+    width: 28%;
+    right: -4%;
+    top: 11px
+}
+
+.imperdible.cintillo2::after {
+    background: #d3d4d3;
+    width: 65%;
+    left: -84%;
+    top: 32px
+}
+
+.imperdible.cintillo2::before {
+    content: "";
+    background: #b6b7b7;
+    width: 65%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    right: -85%;
+    top: 32px
+}
+
+.imperdible.cintillo3::after,
+.imperdible.cintillo3::before {
+    content: "";
+    width: 72%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    top: 32px
+}
+
+.imperdible.cintillo3::after {
+    background: #d3d4d3;
+    left: -84%
+}
+
+.imperdible.cintillo3::before {
+    background: #b6b7b7;
+    right: -85%
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0b2739
+}
+
+@media (max-width:600px) {
+    .fibra-carrucel-info__beneficios-title.paso1::before {
+        right: 109%;
+        width: 37%
+    }
+
+    .fibra-carrucel-info__beneficios-title::after {
+        left: 100%
+    }
+
+    .fibra-carrucel-info__beneficios-title.paso1::after {
+        left: 108%;
+        width: 38%
+    }
+
+    .fibra-carrucel-info__beneficios-title::before {
+        right: 100%
+    }
+
+    .imperdible::before {
+        width: 89%;
+        right: -102%
+    }
+
+    .imperdible::after {
+        width: 89%;
+        left: -102%
+    }
+
+    .stefa-planes-fibra-trios .fibra-carrucel-header__gratis-rosa {
+        top: 5px !important
+    }
+
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header {
+        border: 0;
+        padding: 55px 5px 0 !important
+    }
+}
+
+.stefa-planes-fibra-trios {
+    max-width: 1227px;
+    margin: auto
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+    position: relative;
+    border-radius: 15px;
+    width: auto;
+    margin: 0 auto
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information {
+    font-weight: 400;
+    font-size: 20px;
+    color: #019df4;
+    margin-top: 20px
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_information.informacion2 {
+    margin-top: -25px
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_simetrica {
+    font-weight: 400;
+    font-size: 12px;
+    color: #50535a
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_regular {
+    font-weight: 400;
+    font-size: 14px;
+    color: #50535a;
+    margin-bottom: 4px
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body .fibra-carrucel-body-item {
+    display: flex;
+    flex-direction: row
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body {
+    padding: 20px
+}
+
+.stefa-planes-fibra-trios .fibra-carrucel-header_btn_compra_online,
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-cintillo.cintillo-general2 {
+    background-color: #019df4
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-header_btn .fibra-carrucel-btn_item {
+    font-weight: 700;
+    color: #019bf2;
+    text-align: center;
+    cursor: pointer;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #019bf2;
+    outline: 0;
+    font-size: 16px;
+    line-height: 42px;
+    width: 230px;
+    height: 42px;
+    background-color: transparent;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .4s
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container {
+    padding-top: 25px;
+    padding-bottom: 0
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_mbps span {
+    font-size: 20px
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-header .fibra-carrucel-info-container .fibra-carrucel-info.espacio1 {
+    margin-bottom: -22px
+}
+
+@media (min-width:600px) {
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .swiper-pagination.dots-solo {
+        display: block !important
+    }
+
+    .stefa-planes-fibra-trios {
+        margin-bottom: 40px
+    }
+}
+
+.divisor-mbps-meses {
+    border-top: 1px solid #ededed;
+    width: 268px;
+    margin: 0 -4px
+}
+
+.stefa-planes-fibra-trios .fibra-carrucel-header__gratis-rosa {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #86888c;
+    position: relative;
+    top: 4px
+}
+
+.stefa-planes-fibra-trios .fibra-carrucel-header__gratis-rosa.rosa5 {
+    margin-bottom: -6px
+}
+
+.stefa-planes-fibra-trios .fibra-carrucel-info-container .fibra-carrucel-info .fibra-carrucel-header_regular.regular2 {
+    margin-bottom: 24px !important
+}
+
+@media (max-width:768px) {
+
+    .stefa-planes-fibra-internet .planes-fibra-optica_container .planes-tv-carrucel .fibra-carrucel-slide_container,
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container {
+        width: auto
+    }
+
+    .stefa-planes-fibra-internet .fibra-carrucel-header__gratis-rosa {
+        width: 100%
+    }
+
+    .stefa-planes-fibra-trios .fibra-carrucel-header__gratis-rosa.rosa5 {
+        margin-bottom: 17px
+    }
+
+    .stefa-planes-fibra-trios .divisor-mbps-meses {
+        margin-top: 30px !important
+    }
+
+    .stefa-planes-fibra-trios .fibra-carrucel-header__gratis-rosa {
+        margin-bottom: 14px
+    }
+
+    .divisor-mbps-meses {
+        width: 100%;
+        margin: 0
+    }
+}
+
+.stefa-planes-fibra-trios .fibra_carrucel_beneficios_texto::before {
+    content: "";
+    background: #d3d4d3;
+    width: 9%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    right: -2%;
+    top: 6px
+}
+
+.stefa-planes-fibra-trios .fibra_carrucel_beneficios_texto::after {
+    content: "";
+    background: #d3d4d3;
+    width: 8%;
+    display: inline;
+    position: absolute;
+    height: 1px;
+    left: -2%;
+    top: 6px
+}
+
+.imperdible.cintillo4,
+.imperdible.cintillo5,
+.imperdible.cintillo6 {
+    padding-top: 14px;
+    padding-bottom: 15px
+}
+
+.imperdible.cintillo4::after,
+.imperdible.cintillo5::after,
+.imperdible.cintillo6::after {
+    top: 21px;
+    width: 75%;
+    left: -82%
+}
+
+.imperdible.cintillo4::before,
+.imperdible.cintillo5::before,
+.imperdible.cintillo6::before {
+    top: 21px;
+    width: 75%;
+    right: -82%
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto {
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #019df4;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--mbps {
+    font-weight: 700;
+    font-size: 12px;
+    color: #86888c;
+    margin: 0
+}
+
+.nateevo-movTotal--planes .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--info {
+    font-weight: 400;
+    font-size: 12px;
+    color: #86888c;
+    margin: 0
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-icon {
+    width: 15%
+}
+
+.portlet-journal-content .journal-content-article img {
+    max-width: none !important
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--info {
+    font-weight: 400;
+    font-size: 12px;
+    color: #86888c
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--mbps {
+    font-weight: 700;
+    font-size: 12px;
+    color: #86888c
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate .beneficios--box-body .box--title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #019df4
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto .beneficios--box.beneficios--box-separate {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-slide_container .fibra-carrucel-body.active .fibra-carrucel-oculto {
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.cyberenabled .fibra-carrucel-info-container {
+    justify-content: center;
+    max-width: 210px;
+    margin: auto
+}
+
+.cyberenabled .parrillahogar__cybersticker {
+    display: block !important;
+    width: 70px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: -80px
+}
+
+.cyberenabled .fibra-carrucel-info-container .fibra-carrucel-info {
+    text-align: start;
+    position: relative !important;
+    width: fit-content !important;
+    margin-left: -7px
+}
+
+.cyberenabled .fibra-carrucel-header_mbps span {
+    font-size: 24px !important
+}
+
+.cyberenabled .fibra-carrucel-header_mbps {
+    letter-spacing: -.7px
+}
+
+.cybernov .parrillahogar__cybersticker {
+    width: auto;
+    height: auto;
+    display: block !important;
+    position: absolute;
+    right: -10px;
+    top: -35px;
+    object-fit: cover
+}
+
+.cybernov .swiper-slide {
+    padding-top: 35px !important
+}
+
+.cybernov .fibra-carrucel-info-container .fibra-carrucel-info {
+    position: static !important
+}
+
+@media (min-width:992px) {
+
+    #JUh-2 .stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-next.s-button--next,
+    #JUh-2 .stefa-planes-fibra-internet .planes-fibra-optica_container .swiper-button-prev.s-button--prev,
+    #JUh-3 .stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-next.s-button--next,
+    #JUh-3 .stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-prev.s-button--prev {
+        display: none
+    }
+}
+
+.fibra_carrucel_beneficios_texto {
+    margin: 0 5px 1rem;
+    line-height: 14px
+}
+
+.cintillotvgratis {
+    background: #f4f4f4;
+    border-radius: 8px;
+    height: 30px;
+    margin-bottom: 1em;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 0
+}
+
+.descuento60 {
+    height: 52px;
+    width: 255px;
+    padding: 8px 70px;
+    background: var(--realce-magenta-realce, #e63780);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-top: 8px !important
+}
+
+.descuento60__pequeño {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.5px;
+    width: 81px;
+    display: flex;
+    margin: 0 auto
+}
+
+.stefa-accordion-tyc--disney li {
+    margin-bottom: 20px
+}
+
+.stefa-accordion-tyc--disney ol {
+    padding-left: 20px
+}
+
+.gamertabs__tvapp {
+    display: flex;
+    max-width: 223px;
+    margin: 0 auto 20px !important;
+    background-color: #f6f6f6;
+    color: #50535a;
+    padding: 7px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px
+}
+
+.gamertabs__tvapp--svg {
+    margin-right: 8px
+}
+
+.gamertabs__tvapp span {
+    font-size: 10px
+}
+
+.gamertabs__tvapp b {
+    font-size: 12px
+}
+
+.instalacion-gratis-content {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 4px 32px;
+    flex-direction: column;
+    width: 233px;
+    margin: 18px auto 0
+}
+
+.instalacion-gratis__titulo {
+    color: #0b2739;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    white-space: nowrap
+}
+
+.instalacion-gratis__advertencia {
+    color: #50535a;
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom: 0;
+    white-space: nowrap
+}
+
+.instalacion-gratis__advertencia span {
+    color: #019df4
+}
+
+.instalacion-gratis__titulo span {
+    color: #008edd;
+    margin: 0 4px
+}
+
+.stefa-slided__planes__head.nuevo {
+    padding-top: 2em;
+    height: 170px
+}
+
+.stefa-slided__planes__head {
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #0b2739;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    min-height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    bottom: 55px;
+    width: 104%;
+    border-radius: 15px 15px 0 0
+}
+
+.stefa-slided__planes__head__ttl {
+    margin-bottom: 0
+}
+
+.stefa-slided__planes__head__oferta {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: -.025em
+}
+
+.stefa-slided__planes__head__txt {
+    margin-bottom: 0;
+    font-size: 14px
+}
+
+.stefa-slided__planes__head__oferta__big {
+    font-size: 28px;
+    line-height: 34px
+}
+
+.stefa-slided__planes__head__oferta__big--old {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3c5261;
+    text-decoration: line-through
+}
+
+.solo-internet__meses6 {
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    left: 4px
+}
+
+.solo-internet__tabs_planes--cintillo.cintillo2 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -55px;
+    z-index: 1;
+    right: 0
+}
+
+.solo-internet__tabs_planes--cintillo {
+    width: 100%;
+    height: 28px;
+    padding: 4px 16px;
+    background: #a13ea1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    margin-bottom: 15px
+}
+
+.plan-card-benefits {
+    align-items: center;
+    border-radius: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 12px auto 10px;
+    padding: 0 8px;
+    height: 44px;
+    width: 233px;
+    background-color: #f6f6f6
+}
+
+.plan-card-benefits img {
+    border-radius: 8px
+}
+
+.plan-card-benefits-text {
+    color: #313235;
+    display: flex;
+    flex-flow: column nowrap
+}
+
+.plan-card-benefits-title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    margin: 0
+}
+
+.plan-card-benefits-subtitle {
+    font-size: 10px !important;
+    font-weight: 400;
+    margin: 0
+}
+
+.stefa-slided__planes__body__label.label2 {
+    top: 160px
+}
+
+.stefa-slided__planes__body__label {
+    display: flex;
+    padding: 3px 4px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #e63780;
+    position: absolute;
+    left: 50%;
+    top: 145px;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+    gap: 2px;
+    flex-wrap: nowrap;
+    width: max-content
+}
+
+.hv_div_plan_2_meses {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    top: -16px;
+    left: 140px;
+    background: #019df4;
+    width: 233px;
+    height: 65px;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 1em
+}
+
+.hv_img_plan_2_meses {
+    width: 36px;
+    height: 36px
+}
+
+.hv_txt_plan_2_meses {
+    display: flex;
+    font-size: 10px;
+    flex-direction: column;
+    line-height: 1.4em;
+    color: #fff;
+    align-items: center;
+    text-wrap: nowrap;
+    margin-left: 15px
+}
+
+.hv_txt_plan_2_meses span {
+    font-style: italic;
+    font-size: 10px
+}
+
+.hv_txt_plan_2_meses b {
+    font-size: 14px
+}
+
+@media (max-width:600px) {
+    .stefa-planes-fibra-trios .fibra_carrucel_beneficios_texto::before {
+        width: 16%
+    }
+
+    .stefa-planes-fibra-trios .fibra_carrucel_beneficios_texto::after {
+        width: 15%
+    }
+
+    .descuento60,
+    .velocidad-cinta {
+        width: 280px
+    }
+
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-next.s-button--next,
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .swiper-button-prev.s-button--prev {
+        display: none
+    }
+
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-ver-mas {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    .stefa-planes-fibra-trios .planes-fibra-optica_container .planes-internet-trios .fibra-carrucel-ver-mas .fibra-carrucel_btn {
+        font-weight: 400;
+        font-size: 16px;
+        outline: 0;
+        text-decoration: underline;
+        color: #019df4
+    }
+
+    .fibra-carrucel_btn_comp_online {
+        width: 234px;
+        margin: 0 auto
+    }
+
+    .imperdible::before {
+        width: 89%;
+        right: -102%
+    }
+
+    .imperdible::after {
+        width: 89%;
+        left: -102%
+    }
+
+    .cintillotvgratis {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 15px 0;
+        width: 275px;
+        height: 46px;
+        margin: 1em auto !important
+    }
+
+    .fibra-carrucel-header_btn {
+        margin-bottom: 12px
+    }
+
+    .instalacion-gratis-content {
+        margin-bottom: 34px
+    }
+
+    .planes-fibra-optica_container-segunda .instalacion-gratis-content {
+        margin-bottom: 8px
+    }
+}
+
+.canaln-exclusivo__itembtn:hover {
+    background-color: #3c5261;
+    color: #fff
+}
+
+.stefa-slided__planes__head__oferta__small {
+    line-height: 18px;
+    font-size: 14px;
+}
+</style>
