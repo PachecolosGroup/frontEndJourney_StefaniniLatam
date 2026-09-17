@@ -1,0 +1,65 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.stefa-tabbed__tab-item'); // Selecciona las pestañas
+    const tabContents = document.querySelectorAll('.stefa-tabbed__parent'); // Selecciona el contenido de las pestañas
+
+    // Añade un evento de clic a cada pestaña
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-item'); // Obtiene el valor del atributo data-item
+
+            // Quitar la clase activa de todas las pestañas
+            tabs.forEach((t) => t.classList.remove('lt__tab-item--active'));
+
+            // Agregar la clase activa a la pestaña clicada
+            tab.classList.add('lt__tab-item--active');
+
+            // Quitar la clase activa de todos los contenidos
+            tabContents.forEach((content) => content.classList.remove('lt__parent--active'));
+
+            // Agregar la clase activa al contenido correspondiente
+            const activeContent = document.querySelector(`.stefa-tabbed__parent[tab-id="${targetTab}"]`);
+            if (activeContent) {
+                activeContent.classList.add('lt__parent--active');
+            }
+        });
+    });
+});
+
+ 
+ </script>
+<script src="/wp-content/themes/movistar-residencial/assets/migracion/movistar-total/swipper11.min.js"></script>
+<script type='text/javascript' src='/documents/assets/Stefa-Utils/JS_OCT_Stefa_Libreria.js' id='swiper-js-js'></script>
+
+ <script>
+var swiper = new Swiper("#beneficios--trios--oculto .swiper-container", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+        allowTouchMove : false,
+      },
+    },
+  });
+
+
+YUI().use("aui-toggler", function (Y) { new Y.TogglerDelegate({ animated: true, closeAllOnExpand: true, container: "#khir_faq-accordion", content: ".faqs-accordion__answer", expanded: false, header: ".faqs-accordion__question", transition: { duration: .2, easing: "cubic-bezier(0, 0.1, 0, 1)" } }) });
+
+YUI().use("aui-toggler", function (Y) { new Y.TogglerDelegate({ animated: true, closeAllOnExpand: true, container: "#vjep_faq-accordion", content: ".faqs-accordion__answer", expanded: false, header: ".faqs-accordion__question", transition: { duration: .2, easing: "cubic-bezier(0, 0.1, 0, 1)" } }) });
+
+
+</script>
