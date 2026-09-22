@@ -1,0 +1,209 @@
+<section class="information pr-0 pt-4 pb-4 pl-0 p-lg-5 p-md-5 p-sm-5">
+  <div class="information__content">
+    <div class="row">
+      <div class="col-content-blog">
+        <div class="card card--information">
+          <div class="card--information__content">
+            <!-- Inicio blog -->
+            <div class="card__row--display" id="start">
+              <li class="item-list">
+                Esta transformación también se refleja en mejores resultados en
+                primer semestre 2026, como el crecimiento en EBITDA de 37% y S/
+                239 millones en eficiencias acumuladas.
+              </li>
+
+              <br />
+              <p>
+                Movistar alcanzó por quinto mes consecutivo el primer lugar en
+                el ranking de indicadores 5G de la herramienta “Checa tu
+                Internet Móvil” de OSIPTEL. La compañía lideró 3 de los 6
+                indicadores evaluados en la última medición disponible
+                correspondiente a julio, entre ellos velocidad de descarga,
+                consolidando el desempeño de su red 5G y la experiencia de
+                navegación de sus clientes.
+              </p>
+              <p>
+                Este liderazgo se da en medio de la modernización de la red
+                móvil que la compañía viene desplegando a nivel nacional.
+                Actualmente, cerca del 60% del tráfico móvil de sus clientes ya
+                opera sobre esta nueva red, y el proceso continuará avanzando
+                hasta completar la migración.
+              </p>
+              <p>
+                Estos resultados ocurren como parte de la transformación de la
+                operación, que también se refleja en su desempeño financiero. En
+                el primer semestre de 2026, el EBITDA creció 37% frente al mismo
+                periodo del año anterior. Asimismo, logró eficiencias por S/239
+                millones, recursos que fueron destinados para impulsar
+                inversiones en la red.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-type-product="MOVFI001" id="CWB_Promo_Banner"> </div>
+  </div>
+</section>
+<style>
+  .stefa-leyend-card {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .stefa-leyend-card p {
+    margin: 0;
+    color: #50535a;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .stefa-lyd-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .information,
+  .information * {
+    box-sizing: border-box;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .information .information__content,
+  .information .information__content .row,
+  .information .col-content-blog,
+  .information .card--information,
+  .information .card--information__content,
+  .information .card__row--display {
+    width: 100%;
+  }
+
+  .information .information__content .row {
+    margin: 0;
+  }
+
+  .information .col-content-blog {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .information .card--information {
+    padding: 10px;
+  }
+
+  .information .card__row--display {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .information .card__row--display p {
+    margin: 0;
+  }
+
+  .information .card__row--display > br {
+    display: none;
+  }
+
+  .information .item-list {
+    display: list-item;
+    margin-left: 20px;
+    color: #50535a;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .information .img_artistas,
+  .information .img_mujeres-blog {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .information .img_artistas {
+    max-width: 211px;
+    aspect-ratio: 211 / 253;
+  }
+
+  .information .img_mujeres-blog {
+    max-width: 379px;
+    aspect-ratio: 379 / 253;
+  }
+
+  #CWB_Promo_Banner {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    .information .card--information {
+      padding: 40px 40px 32px;
+    }
+
+    .information .card__row--display {
+      grid-template-columns: 211px 379px;
+      column-gap: 10px;
+      row-gap: 16px;
+    }
+
+    .information .card__row--display p,
+    .information .card__row--display .item-list {
+      grid-column: 1 / -1;
+    }
+
+    .information .img_artistas {
+      width: 211px;
+      height: 253px;
+      max-width: none;
+    }
+
+    .information .img_mujeres-blog {
+      width: 379px;
+      height: 253px;
+      max-width: none;
+    }
+
+    .stefa_contenedor_items-blog .title {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .information .card__row--display {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .information .img_mujeres-blog {
+      order: 1;
+      width: 323px;
+      max-width: 100%;
+      height: 215px;
+      margin: 0 auto !important;
+      aspect-ratio: auto;
+    }
+
+    .information .img_artistas {
+      order: 2;
+      width: 323px;
+      max-width: 100%;
+      height: 386px;
+      margin: 0 auto !important;
+      aspect-ratio: auto;
+    }
+  }
+</style>
