@@ -1,0 +1,112 @@
+<!-- long cards -->
+<section class="stefa-3trio-items">
+  <div class="stefa-3trio-items-holder">
+    <div class="stefa-3trio-iteem stefa-border">
+      <img
+        class="stefa-3trio-icon"
+        src="https://cert-cdn.movistar.com.pe/2026/09/IconWrapper-design-only.svg"
+        alt=""
+        srcset=""
+      />
+      <div class="stefa-3trio-item-text-main">
+        <p class="stefa-3trio-item-text-imp"><b>¡Importante!</b></p>
+        <p class="stefa-3trio-item-text-2">
+          Si es tu primera transacción con nosotros, la podrás realizar sin
+          ingresar dicha contraseña. Para las siguientes transacciones será
+          obligatorio su uso.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stefa-3trio-items {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .stefa-3trio-items p {
+    margin: 0px;
+  }
+  .stefa-3trio-item-text-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .stefa-3trio-items-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1260px) {
+    .stefa-3trio-iteem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: normal;
+      border-radius: 10px;
+      margin: 0 auto;
+      width: 700px;
+      padding: 20px;
+    }
+  }
+
+  .stefa-3trio-icon {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+  }
+  /* fonts */
+  .stefa-3trio-item-text-imp {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(49, 50, 53, 1);
+    max-width: 1000px;
+  }
+
+  .stefa-3trio-item-text-2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: rgba(49, 50, 53, 1);
+    max-width: 1000px;
+  }
+
+  .stefa-border {
+    border: 1px solid rgba(1, 155, 239, 1);
+  }
+
+  @media screen and (max-width: 768px) {
+    .stefa-3trio-items {
+      margin: none !important;
+    }
+    .stefa-3trio-item {
+      width: 470px;
+    }
+    .stefa-3trio-item-text-2 {
+      padding: 10px;
+    }
+    .stefa-3trio-item {
+      gap: 0;
+    }
+    .stefa-3trio-items-holder {
+      gap: 10px;
+    }
+    .stefa-3trio-iteem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: normal;
+      border-radius: 10px;
+      max-width: 470px;
+      padding: 20px;
+    }
+  }
+</style>

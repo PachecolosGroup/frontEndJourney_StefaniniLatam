@@ -1,0 +1,24 @@
+------------------ SCRIPT HEADER ---------------------------
+
+<!--<link rel='stylesheet' type='text/css' data-senna-track="temporary" href='/wp-content/themes/movistar-residencial/assets/css/CSS_SEPT_Contraseña-unica.css'>-->
+<link rel='stylesheet' type='text/css' data-senna-track="temporary" href='https://cert-cdn.movistar.com.pe/documents/assets/atencion-al-cliente/crea-tu-contrasena/CSS_SEPT_Contrasena-unica.css'>
+
+<style>
+.stefa--carrucel--operador {
+position: relative;
+}
+</style>
+
+----------- SCRIPT FOOTER -----------------------------
+
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/swiper-bundle.min.js" id="swiper-js-js"></script>
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/custom-slider-swiper-v1.0.js" id="movistar-residencial-swiper-js-js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script type="text/javascript" src="/wp-content/themes/movistar-residencial/assets/js/custom-slider-v1.0.js"></script>
+
+<script src="/wp-content/themes/movistar-residencial/assets/js/JS_SEP_Contraseña-Unica_min.js"></script>
+<script>
+    const slider = new Slider;
+    slider.initSliderHero("#bheromizp_ .glide-banner_hero", 1 > 1)
+</script>

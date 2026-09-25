@@ -1,0 +1,170 @@
+<section class="stefa-sect6-ytb">
+  <div class="stefa-sect6-holder">
+    <div class="stefa-sect6-ytbcontent">
+      <picture>
+        <source
+          class="stefa-sect6-img"
+          media="(max-width: 768px)"
+          srcset="
+            https://cert-cdn.movistar.com.pe/2026/09/Card-1-desktop_11zon-1.webp
+          "
+        />
+        <img
+          class="stefa-sect6-img"
+          src="https://cert-cdn.movistar.com.pe/2026/09/Card-1-mobile_11zon-1.webp"
+          alt="Descripción de la imagen"
+        />
+      </picture>
+    </div>
+    <div class="stefa-sect6-txt-cont">
+      <h2 class="stefa_opt--sect6-h3">
+        <b>Contraseña Única</b>
+      </h2>
+      <p class="stefa_opt--sect6-pg">
+        La Contraseña Única Movistar te permite validar tu identidad para
+        efectuar trámites de nuevos servicios móvil, portabilidad, cambio de
+        titularidad o cambio de Sim Card (Chip). Esta contraseña es personal,
+        secreta y no la debes compartir con nadie. A través de su uso se
+        previenen fraudes vinculados a tus servicios con nosotros.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stefa-sect6-ytb {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(107, 108, 111, 1);
+    padding: 40px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    max-width: 1100px;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .stefa-sect6-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 5% auto;
+    max-width: 1230px;
+    margin: 0 auto;
+  }
+  .stefa-sect6-txt-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 500px;
+    align-items: flex-start;
+  }
+
+  .stefa-sect6-iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+  }
+
+  /* Fonts */
+  .stefa_opt--sect6-h3 {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: rgba(11, 39, 57, 1);
+  }
+  .stefa_opt--sect6-pg {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: rgba(107, 108, 111, 1);
+    margin: 0%;
+    padding-bottom: 20px;
+  }
+
+  /* boton */
+  .stefa_opt--sect6-btn {
+    width: 290px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: rgba(107, 108, 111, 1);
+    background-color: #019bef;
+    font-weight: bold;
+    border: none;
+    border-radius: 60px;
+    margin: 0%;
+    text-decoration: none !important;
+  }
+  .stefa_opt--sect6-btn:hover {
+    color: rgba(107, 108, 111, 1);
+    background-color: #017ac1;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+
+  .stefa-sect6-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  img.stefa-sect6-img {
+    width: 500px;
+    border-radius: 20px;
+  }
+
+  /* Responsive */
+
+  @media (max-width: 768px) {
+    .stefa-sect6-ytb {
+      padding: 50px;
+    }
+    .stefa-sect6-holder {
+      display: flex;
+      flex-direction: column !important;
+      padding: 0px;
+      max-width: fit-content;
+    }
+    .stefa-sect6-txt-cont {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      /*  max-width: 600px; */
+      align-items: center;
+    }
+    /*     .stefa-sect6-iframe {
+      width: 380px;
+      height: 220px;
+      border-radius: 20px;
+    }
+ */
+    /* Fonts */
+    .stefa_opt--sect4-h3 {
+      font-size: 22px;
+    }
+    .stefa_opt--sect4-pg {
+      font-size: 18px;
+    }
+    /* boton */
+    .stefa_opt--sect6-btn {
+      width: 260px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: rgba(107, 108, 111, 1);
+      background-color: #019bef;
+      font-weight: bold;
+      border: none;
+      border-radius: 60px;
+      margin: 0%;
+    }
+  }
+</style>

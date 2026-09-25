@@ -1,0 +1,175 @@
+<section class="stefa-ctc-main">
+  <div class="stefa-ctc-holder">
+    <div class="stefa-ctc-holder-1">
+      <p class="stefa-ctc-title">¿Cuándo rige y cómo se genera?</p>
+      <p class="stefa-ctc-p">
+        Es obligatoria desde una fecha puntual y se crea junto con tu trámite,
+        no antes.
+      </p>
+    </div>
+    <div class="stefa-ctc-holder-2">
+      <div class="stefa-ctc-holder-item">
+        <picture>
+          <source
+            class="stefa-ctc-img"
+            media="(max-width: 768px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/09/webp_sep_ctc_img1.webp
+            "
+          />
+          <img
+            class="stefa-ctc-img"
+            src="https://cert-cdn.movistar.com.pe/2026/09/webp_sep_ctc_img1.webp"
+            alt="Descripción de la imagen"
+          />
+        </picture>
+        <p class="stefa-ctc-p2">
+          Su uso es obligatorio <b>desde marzo de 2023</b>
+        </p>
+      </div>
+      <div class="stefa-ctc-holder-item">
+        <picture>
+          <source
+            class="stefa-ctc-img"
+            media="(max-width: 768px)"
+            srcset="
+              https://cert-cdn.movistar.com.pe/2026/09/webp_sep_ctc_img2.webp
+            "
+          />
+          <img
+            class="stefa-ctc-img"
+            src="https://cert-cdn.movistar.com.pe/2026/09/webp_sep_ctc_img2.webp"
+            alt="Descripción de la imagen"
+          />
+        </picture>
+        <p class="stefa-ctc-p2">
+          Se genera al solicitar una <b>nueva transacción</b>, no antes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .stefa-ctc-main {
+    padding: 10px;
+    background-color: rgba(11, 39, 57, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  .stefa-ctc-main p {
+    margin: 0px;
+    padding: 0px;
+  }
+  .stefa-ctc-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+    margin: 0 auto;
+  }
+  /* items */
+  .stefa-ctc-holder-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .stefa-ctc-holder-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* fonts */
+  .stefa-ctc-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .stefa-ctc-p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .stefa-ctc-p2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /* inner Items */
+  .stefa-ctc-holder-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+  }
+  .stefa-ctc-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .stefa-ctc-img {
+    width: 96px;
+    height: 96px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .stefa-ctc-main {
+      width: auto;
+      padding: 50px;
+    }
+    .stefa-ctc-holder-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .stefa-ctc-holder {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    /* fonts */
+    .stefa-ctc-title {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .stefa-ctc-p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .stefa-ctc-p2 {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+</style>
