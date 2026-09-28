@@ -1,0 +1,217 @@
+<style>
+  :root {
+    --imgGradientSrc: url("https://cert-cdn.movistar.com.pe/2026/01/tv-family.webp");
+  }
+  .container-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Sección Superior */
+  .top-section {
+    padding: 60px 20px;
+  }
+
+  .top-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .tv-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .vivo-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00a9e0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .channel-badge {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background: #00a9e0;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .top-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .top-text p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Sección Inferior */
+  .bottom-section {
+    background: #09202e;
+    color: white;
+    padding: 0px 20px;
+  }
+
+  .bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .bottom-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .text-h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+
+  .bottom-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    opacity: 0.95;
+  }
+
+  .family-image {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .family-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  .img-degrade {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: /* degradé izquierdo */
+      linear-gradient(to right, #09202e 0%, #09202e 12%, rgb(0 50 82 / 0%) 48%),
+      /* degradé derecho */
+      linear-gradient(to left, #09202e 0%, #09202e -6%, rgb(0 50 82 / 0%) 18%),
+      /* imagen */ var(--imgGradientSrc);
+    background-size: cover;
+    background-position: center;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .bottom-text {
+      position: relative;
+      margin-top: -100px;
+      z-index: 1;
+    }
+    .family-image {
+      min-width: 100%;
+      transform: scale(1.3);
+    }
+    .img-degrade {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      background-image: /* degradé izquierdo */
+        linear-gradient(to top, #09202e 0%, #09202e 12%, rgb(0 50 82 / 0%) 48%),
+        var(--imgGradientSrc);
+      background-size: cover;
+      background-position: center;
+    }
+    .top-section,
+    .bottom-section {
+      padding: 40px 15px;
+    }
+
+    .top-content {
+      flex-direction: column;
+    }
+
+    .bottom-content {
+      flex-direction: column-reverse;
+    }
+
+    .text-h2 {
+      font-size: 32px;
+    }
+
+    .tv-screen {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<!-- Sección Superior -->
+<section class="top-section">
+  <div class="container-content">
+    <div class="top-content">
+      <div class="tv-image">
+        <div class="tv-screen">
+          <img src="https://cert-cdn.movistar.com.pe/2026/01/tv.webp" />
+        </div>
+      </div>
+      <div class="top-text">
+        <h2 class="text-h2">
+          + Plus TV Life en vivo: gastronomía, viajes y cultura en Movistar TV
+        </h2>
+        <p>
+          Disfruta de lo mejor de la gastronomía, los viajes y la cultura
+          peruana en un solo canal. Con <b>+Plus TV Life</b> y
+          <b>Movistar TV App</b> puedes ver
+          <b>TV en vivo y televisión por internet</b> desde tu hogar o donde
+          estés, con tu plan de <b>internet fibra óptica + TV </b>Movistar.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Inferior -->
+<section class="bottom-section">
+  <div class="container-content">
+    <div class="bottom-content">
+      <div class="bottom-text">
+        <h2 class="text-h2 text-white">
+          TV en vivo y televisión por internet con Movistar TV App
+        </h2>
+        <p>
+          Con Movistar TV App disfruta
+          <strong>TV en vivo y televisión por internet</strong>
+          donde estés. Solo necesitas tu usuario de Mi Movistar y una conexión
+          de
+          <strong>internet hogar o fibra óptica Movistar</strong> para acceder a
+          <strong>+Plus TV Life</strong> y a más de 30 canales en vivo de TV
+          nacional e internacional en dos dispositivos a la vez.
+        </p>
+      </div>
+      <div class="family-image">
+        <div class="img-degrade"></div>
+      </div>
+    </div>
+  </div>
+</section>
