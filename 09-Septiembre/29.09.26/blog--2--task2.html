@@ -1,0 +1,220 @@
+<section class="information pr-0 pt-4 pb-4 pl-0 p-lg-5 p-md-5 p-sm-5">
+  <div class="information__content">
+    <div class="row">
+      <div class="col-content-blog">
+        <div class="card card--information">
+          <div class="card--information__content">
+            <!-- Inicio blog -->
+            <div class="card__row--display" id="start">
+              <p>
+                Movistar fue reconocida con mención Sobresaliente en la
+                Certificación Empresa con Gestión Sostenible (EGS) 2025,
+                iniciativa impulsada por Perú Sostenible que evalúa el desempeño
+                de las organizaciones en materia ambiental, social y de
+                gobernanza en base a estándares internacionales de
+                sostenibilidad. Este resultado marca un hito para la compañía,
+                al ser la primera vez que alcanza este nivel de reconocimiento
+                desde la implementación del actual esquema de categorías.
+                Destaca además que lideró el sector telecomunicaciones en este
+                reconocimiento.
+              </p>
+              <p>
+                La Certificación EGS analiza el desempeño de las organizaciones
+                en cuatro dimensiones:  ambiental, social, gobernanza y modelo
+                de negocio e innovación, promoviendo la integración de aspectos
+                ASG en la estrategia del negocio y en la toma de decisiones. La
+                categoría Sobresaliente distingue a las empresas que demuestran
+                un alto nivel de madurez en la incorporación de estos
+                estándares.
+              </p>
+              <p>
+                Para la edición 2025 se evaluó la gestión de Movistar en materia
+                de sostenibilidad. La compañía está comprometida con promover
+                una conectividad con propósito. Por ello, en el frente
+                ambiental, destacó el contar con la certificación internacional
+                ISO 14001, así como su impulso a la economía circular -habiendo
+                gestionado en 2025 más de 700 toneladas de residuos
+                electrónicos- y la eficiencia energética en sus operaciones a
+                partir de la renovación y modernización de sus redes fijas y
+                móviles.
+              </p>
+              <p>
+                En el frente social, se destaca el impulso a la inclusión
+                digital del país llegando a más de 58 mil comunidades rurales a
+                nivel nacional promoviendo así el acceso a oportunidades y mayor
+                desarrollo; además, se valoró para esta distinción la gestión
+                responsable de su equipo humano y en el frente gobernanza,
+                gestiona bajo altos estándares de ética, integridad y una sólida
+                gestión de riesgos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div data-type-product="MOVFI001" id="CWB_Promo_Banner"> </div>
+  </div>
+</section>
+<style>
+  .stefa-leyend-card {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .stefa-leyend-card p {
+    margin: 0;
+    color: #50535a;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .stefa-lyd-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .information,
+  .information * {
+    box-sizing: border-box;
+  }
+
+  .information {
+    width: 100%;
+  }
+
+  .information .information__content,
+  .information .information__content .row,
+  .information .col-content-blog,
+  .information .card--information,
+  .information .card--information__content,
+  .information .card__row--display {
+    width: 100%;
+  }
+
+  .information .information__content .row {
+    margin: 0;
+  }
+
+  .information .col-content-blog {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .information .card--information {
+    padding: 10px;
+  }
+
+  .information .card__row--display {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .information .card__row--display p {
+    margin: 0;
+  }
+
+  .information .card__row--display > br {
+    display: none;
+  }
+
+  .information .item-list {
+    display: list-item;
+    margin-left: 20px;
+    color: #50535a;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .information .img_artistas,
+  .information .img_mujeres-blog {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .information .img_artistas {
+    max-width: 211px;
+    aspect-ratio: 211 / 253;
+  }
+
+  .information .img_mujeres-blog {
+    max-width: 379px;
+    aspect-ratio: 379 / 253;
+  }
+
+  #CWB_Promo_Banner {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 768px) {
+    .information .card--information {
+      padding: 40px 40px 32px;
+    }
+
+    .information .card__row--display {
+      grid-template-columns: 211px 379px;
+      column-gap: 10px;
+      row-gap: 16px;
+    }
+
+    .information .card__row--display p,
+    .information .card__row--display .item-list {
+      grid-column: 1 / -1;
+    }
+
+    .information .img_artistas {
+      width: 211px;
+      height: 253px;
+      max-width: none;
+    }
+
+    .information .img_mujeres-blog {
+      width: 379px;
+      height: 253px;
+      max-width: none;
+    }
+
+    .stefa_contenedor_items-blog .title {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .information .card__row--display {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    .information .img_mujeres-blog {
+      order: 1;
+      width: 323px;
+      max-width: 100%;
+      height: 215px;
+      margin: 0 auto !important;
+      aspect-ratio: auto;
+    }
+
+    .information .img_artistas {
+      order: 2;
+      width: 323px;
+      max-width: 100%;
+      height: 386px;
+      margin: 0 auto !important;
+      aspect-ratio: auto;
+    }
+  }
+</style>

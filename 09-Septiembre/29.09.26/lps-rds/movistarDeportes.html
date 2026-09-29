@@ -1,0 +1,353 @@
+<!-- Section V -- terminado -->
+<section class="stefa-mp-sct3">
+  <div
+    class="stefa-mp-sct3-carousel"
+    lt-carousel="view: 1; view1200: 2; autoheight: false"
+    style="padding: 0px 0px 40px 0px"
+  >
+    <div class="swiper-container">
+      <!-- static tex -->
+      <div class="stefa-cn-sct2-item-2" style="padding-bottom: 20px">
+        <!--  <p class="stefa-mp-sct3-card-txt-1">
+          ¿Cómo disfrutar de <b>Canal N?</b>
+        </p> -->
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- card1 -->
+          <div class="stefa-mp-sct3-card">
+            <div class="stefa-mp-sct3-card-img-holder">
+              <img
+                class="stefa-mp-sct3-card-img"
+                src="https://cert-cdn.movistar.com.pe/2026/09/WEBP_SEP_CN4_2.webp"
+                alt="Image"
+              />
+            </div>
+
+            <div class="stefa-mp-sct3-card-holder-txt">
+              <div class="stefa-mp-sct3-txtflex">
+                <p class="stefa-mp-sct3-card-txt1">Si no eres cliente TV</p>
+                <p class="stefa-mp-sct3-card-txt2">
+                  <b>¡Contrata hoy mismo!​</b>
+                </p>
+                <p class="stefa-mp-sct3-card-txt3">
+                  Contrata hoy mismo tu servicio de TV y podrás tener acceso a
+                  +100 canales para disfrutar​.
+                </p>
+              </div>
+              <div class="stefa-mp-sct-reFix">
+                <a
+                  href="https://www.movistar.com.pe/hogar/movistar-tv-cable"
+                  target="_blank"
+                  class="stefa-mp-sct3-card-btn-a"
+                  >Consulta Aquí</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- card2 -->
+          <div class="stefa-mp-sct3-card">
+            <div class="stefa-mp-sct3-card-img-holder">
+              <img
+                class="stefa-mp-sct3-card-img"
+                src="https://cert-cdn.movistar.com.pe/2026/09/WEBP_SEP_CN4_1.webp"
+                alt="Image"
+              />
+            </div>
+
+            <div class="stefa-mp-sct3-card-holder-txt">
+              <div class="stefa-mp-sct3-txtflex">
+                <p class="stefa-mp-sct3-card-txt1">Si ya eres cliente</p>
+                <p class="stefa-mp-sct3-card-txt2">
+                  <b>Mira M.Deportes en vivo hoy ​</b>
+                </p>
+                <p class="stefa-mp-sct3-card-txt3">
+                  Mira MDeportes en vivo hoy en Movistar TV APP. Sigue las
+                  noticias del deporte y programas exclusivos donde quieras​.
+                </p>
+              </div>
+              <div class="stefa-mp-sct-reFix">
+                <a
+                  href="https://play.google.com/store/apps/details?hl=es_PE&id=pe.movistar.go&utm_source=chatgpt.com&pli=1"
+                  target="_blank"
+                  class="stefa-mp-sct3-card-btn"
+                  >Activa sin costo aqui</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination dots-solo"></div>
+    </div>
+  </div>
+</section>
+<style>
+  /* =========================================================
+     BASE (escritorio)
+     ========================================================= */
+  .stefa-mp-sct3 {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  .stefa-mp-sct3-carousel {
+    max-width: 800px; /* 2 cards de 370px + separación */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Slides del mismo alto */
+  .stefa-mp-sct3 .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+
+  /* Título estático (comentado en el HTML) */
+  .stefa-mp-sct3-card-txt-1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(10, 38, 57, 1);
+  }
+
+  /* ---------- CARD ---------- */
+  .stefa-mp-sct3-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 370px;
+    min-height: 490px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden; /* nada se sale de la card */
+    border-radius: 16px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    background-color: #fff;
+  }
+
+  .stefa-mp-sct3-card-img-holder {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .stefa-mp-sct3-card-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .stefa-mp-sct3-card-holder-txt {
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1; /* ocupa el resto de la card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* texto arriba, botón abajo */
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .stefa-mp-sct3-txtflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .stefa-mp-sct-reFix {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* ---------- TEXTOS ---------- */
+  .stefa-mp-sct3-card-txt1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: rgba(49, 50, 53, 1);
+  }
+
+  .stefa-mp-sct3-card-txt2 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(107, 108, 111, 1);
+  }
+
+  .stefa-mp-sct3-card-txt3 {
+    margin: 0;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(107, 108, 111, 1);
+  }
+
+  /* ---------- BOTONES (ambos iguales) ---------- */
+  .stefa-mp-sct3-card-btn,
+  .stefa-mp-sct3-card-btn-a {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%; /* nunca más ancho que la card */
+    min-height: 42px;
+    padding: 7px 14px;
+    border: 1.5px solid rgba(1, 155, 239, 1);
+    border-radius: 70px;
+    color: rgba(1, 155, 239, 1);
+    font-weight: 400;
+    font-size: 20.5px;
+    line-height: 27px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal; /* si no cabe, baja de línea */
+    cursor: pointer;
+  }
+
+  .stefa-mp-sct3-card-btn {
+    width: 260px;
+  }
+
+  /* =========================================================
+     TABLET / MÓVIL: hasta 768px
+     ========================================================= */
+  @media screen and (max-width: 768px) {
+    .stefa-mp-sct3 {
+      padding: 20px 10px;
+    }
+
+    .stefa-mp-sct3-card {
+      max-width: 310px;
+      min-height: 0;
+    }
+
+    .stefa-mp-sct3-card-img-holder {
+      height: 200px;
+    }
+
+    .stefa-mp-sct3-card-holder-txt {
+      padding: 16px;
+    }
+
+    .stefa-mp-sct3-card-txt1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .stefa-mp-sct3-card-txt2 {
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(49, 50, 53, 1);
+    }
+
+    .stefa-mp-sct3-card-txt3 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .stefa-mp-sct3-card-btn,
+    .stefa-mp-sct3-card-btn-a {
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+    .stefa-mp-sct3-card-btn {
+      width: 100%;
+    }
+
+    .stefa-mp-sct3-card-txt-1 {
+      font-size: 32px;
+    }
+
+    .stefa-cn-sct2-item-2 {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  /* =========================================================
+     680px o menos
+     ========================================================= */
+  @media screen and (max-width: 680px) {
+    .stefa-mp-sct3-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  /* =========================================================
+     480px o menos (móviles comunes)
+     ========================================================= */
+  @media screen and (max-width: 480px) {
+    .stefa-mp-sct3 {
+      padding: 20px 8px;
+    }
+
+    .stefa-mp-sct3-card {
+      max-width: 290px;
+    }
+
+    .stefa-mp-sct3-card-img-holder {
+      height: 190px;
+    }
+
+    .stefa-mp-sct3-card-txt1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    .stefa-mp-sct3-card-btn,
+    .stefa-mp-sct3-card-btn-a {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  /* =========================================================
+     360px o menos (móviles pequeños)
+     ========================================================= */
+  @media screen and (max-width: 360px) {
+    .stefa-mp-sct3-card {
+      max-width: 260px;
+    }
+
+    .stefa-mp-sct3-card-img-holder {
+      height: 170px;
+    }
+
+    .stefa-mp-sct3-card-holder-txt {
+      padding: 14px;
+    }
+
+    .stefa-mp-sct3-card-txt3 {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  /* =========================================================
+     DEPURACIÓN (descomenta para ver los límites de cada bloque)
+     ========================================================= */
+  /*
+  .stefa-mp-sct3-card            { outline: 2px solid red; }
+  .stefa-mp-sct3-card-img-holder { outline: 2px solid orange; }
+  .stefa-mp-sct3-card-holder-txt { outline: 2px solid green; }
+  .stefa-mp-sct3-txtflex         { outline: 2px dashed blue; }
+  .stefa-mp-sct-reFix            { outline: 2px dashed purple; }
+  .stefa-mp-sct3-card-btn,
+  .stefa-mp-sct3-card-btn-a      { outline: 2px solid magenta; }
+  */
+</style>

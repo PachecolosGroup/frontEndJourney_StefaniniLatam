@@ -1,0 +1,50 @@
+<style>
+  /* fixx total */
+  @media screen and (max-width: 680px) {
+    .stefa-mp-sct3-card {
+      width: auto !important;
+      height: 440px !important;
+    }
+
+    .stefa-cn-sct3-card-holder {
+      width: 280px !important;
+      height: auto !important;
+    }
+    .stefa-cn-card {
+      width: 280px;
+      height: auto !important;
+    }
+  }
+
+  /* =========================================================
+   PAGINACIÓN (dots)
+   ========================================================= */
+  .stefa-mp-sct3 .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Bullet inactivo: círculo gris */
+  .stefa-mp-sct3 .swiper-pagination .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 !important; /* el espacio lo da el gap */
+    border-radius: 50%;
+    background: #979797;
+    opacity: 1;
+    transition:
+      width 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  /* Bullet activo: píldora azul */
+  .stefa-mp-sct3 .swiper-pagination .swiper-pagination-bullet-active {
+    width: 38px;
+    height: 8px;
+    border-radius: 9px;
+    background: rgba(1, 155, 239, 1);
+    opacity: 1;
+  }
+</style>
