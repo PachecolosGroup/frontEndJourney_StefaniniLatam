@@ -1,0 +1,322 @@
+<section class="stefa-refix--prrl stefa_rdv26 stefa_parrillas_home_vKenos mt-4">
+  <div class="stefa-disfruta-container">
+    <div class="stefa-disfruta-header">
+      <h1 class="stefa-disfruta-title">
+        <b>Aprende</b> cómo afiliarte a <b>Preplan</b>
+      </h1>
+    </div>
+  </div>
+  <div class="stefa_nav-tabs__body">
+    <div lt-tabs>
+      <!-- Contenido de las tabs -->
+      <div class="lt__parent lt__parent--active">
+        <div
+          class="stefa-kenosHome-tabContainer"
+          lt-carousel="view: 1; view1200: 3; autoheight: false"
+        >
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- card1 -->
+              <div class="swiper-slide">
+                <div
+                  class="section-renovar-requipo-linea__paso stefa_learn__step"
+                >
+                  <ul class="stefa_learn__list">
+                    <li class="stefa_learn__item" data-step="1">
+                      Ingresa a la App Mi Movistar
+                    </li>
+                  </ul>
+                </div>
+
+                <img
+                  alt="equipos-logos-linea"
+                  class="equipos-logos-linea stefa_learn__img"
+                  data-widget="image"
+                  height="480"
+                  loading="lazy"
+                  src="https://cert-cdn.movistar.com.pe/2026/10/Mockup-vector.webp"
+                  width="256"
+                />
+              </div>
+              <!-- card2 -->
+              <div class="swiper-slide">
+                <div
+                  class="section-renovar-requipo-linea__paso stefa_learn__step"
+                >
+                  <ul class="stefa_learn__list">
+                    <li class="stefa_learn__item" data-step="2">
+                      Haz clic en <b>"Afiliarme"</b> dentro de <br />
+                      la sección "Únete a Preplan"
+                    </li>
+                  </ul>
+                </div>
+
+                <img
+                  alt="equipos-logos-linea"
+                  class="equipos-logos-linea stefa_learn__img"
+                  data-widget="image"
+                  height="480"
+                  loading="lazy"
+                  src="https://cert-cdn.movistar.com.pe/2026/10/Mockup-vector.webp"
+                  width="256"
+                />
+              </div>
+              <!-- card3 -->
+              <div class="swiper-slide">
+                <div
+                  class="section-renovar-requipo-linea__paso stefa_learn__step"
+                >
+                  <ul class="stefa_learn__list">
+                    <li class="stefa_learn__item" data-step="3">
+                      Confirma la afiliación y ¡listo!
+                    </li>
+                  </ul>
+                </div>
+
+                <img
+                  alt="equipos-logos-linea"
+                  class="equipos-logos-linea stefa_learn__img"
+                  data-widget="image"
+                  height="480"
+                  loading="lazy"
+                  src="https://cert-cdn.movistar.com.pe/2026/10/Mockup-vector.webp"
+                  width="256"
+                />
+              </div>
+            </div>
+
+            <div class="stefa_learn__btn-container">
+              <a
+                class="stefa_learn_btn"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Descarga la app
+              </a>
+            </div>
+
+            <div class="swiper-pagination dots-solo"></div>
+          </div>
+
+          <div class="swiper-button-prev lt-button-prev">
+            <svg
+              class="icon svg--inline"
+              fill="none"
+              focusable="false"
+              role="img"
+              viewbox="0 0 8 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 1.7334L1 7.7334L7 13.7334"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="swiper-button-next lt-button-next">
+            <svg
+              class="icon svg--inline"
+              fill="none"
+              focusable="false"
+              role="img"
+              viewbox="0 0 8 15"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 13.7334L7 7.7334L1 1.7334"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* reFix img size */
+  .stefa_learn__step {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    /* margin-bottom: 16px; */
+  }
+
+  .stefa_learn__step .stefa_learn__list {
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  /* Imagen: mismo tamaño en todos los slides */
+  .stefa_learn__img {
+    display: block;
+    width: 100%;
+    max-width: 256px;
+    height: auto;
+    aspect-ratio: 256 / 480;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    .stefa_learn__step {
+      min-height: 40px;
+    }
+  }
+
+  /* Texto + counter */
+  .stefa_learn__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: stefa-learn;
+    /*     padding-bottom: 4%; */
+  }
+  .stefa_learn__item {
+    counter-increment: stefa-learn;
+    position: relative;
+    padding-left: 40px;
+    min-height: 28px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #313235;
+  }
+
+  .stefa_learn__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .stefa_learn__item::before {
+    content: attr(data-step);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #0b2739;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 767px) {
+    .stefa_learn__item {
+      font-size: 14px;
+    }
+  }
+
+  /* Contenedor de tabs */
+  .stefa-refix--prrl .stefa_parrillas_home_vKenos__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 976px;
+    margin: 0 auto 16px;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .stefa_learn__btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .stefa_learn_btn {
+    padding-top: 16px;
+    padding-right: 64px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    border-radius: 60px;
+    background: #019bef;
+    background: rgba(11, 39, 57, 1);
+    color: white;
+    margin: 0 auto;
+    text-decoration: none !important;
+    font-weight: 700;
+  }
+
+  /* Estado normal */
+  .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item {
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff !important;
+    color: #313235;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Hover de tab inactiva: permanece blanco, sin cambio a gris */
+  .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item:hover,
+  .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item:focus,
+  .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item:active {
+    background: #fff !important;
+  }
+
+  /* Estado activo */
+  .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item.lt__tab-item--active {
+    border: 1px solid #019bef;
+    background: #019bef !important;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /* La tab activa se mantiene azul también en hover/focus/active */
+  .stefa-refix--prrl
+    .stefa_nav-tabs__body
+    .lt__tab-item.lt__tab-item--active:hover,
+  .stefa-refix--prrl
+    .stefa_nav-tabs__body
+    .lt__tab-item.lt__tab-item--active:focus,
+  .stefa-refix--prrl
+    .stefa_nav-tabs__body
+    .lt__tab-item.lt__tab-item--active:active {
+    background: #019bef !important;
+    color: #fff !important;
+  }
+
+  /* Paneles */
+  .stefa-refix--prrl .lt__parent {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  @media (max-width: 600px) {
+    .stefa-refix--prrl .stefa_parrillas_home_vKenos__tabs {
+      max-width: 360px;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .stefa-refix--prrl .stefa_nav-tabs__body .lt__tab-item {
+      min-height: 72px;
+      padding: 12px;
+    }
+  }
+</style>
