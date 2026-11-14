@@ -1,0 +1,1472 @@
+<div class="marketplace-container">
+  <!-- HEADER -->
+  <header class="top-header">
+    <button class="brand-logo" data-view="catalog">
+      Tienda online Marketplace
+    </button>
+    <div class="cart-icon-wrapper" id="goToCart">
+      🛒 <span class="cart-badge">0</span>
+    </div>
+  </header>
+
+  <!-- ================= VISTA 1: CATÁLOGO ================= -->
+  <div id="view-catalog" class="app-view">
+    <div class="stepper-wrapper">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 25%"></div>
+      </div>
+      <span class="stepper-text">1/4 - Elegir productos</span>
+    </div>
+
+    <section class="store-header">
+      <span class="store-badge">Tienda</span>
+      <h1 class="store-title">Accesorios</h1>
+      <p class="store-subtitle">Encuentra lo que necesitas</p>
+    </section>
+
+    <div class="toolbar">
+      <nav class="category-pills">
+        <button class="pill active" data-category="todos">Todas</button>
+        <button class="pill" data-category="audio">Audio</button>
+        <button class="pill" data-category="energia">Energía</button>
+        <button class="pill" data-category="home">Home</button>
+        <button class="pill" data-category="smartwatch">Smartwatch</button>
+      </nav>
+      <div class="search-box">
+        <input
+          type="search"
+          id="product-search"
+          placeholder="Buscar productos..."
+        />
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+
+    <p class="product-count" id="product-count-text">Calculando...</p>
+
+    <div class="product-grid" id="product-grid"></div>
+
+    <!-- Controles de Paginación -->
+    <div class="pagination" id="pagination-controls"></div>
+  </div>
+  <!-- ================= VISTA 2: DETALLE DE PRODUCTO ================= -->
+  <div id="view-detail" class="app-view" style="display: none">
+    <div class="stepper-wrapper">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 50%"></div>
+      </div>
+      <span class="stepper-text">2/4 - Ver producto</span>
+    </div>
+
+    <section class="product-detail-header">
+      <button class="back-link" data-view="catalog">&larr; Volver</button>
+      <span class="store-badge" id="detail-category">--</span>
+      <h1 class="store-title" id="detail-title">--</h1>
+    </section>
+
+    <div class="product-tabs">
+      <button class="tab-btn active" data-tab="detalle">Detalle</button>
+      <button class="tab-btn" data-tab="faq">Preguntas</button>
+    </div>
+
+    <div class="tab-content active" id="detalle">
+      <h2 class="section-heading">Conoce tu producto</h2>
+      <div class="product-image-box-detail">
+        <img
+          src="https://cert-cdn.movistar.com.pe/2026/11/color_op_1.webp"
+          id="detail-img"
+          alt="Detalle"
+        />
+      </div>
+      <ul class="feature-list">
+        <li>Diseño ergonómico y moderno</li>
+        <li>Materiales de alta calidad y resistencia</li>
+        <li>Garantía oficial y soporte técnico</li>
+      </ul>
+
+      <div class="quantity-section">
+        <h3>Cantidad</h3>
+        <p class="quantity-hint" id="stock-hint">Stock disponible: --</p>
+        <div class="quantity-selector">
+          <button class="qty-btn" id="decrease">-</button>
+          <span class="qty-value" id="qty">1</span>
+          <button class="qty-btn" id="increase">+</button>
+        </div>
+      </div>
+
+      <div class="product-footer-bar">
+        <div class="footer-product-info">
+          <span class="footer-name" id="footer-product-name">--</span>
+          <span class="footer-price" id="footer-product-price">--</span>
+        </div>
+        <button class="btn-add-cart" id="btnAddCart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="tab-content" id="faq" style="display: none">
+      <h2 class="section-heading">Preguntas frecuentes</h2>
+      <p>
+        ¿Tienes dudas sobre compatibilidad o garantía? Puedes devolverlo hasta 7
+        días después de tu compra.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= VISTA 3: CARRITO ================= -->
+  <div id="view-cart" class="app-view" style="display: none">
+    <div class="stepper-wrapper">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 75%"></div>
+      </div>
+      <span class="stepper-text">3/4 - Revisar carrito</span>
+    </div>
+
+    <button class="back-link" data-view="catalog">&larr; Volver</button>
+
+    <div class="cart-summary-header">
+      <span class="store-badge">Tu compra</span>
+      <h2>Revisa tu carrito</h2>
+    </div>
+
+    <p class="cart-items-count" id="cart-counter-text">
+      0 unidades · 0 productos
+    </p>
+    <div id="cart-items-container"></div>
+
+    <div class="cart-totals-section">
+      <span class="label">Total</span>
+      <span class="amount" id="cart-total-amount">S/ 0.00</span>
+    </div>
+    <button class="btn-primary-action" id="btn-checkout">Continuar</button>
+  </div>
+</div>
+<!-- scripts -->
+<script>
+  // BD de PRODUCTOS
+  const productsDatabase = {
+    // Audio (8 items)
+
+    "AUD-001": {
+      id: "AUD-001",
+      name: "AirPods 4 ANC",
+      brand: "Apple",
+      category: "Audio",
+      price: 989.0,
+      regularPrice: 1099.0, // precio antes del descuento
+      badge: "Oferta limitada", // opcional; si no lo pones, no se muestra
+      colors: [
+        {
+          name: "Navy Blue",
+          hex: "#2f3437",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+        },
+        {
+          name: "Arena",
+          hex: "#7d6e57",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_2.webp",
+        },
+        {
+          name: "Color3",
+          hex: "",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_3.webp",
+        },
+        {
+          name: "Color4",
+          hex: "#28A7CE",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_4.webp",
+        },
+        {
+          name: "Color5",
+          hex: "#073513",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_5.webp",
+        },
+        {
+          name: "Color6",
+          hex: "#B8E20C",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_6.webp",
+        },
+      ],
+      stock: 10,
+      img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+    },
+    // Energía (10 items)
+    "ENE-001": {
+      id: "ENE-001",
+      name: "APPLE 20W USB-C ADAPTER",
+      brand: "Energía",
+      category: "Energía",
+      price: 99.0,
+      stock: 15,
+      regularPrice: 1099.0, // precio antes del descuento
+      badge: "Oferta limitada", // opcional; si no lo pones, no se muestra
+      colors: [
+        {
+          name: "Navy Blue",
+          hex: "#2f3437",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+        },
+        {
+          name: "Arena",
+          hex: "#7d6e57",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_2.webp",
+        },
+        {
+          name: "Color3",
+          hex: "",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_3.webp",
+        },
+        {
+          name: "Color4",
+          hex: "#28A7CE",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_4.webp",
+        },
+        {
+          name: "Color5",
+          hex: "#073513",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_5.webp",
+        },
+        {
+          name: "Color6",
+          hex: "#B8E20C",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_6.webp",
+        },
+      ],
+      stock: 10,
+      img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+    },
+
+    // Home (6 items)
+    "HOM-001": {
+      id: "HOM-001",
+      name: "APPLE AIRTAG 1 PACK",
+      brand: "Home",
+      category: "Home",
+      price: 99.0,
+      stock: 15,
+      regularPrice: 1099.0, // precio antes del descuento
+      badge: "Oferta limitada", // opcional; si no lo pones, no se muestra
+      colors: [
+        {
+          name: "Navy Blue",
+          hex: "#2f3437",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+        },
+        {
+          name: "Arena",
+          hex: "#7d6e57",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_2.webp",
+        },
+        {
+          name: "Color3",
+          hex: "",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_3.webp",
+        },
+        {
+          name: "Color4",
+          hex: "#28A7CE",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_4.webp",
+        },
+        {
+          name: "Color5",
+          hex: "#073513",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_5.webp",
+        },
+        {
+          name: "Color6",
+          hex: "#B8E20C",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_6.webp",
+        },
+      ],
+      stock: 10,
+      img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+    },
+
+    // Smartwatch (6 items)
+    "SWT-001": {
+      id: "SWT-001",
+      name: "HONOR HC WATCH 2I",
+      brand: "Smartwatch",
+      category: "Smartwatch",
+      price: 99.0,
+      stock: 15,
+      regularPrice: 1099.0, // precio antes del descuento
+      badge: "Oferta limitada", // opcional; si no lo pones, no se muestra
+      colors: [
+        {
+          name: "Navy Blue",
+          hex: "#2f3437",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+        },
+        {
+          name: "Arena",
+          hex: "#7d6e57",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_2.webp",
+        },
+        {
+          name: "Color3",
+          hex: "",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_3.webp",
+        },
+        {
+          name: "Color4",
+          hex: "#28A7CE",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_4.webp",
+        },
+        {
+          name: "Color5",
+          hex: "#073513",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_5.webp",
+        },
+        {
+          name: "Color6",
+          hex: "#B8E20C",
+          img: "https://cert-cdn.movistar.com.pe/2026/11/color_op_6.webp",
+        },
+      ],
+      stock: 10,
+      img: "https://cert-cdn.movistar.com.pe/2026/11/WEBP_NOV_Demo_marketplace_producto.webp",
+    },
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    let stockInventory = JSON.parse(localStorage.getItem("marketplace_stock"));
+    if (!stockInventory) {
+      stockInventory = {};
+      Object.values(productsDatabase).forEach(
+        (p) => (stockInventory[p.id] = p.stock),
+      );
+      localStorage.setItem("marketplace_stock", JSON.stringify(stockInventory));
+    }
+
+    let cart = JSON.parse(localStorage.getItem("marketplace_cart"));
+    if (!cart || !Array.isArray(cart) || cart.length === 0) {
+      cart = []; // Arranca limpio si se desea, o puedes poner items por defecto
+    }
+
+    // Variables del DOM
+    const catalogView = document.getElementById("view-catalog");
+    const detailView = document.getElementById("view-detail");
+    const cartView = document.getElementById("view-cart");
+    const cartBadge = document.querySelector(".cart-badge");
+    const productGrid = document.getElementById("product-grid");
+    const productCountText = document.getElementById("product-count-text");
+    const paginationControls = document.getElementById("pagination-controls");
+
+    // Paginación y Filtros
+    let allProducts = Object.values(productsDatabase);
+    let filteredProducts = [...allProducts];
+    let currentPage = 1;
+    const itemsPerPage = 10;
+    let currentCategory = "todos";
+    let searchQuery = "";
+
+    // Estado del detalle actual
+    let currentProductId = null;
+    let currentQty = 1;
+
+    function getMaxAllowedLimit(productId) {
+      const totalStock =
+        stockInventory[productId] ?? productsDatabase[productId].stock;
+      return Math.max(1, Math.floor(totalStock * 0.7));
+    }
+
+    // ========= LÓGICA DE CATÁLOGO Y PAGINACIÓN =========
+    function applyFilters() {
+      filteredProducts = allProducts.filter((p) => {
+        const matchCat =
+          currentCategory === "todos" ||
+          p.category.toLowerCase() === currentCategory;
+        const matchSearch = p.name.toLowerCase().includes(searchQuery);
+        return matchCat && matchSearch;
+      });
+      currentPage = 1; // Reinicia a la pág 1 al filtrar
+      renderCatalogPage();
+    }
+
+    function renderCatalogPage() {
+      productGrid.innerHTML = "";
+      const start = (currentPage - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      const paginated = filteredProducts.slice(start, end);
+
+      if (paginated.length === 0) {
+        productGrid.innerHTML =
+          '<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">No se encontraron productos.</p>';
+      }
+
+      paginated.forEach((product) => {
+        const colors = product.colors || [];
+        const discount = product.regularPrice
+          ? Math.round((1 - product.price / product.regularPrice) * 100)
+          : 0;
+
+        const card = document.createElement("article");
+        card.className = "product-card";
+        card.innerHTML = `
+    <div class="card-image-box">
+      ${
+        product.badge
+          ? `
+        <span class="card-offer-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l2.4 1.8 3-.2.9 2.9 2.5 1.7-1 2.8 1 2.8-2.5 1.7-.9 2.9-3-.2L12 22l-2.4-1.8-3 .2-.9-2.9-2.5-1.7 1-2.8-1-2.8 2.5-1.7.9-2.9 3 .2z"/>
+            <path d="M9 15l6-6"/><circle cx="9.5" cy="9.5" r=".8"/><circle cx="14.5" cy="14.5" r=".8"/>
+          </svg>
+          ${product.badge}
+        </span>`
+          : ""
+      }
+        <img src="${colors[0]?.img || product.img}" alt="${product.name}" loading="lazy"/>
+    </div>
+
+    <div class="card-content">
+      <span class="card-brand">${product.brand ?? product.category}</span>
+      <h2 class="card-title">${product.name}</h2>
+
+      ${
+        colors.length
+          ? `
+        <div class="card-colors">
+          <span class="card-color-name">${colors[0].name}</span>
+          <div class="card-swatches">
+            ${colors
+              .map(
+                (c, i) => `
+              <button type="button" class="swatch ${i === 0 ? "active" : ""}"
+                style="--swatch: ${c.hex}" data-color-name="${c.name}"
+                aria-label="${c.name}"
+                data-img="${c.img || product.img}"
+                ></button>`,
+              )
+              .join("")}
+          </div>
+        </div>`
+          : ""
+      }
+
+      <div class="card-price-row">
+        <p class="card-price">S/${product.price.toLocaleString("es-PE")}</p>
+        ${discount > 0 ? `<span class="card-discount">-${discount}%</span>` : ""}
+      </div>
+      ${
+        product.regularPrice
+          ? `
+        <p class="card-regular-price">Precio regular: S/ ${product.regularPrice.toLocaleString("es-PE")}</p>`
+          : ""
+      }
+
+      <button class="card-btn" data-action="view-detail" data-id="${product.id}">Ver producto</button>
+    </div>
+  `;
+
+        // Al hacer clic en un color: cambia el activo, el nombre y la foto
+        const cardImg = card.querySelector(".card-image-box img");
+
+        card.querySelectorAll(".swatch").forEach((sw) => {
+          sw.addEventListener("click", () => {
+            card
+              .querySelectorAll(".swatch")
+              .forEach((s) => s.classList.remove("active"));
+            sw.classList.add("active");
+            card.querySelector(".card-color-name").textContent =
+              sw.dataset.colorName;
+            cardImg.src = sw.dataset.img;
+            cardImg.alt = `${product.name} - ${sw.dataset.colorName}`;
+          });
+        });
+
+        productGrid.appendChild(card);
+      });
+
+      // Actualizar el texto del contador
+      const startText = filteredProducts.length > 0 ? start + 1 : 0;
+      const endText = Math.min(end, filteredProducts.length);
+      productCountText.textContent = `Mostrando ${startText} - ${endText} de ${filteredProducts.length} productos`;
+
+      renderPaginationButtons();
+      attachCatalogEvents();
+    }
+
+    function renderPaginationButtons() {
+      paginationControls.innerHTML = "";
+      const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+
+      if (totalPages <= 1) return; // Oculta paginación si hay 1 sola página
+
+      // Botón Anterior
+      const btnPrev = document.createElement("button");
+      btnPrev.className = "page-btn";
+      btnPrev.textContent = "Anterior";
+      btnPrev.disabled = currentPage === 1;
+      btnPrev.addEventListener("click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderCatalogPage();
+          scrollToTop();
+        }
+      });
+      paginationControls.appendChild(btnPrev);
+
+      // Números de Página
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.className = `page-btn ${i === currentPage ? "active" : ""}`;
+        btn.textContent = i;
+        btn.addEventListener("click", () => {
+          currentPage = i;
+          renderCatalogPage();
+          scrollToTop();
+        });
+        paginationControls.appendChild(btn);
+      }
+
+      // Botón Siguiente
+      const btnNext = document.createElement("button");
+      btnNext.className = "page-btn";
+      btnNext.textContent = "Siguiente";
+      btnNext.disabled = currentPage === totalPages;
+      btnNext.addEventListener("click", () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderCatalogPage();
+          scrollToTop();
+        }
+      });
+      paginationControls.appendChild(btnNext);
+    }
+
+    function scrollToTop() {
+      document.querySelector(".toolbar").scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Eventos Filtros
+    document.querySelectorAll(".pill").forEach((pill) => {
+      pill.addEventListener("click", () => {
+        document
+          .querySelectorAll(".pill")
+          .forEach((p) => p.classList.remove("active"));
+        pill.classList.add("active");
+        currentCategory = pill.getAttribute("data-category");
+        applyFilters();
+      });
+    });
+
+    document.getElementById("product-search").addEventListener("input", (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      applyFilters();
+    });
+
+    // ========= LÓGICA GENERAL SPA Y CARRITO =========
+    function updateBadge() {
+      const totalUnits = cart.reduce(
+        (sum, item) => sum + (Number(item.quantity) || 0),
+        0,
+      );
+      if (cartBadge) cartBadge.textContent = totalUnits;
+    }
+
+    function saveAll() {
+      localStorage.setItem("marketplace_cart", JSON.stringify(cart));
+      localStorage.setItem("marketplace_stock", JSON.stringify(stockInventory));
+      updateBadge();
+    }
+
+    function switchView(viewName) {
+      catalogView.style.display = "none";
+      detailView.style.display = "none";
+      cartView.style.display = "none";
+
+      if (viewName === "catalog") {
+        renderCatalogPage();
+        catalogView.style.display = "block";
+      }
+      if (viewName === "detail") detailView.style.display = "block";
+      if (viewName === "cart") {
+        renderCart();
+        cartView.style.display = "block";
+      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.querySelectorAll("[data-view]").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        switchView(btn.getAttribute("data-view"));
+      });
+    });
+
+    document
+      .getElementById("goToCart")
+      .addEventListener("click", () => switchView("cart"));
+
+    // Evento: Entrar al Detalle del Producto
+    function attachCatalogEvents() {
+      document
+        .querySelectorAll('[data-action="view-detail"]')
+        .forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const id = e.currentTarget.getAttribute("data-id");
+            const product = productsDatabase[id];
+
+            currentProductId = product.id;
+            const availableStock = stockInventory[product.id];
+            const maxAllowed = getMaxAllowedLimit(product.id);
+
+            document.getElementById("detail-title").textContent = product.name;
+            document.getElementById("detail-category").textContent =
+              product.category;
+            document.getElementById("detail-img").src = product.img;
+            document.getElementById("footer-product-name").textContent =
+              product.name;
+            document.getElementById("footer-product-price").textContent =
+              `S/ ${product.price.toFixed(2)}`;
+            document.getElementById("stock-hint").textContent =
+              `Stock disponible: ${availableStock} (Máximo 70%: ${maxAllowed} u.)`;
+
+            currentQty = 1;
+            document.getElementById("qty").textContent = currentQty;
+
+            switchView("detail");
+          });
+        });
+    }
+
+    // Control Cantidad (Vista Detalle)
+    const qtySpan = document.getElementById("qty");
+    document.getElementById("increase").addEventListener("click", () => {
+      const maxAllowed = getMaxAllowedLimit(currentProductId);
+      const existingInCart = cart.find((i) => i.id === currentProductId);
+      const inCartQty = existingInCart ? existingInCart.quantity : 0;
+
+      if (currentQty + inCartQty < maxAllowed) {
+        currentQty++;
+        qtySpan.textContent = currentQty;
+      } else {
+        alert(
+          `Límite alcanzado. Solo se permite seleccionar máximo ${maxAllowed} unidades (70% del stock).`,
+        );
+      }
+    });
+
+    document.getElementById("decrease").addEventListener("click", () => {
+      if (currentQty > 1) {
+        currentQty--;
+        qtySpan.textContent = currentQty;
+      }
+    });
+
+    // Pestañas (Vista Detalle)
+    document.querySelectorAll(".tab-btn").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        document
+          .querySelectorAll(".tab-btn")
+          .forEach((t) => t.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((c) => (c.style.display = "none"));
+        tab.classList.add("active");
+        document.getElementById(tab.getAttribute("data-tab")).style.display =
+          "block";
+      });
+    });
+
+    // Botón "Agregar al carrito"
+    document.getElementById("btnAddCart").addEventListener("click", () => {
+      const product = productsDatabase[currentProductId];
+      const maxAllowed = getMaxAllowedLimit(product.id);
+      const existing = cart.find((item) => item.id === product.id);
+      const currentInCart = existing ? existing.quantity : 0;
+
+      if (currentInCart + currentQty > maxAllowed) {
+        alert(
+          `No se puede exceder la cantidad máxima permitida de ${maxAllowed} unidades.`,
+        );
+        return;
+      }
+
+      if (existing) existing.quantity += currentQty;
+      else cart.push({ ...product, quantity: currentQty });
+
+      saveAll();
+      alert(
+        `¡Se agregaron ${currentQty} unidad/es de ${product.name} al carrito!`,
+      );
+      switchView("cart");
+    });
+
+    // Renderizar Carrito (Vista Carrito)
+    function renderCart() {
+      const container = document.getElementById("cart-items-container");
+      container.innerHTML = "";
+      let totalUnits = 0,
+        totalPrice = 0;
+
+      if (!cart || cart.length === 0) {
+        container.innerHTML =
+          '<p style="text-align: center; color: var(--text-muted); padding: 2rem;">El carrito está vacío.</p>';
+      } else {
+        cart.forEach((item, index) => {
+          const qty = Number(item.quantity) || 0;
+          const price = Number(item.price) || 0;
+          totalUnits += qty;
+          const itemTotal = price * qty;
+          totalPrice += itemTotal;
+
+          const card = document.createElement("div");
+          card.className = "cart-item-card";
+          card.innerHTML = `
+              <div class="cart-item-info">
+                <img src="${item.img}" class="cart-item-img" alt="${item.name}">
+                <div class="cart-item-details">
+                  <span class="item-cat">${item.category}</span>
+                  <h3>${item.name}</h3>
+                  <span class="item-price">S/ ${price.toFixed(2)} c/u</span>
+                </div>
+              </div>
+              <div class="cart-item-controls">
+                <div class="mini-qty-selector">
+                  <button class="mini-qty-btn decrease-qty" data-index="${index}">-</button>
+                  <span class="mini-qty-value">${qty}</span>
+                  <button class="mini-qty-btn increase-qty" data-index="${index}">+</button>
+                </div>
+                <span class="cart-item-total">S/ ${itemTotal.toFixed(2)}</span>
+                <button class="btn-delete" data-index="${index}">Eliminar</button>
+              </div>
+            `;
+          container.appendChild(card);
+        });
+      }
+
+      document.getElementById("cart-counter-text").textContent =
+        `${totalUnits} unidades · ${cart.length} productos`;
+      document.getElementById("cart-total-amount").textContent =
+        `S/ ${totalPrice.toFixed(2)}`;
+      updateBadge();
+
+      // Controladores Carrito
+      document.querySelectorAll(".increase-qty").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const idx = e.target.getAttribute("data-index");
+          const item = cart[idx];
+          const maxAllowed = getMaxAllowedLimit(item.id);
+
+          if (item.quantity < maxAllowed) {
+            item.quantity++;
+            saveAll();
+            renderCart();
+          } else {
+            alert(
+              `Has alcanzado el límite máximo permitido de ${maxAllowed} unidades (70% del stock).`,
+            );
+          }
+        });
+      });
+
+      document.querySelectorAll(".decrease-qty").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const idx = e.target.getAttribute("data-index");
+          if (cart[idx].quantity > 1) {
+            cart[idx].quantity--;
+            saveAll();
+            renderCart();
+          }
+        });
+      });
+
+      document.querySelectorAll(".btn-delete").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          cart.splice(e.target.getAttribute("data-index"), 1);
+          saveAll();
+          renderCart();
+        });
+      });
+    }
+
+    // Procesar Compra
+    document.getElementById("btn-checkout").addEventListener("click", () => {
+      if (cart.length === 0) return alert("Tu carrito está vacío.");
+      cart.forEach((item) => {
+        if (stockInventory[item.id] !== undefined) {
+          stockInventory[item.id] = Math.max(
+            0,
+            stockInventory[item.id] - item.quantity,
+          );
+        }
+      });
+      cart = [];
+      saveAll();
+      alert("¡Compra procesada con éxito! El stock ha sido descontado.");
+      switchView("catalog");
+    });
+
+    // INICIO
+    applyFilters(); // Aplica filtros y renderiza página 1
+    updateBadge();
+  });
+</script>
+
+<!-- General Style -->
+
+<style>
+  :root {
+    --primary-blue: #0071e3;
+    --bg-card: #f8f9fa;
+    --border-card: #e5e7eb;
+    --text-muted: #6b7280;
+    --text-dark: #111827;
+    --radius-lg: 16px;
+    --radius-pill: 9999px;
+  }
+
+  .marketplace-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  /* Header */
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-card);
+    margin-bottom: 1.5rem;
+  }
+
+  .brand-logo {
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .cart-icon-wrapper {
+    position: relative;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--primary-blue);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  /* Stepper */
+  .stepper-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .progress-bar {
+    height: 4px;
+    background-color: #e5e7eb;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background-color: var(--primary-blue);
+    transition: width 0.3s ease;
+  }
+
+  .stepper-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+
+  /* Titles */
+  .store-badge {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .store-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin: 0.25rem 0;
+  }
+
+  .store-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-pills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .pill.active {
+    background: var(--primary-blue);
+    color: #fff;
+    border-color: var(--primary-blue);
+  }
+
+  .search-box {
+    position: relative;
+    min-width: 260px;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 0.6rem 2.5rem 0.6rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    outline: none;
+  }
+
+  .search-box input:focus {
+    border-color: var(--primary-blue);
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .product-count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Grid de Productos */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  /* edit card Figma style */
+
+  .product-card {
+    border: 1px solid #d6dbe1;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+  .card-image-box {
+    position: relative;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .card-image-box img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+  }
+
+  .card-offer-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: #e8f4fd;
+    color: #0b6bcb;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.35rem 0.6rem;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .card-brand {
+    font-size: 1rem;
+    color: #5f6b7a;
+    text-transform: uppercase;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0.25rem 0 2rem;
+  }
+
+  .card-colors {
+    margin-bottom: 1rem;
+  }
+  .card-color-name {
+    display: block;
+    font-size: 0.8rem;
+    color: #1f2937;
+    margin-bottom: 0.4rem;
+  }
+  .card-swatches {
+    display: flex;
+    gap: 0.6rem;
+  }
+  .swatch {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--swatch);
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px #c5ccd4;
+    cursor: pointer;
+    padding: 0;
+  }
+  .swatch.active {
+    box-shadow: 0 0 0 2px #2d3748;
+  }
+
+  .card-price-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .card-price {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin: 0;
+  }
+  .card-discount {
+    background: #e6f6df;
+    color: #2f7d1f;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+  }
+  .card-regular-price {
+    font-size: 0.95rem;
+    color: #5f6b7a;
+    margin: 0.25rem 0 1.25rem;
+  }
+
+  .card-btn {
+    margin-top: auto;
+    width: 100%;
+    background: #019df4 !important;
+    color: #fff !important;
+    border: none;
+    border-radius: 9999px;
+    padding: 0.9rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+  .card-btn:hover {
+    background: #054f7a !important;
+    text-decoration: none !important;
+  }
+
+  /* fin del reStyle */
+  .stock-badge-card {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+  }
+
+  /* Paginación */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+  }
+
+  .page-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-card);
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: all 0.2s;
+  }
+
+  .page-btn:hover:not(:disabled) {
+    background: var(--bg-card);
+  }
+
+  .page-btn.active {
+    background: var(--primary-blue);
+    color: #fff;
+    border-color: var(--primary-blue);
+  }
+
+  .page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Vistas compartidas (Detalle y Carrito) */
+  .back-link {
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  .back-link:hover {
+    color: var(--primary-blue);
+  }
+
+  .btn-primary-action,
+  .btn-add-cart {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+
+  .btn-primary-action:hover,
+  .btn-add-cart:hover {
+    opacity: 0.9;
+  }
+
+  /* Vista Detalle */
+  .product-tabs {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border-card);
+    margin-bottom: 1.5rem;
+  }
+
+  .tab-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding-bottom: 0.75rem;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .tab-btn.active {
+    color: var(--text-dark);
+  }
+
+  .tab-btn.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-blue);
+  }
+
+  .section-heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .product-image-box-detail {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-image-box-detail img {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+  }
+
+  .feature-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .quantity-section {
+    margin-bottom: 2rem;
+  }
+
+  .quantity-hint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .qty-btn {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--text-dark);
+  }
+
+  .qty-btn:hover {
+    background-color: var(--bg-card);
+  }
+
+  .qty-value {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    min-width: 40px;
+    text-align: center;
+  }
+
+  .product-footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid var(--border-card);
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+
+  .footer-product-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  /* Vista Carrito */
+  .cart-summary-header {
+    background-color: #f0f7ff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cart-summary-header h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-top: 0.25rem;
+  }
+
+  .cart-items-count {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .cart-item-card {
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .cart-item-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .cart-item-img {
+    width: 70px;
+    height: 70px;
+    background: var(--bg-card);
+    border-radius: 8px;
+    object-fit: contain;
+    padding: 0.5rem;
+  }
+
+  .cart-item-details h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0.15rem 0;
+  }
+
+  .cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .mini-qty-selector {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .mini-qty-btn {
+    background: none;
+    border: none;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .mini-qty-btn:hover {
+    background-color: var(--bg-card);
+  }
+
+  .mini-qty-value {
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 30px;
+    text-align: center;
+  }
+
+  .cart-item-total {
+    font-weight: 700;
+    font-size: 1rem;
+    min-width: 90px;
+    text-align: right;
+  }
+
+  .btn-delete {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .cart-totals-section {
+    border-top: 1px solid var(--border-card);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cart-totals-section .amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+  }
+
+  .btn-primary-action {
+    width: 100%;
+    display: block;
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+</style>
+<style>
+  .stefa-duos-kenosv2__baner-content {
+    position: relative;
+    width: 100%;
+    max-width: 1192px;
+    margin: 32px auto;
+  }
+
+  .stefa-duos-kenosv2__link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .stefa-duos-kenosv2__link:hover,
+  .stefa-duos-kenosv2__link:focus,
+  .stefa-duos-kenosv2__link:active {
+    text-decoration: none;
+    color: transparent;
+  }
+
+  @media (max-width: 767px) {
+    .stefa-duos-kenosv2__baner-content {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
+</style>
